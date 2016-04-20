@@ -118,8 +118,8 @@ log Creamos symlinks \(último procesado\)\\n
 echo ln -rfs $HISTORICAL_DATA/$CSVFILE  $DATA/municipios.csv
 echo ln -rfs $HISTORICAL_DATA/$JSONFILE $DATA/municipios.json
 
-ln -rfs $HISTORICAL_DATA/$CSVFILE  $DATA/municipios.csv
-ln -rfs $HISTORICAL_DATA/$JSONFILE $DATA/municipios.json
+ln -f $HISTORICAL_DATA/$CSVFILE  $DATA/municipios.csv
+ln -f $HISTORICAL_DATA/$JSONFILE $DATA/municipios.json
 
-log Nota: Se puede ignorar el warning \"Discarded range with reserved name\" en caso de que se produzca
+log  \\nNota: Se puede ignorar el warning \"Discarded range with reserved name\" en caso de que se produzca
 
