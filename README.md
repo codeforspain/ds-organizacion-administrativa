@@ -1,5 +1,14 @@
+[![Twitter Follow](https://img.shields.io/twitter/follow/codeforspain.svg?style=social?maxAge=2592000)]()
+
 # ds-organizacion-administrativa
 Listado de comunidades, provincias, municipios con sus correspondientes códigos INE
+
+Este dataset es parte del proyecto abierto y colaborativo CodeForSpain
+
+Puedes obtener más información en:
+
+https://github.com/codeforspain/datos/wiki
+https://twitter.com/codeforspain
 
 ## Datos
 
@@ -13,13 +22,13 @@ Listado de comunidades, provincias, municipios con sus correspondientes códigos
 - Script: [/scripts/municipios/](/scripts/municipios/)
 - Datos procesaods: [/data/municipios.json](data/municipios.json) | [/data/municipios.csv](data/municipios.csv) 
 
-La lista de municipios sufre modificaciones todos los años para reflejar tanto los nuevos municipios (segregados), los que han desaparecido (incorporaciones o fusiones) y los cambios en su denominaciones oficiales.
+La lista de municipios sufre modificaciones todos los años para reflejar tanto los nuevos municipios (segregados), los que han desaparecido (incorporaciones o fusiones) y los cambios en sus denominaciones oficiales.
     
 
 ### Formato de los datos
 
 
-Incluye los campos
+Incluye los siguientes campos:
 
     CPRO:   Codigo INE de la provincia
     CMUN:   Codigo INE del municipio en relacion a la provincia
@@ -84,4 +93,4 @@ No ha sufrido modificaciones en los últimos años.
 - URL: http://www.ine.es/daco/daco42/codmun/cod_provincia.htm
 - Tipo: HTML
 
-Las modificaciones que se producen son en su denominación oficial.
+Las modificaciones que se producen son en las denominaciones oficiales de las provincias.
