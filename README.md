@@ -7,11 +7,11 @@ Listado de comunidades, provincias, municipios con sus correspondientes códigos
 ### Municipios
 
 
-URL: [Relación de municipios y códigos por provincias](http://www.ine.es/daco/daco42/codmun/codmun16/16codmunmapa.htm)
-Tipo: Excel (xlsx)
-Descripción: http://www.ine.es/daco/daco42/codmun/codmun00i.htm 
-Script: [/scripts/municipios/](/scripts/municipios/)
-Datos procesaods: [/data/municipios.json](data/municipios.json) | [/data/municipios.csv](data/municipios.csv) 
+- URL: [Relación de municipios y códigos por provincias](http://www.ine.es/daco/daco42/codmun/codmun16/16codmunmapa.htm)
+- Tipo: Excel (xlsx)
+- Descripción: http://www.ine.es/daco/daco42/codmun/codmun00i.htm 
+- Script: [/scripts/municipios/](/scripts/municipios/)
+- Datos procesaods: [/data/municipios.json](data/municipios.json) | [/data/municipios.csv](data/municipios.csv) 
 
 La lista de municipios sufre modificaciones todos los años para reflejar tanto los nuevos municipios (segregados), los que han desaparecido (incorporaciones o fusiones) y los cambios en su denominaciones oficiales.
     
@@ -43,22 +43,25 @@ En JSON:
         {
             "CPRO": "01",                       // CÓDIGO DE LA PROVINCIA
             "CMUN": "001",                      // CÓDIGO DEL MUNICIPIO
-            "DC":   "
+            "DC":   "4",                        // DIGITO DE CONTROL
             "NOMBRE": "Alegría-Dulantzi""       // DENOMINACIÓN DEL MUNICIPIO 
         },
         {
             "CPRO": "01",
             "CMUN": "002",
+            "DC":   "9",
             "NOMBRE": "Amurrio"
         },
         {
             "CPRO": "01",
             "CMUN": "049",
+            "DC":   "3",
             "NOMBRE": "Añana"
         },
         {
             "CPRO": "01",
             "CMUN": "003",
+            "DC":   "5",
             "NOMBRE": "Aramaio"
         },
 
@@ -69,8 +72,8 @@ En la carpeta [/data/historical](/data/historical) se almacena un histórico con
 
 ### Comunidades Autonomas (PENDIENTE)
 
-URL: http://www.ine.es/daco/daco42/codmun/cod_ccaa.htm
-Tipo: HTML
+- URL: http://www.ine.es/daco/daco42/codmun/cod_ccaa.htm
+- Tipo: HTML
 
 No ha sufrido modificaciones en los últimos años.  
 
@@ -78,7 +81,7 @@ No ha sufrido modificaciones en los últimos años.
 
 ### Provincias (PENDIENTE)
 
-URL: http://www.ine.es/daco/daco42/codmun/cod_provincia.htm
-Tipo: HTML
+- URL: http://www.ine.es/daco/daco42/codmun/cod_provincia.htm
+- Tipo: HTML
 
 Las modificaciones que se producen son en su denominación oficial.
