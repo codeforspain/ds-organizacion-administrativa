@@ -1,14 +1,13 @@
-[![Twitter Follow](https://img.shields.io/twitter/follow/codeforspain.svg?style=social?maxAge=2592000)]()
+[![Twitter Follow](https://img.shields.io/twitter/follow/codeforspain.svg?style=social?maxAge=2592000)](https://twitter.com/codeforspain)
 
 # ds-organizacion-administrativa
 Listado de comunidades, provincias, municipios con sus correspondientes códigos INE
 
-Este dataset es parte del proyecto abierto y colaborativo CodeForSpain
+Este dataset es parte del proyecto abierto y colaborativo CodeForSpain. Puedes obtener más información en:
 
-Puedes obtener más información en:
-
-https://github.com/codeforspain/datos/wiki
-https://twitter.com/codeforspain
+- [CodeForSpain Wiki](https://github.com/codeforspain/datos/wiki)
+- [Twitter](https://twitter.com/codeforspain)
+- [www.codeforspain.org](www.codeforspain.org)
 
 ## Datos
 
