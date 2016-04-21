@@ -9,10 +9,8 @@ Este dataset es parte del proyecto abierto y colaborativo CodeForSpain. Puedes o
 - [Twitter](https://twitter.com/codeforspain)
 - [www.codeforspain.org](www.codeforspain.org)
 
-## Datos
 
-
-### Municipios
+## Municipios
 
 
 - URL: [Relación de municipios y códigos por provincias](http://www.ine.es/daco/daco42/codmun/codmun16/16codmunmapa.htm)
@@ -78,18 +76,93 @@ En JSON:
 
 En la carpeta [/data/historical](/data/historical) se almacena un histórico con los datos correspondientes a otros años.  
 
-### Comunidades Autonomas (PENDIENTE)
+        
+         
+## Provincias
 
-- URL: http://www.ine.es/daco/daco42/codmun/cod_ccaa.htm
-- Tipo: HTML
-
-No ha sufrido modificaciones en los últimos años.  
-
-
-
-### Provincias (PENDIENTE)
 
 - URL: http://www.ine.es/daco/daco42/codmun/cod_provincia.htm
 - Tipo: HTML
+- Script: [/scripts/autonomias_provincias/](/scripts/autonomias_provincias/)
+- Datos procesaods: [/data/provincias.json](data/provincias.json) | [/data/provincias.csv](data/provincias.csv) 
 
-Las modificaciones que se producen son en las denominaciones oficiales de las provincias.
+Las modificaciones que se producen son solo en las denominaciones oficiales de las provincias.
+
+### Formato de los datos
+
+
+Incluye los siguientes campos:
+
+    codigo:   Codigo INE de la provincia
+    nombre:   Denominacion oficial
+    
+
+Ejemplo en CSV:
+
+| codigo | nombre           | 
+|--------|------------------| 
+| 02     | Albacete         | 
+| 03     | Alicante/Alacant | 
+| 04     | Almería          | 
+
+
+En JSON:
+
+    [
+        {
+            "codigo": "02",
+            "nombre": "Albacete"
+        },
+        {
+            "codigo": "03",
+            "nombre": "Alicante\/Alacant"
+        },
+        {
+            "codigo": "04",
+            "nombre": "Almería"
+        },
+
+
+## Comunidades Autonomas
+
+- URL: http://www.ine.es/daco/daco42/codmun/cod_ccaa.htm
+- Tipo: HTML
+- Script: [/scripts/autonomias_provincias/](/scripts/autonomias_provincias/)
+- Datos procesaods: [/data/autonomias.json](data/autonomias.json) | [/data/autonomias.csv](data/autonomias.csv) 
+
+No ha sufrido modificaciones en los últimos años.  
+
+### Formato de los datos
+
+
+Incluye los siguientes campos:
+
+    codigo:   Codigo INE de la autonomia
+    nombre:   Denominacion oficial
+      
+
+
+Ejemplo en CSV:
+
+| codigo | nombre                    | 
+|--------|---------------------------| 
+| 01     | Andalucía                 | 
+| 02     | Aragón                    | 
+| 03     | "Asturias, Principado de" | 
+
+
+En JSON:
+
+    [
+         {
+             "codigo":"01",
+             "nombre":"Andalucía"
+         },
+         {
+            "codigo":"02",
+            "nombre":"Aragón"
+         },
+         {
+             "codigo":"03",
+             "nombre":"Asturias, Principado de"
+         },

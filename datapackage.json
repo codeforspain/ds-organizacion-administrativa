@@ -47,8 +47,44 @@
           },
           {
             "name": "NOMBRE",
+            "type": "string",
+            "description": "Denominación oficial del municipio"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/provincias.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "codigo",
             "type": "number",
-            "description": "Denominación Oficial del Municipios"
+            "description": "Código INE de la provincia",
+            "pattern": "[0-9]{2}"
+          },
+          {
+            "name": "nombre",
+            "type": "string",
+            "description": "Denominación oficial de la provincia"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/autonomias.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "codigo",
+            "type": "number",
+            "description": "Código INE de la comunidad autónoma",
+            "pattern": "[0-9]{2}"
+          },
+          {
+            "name": "nombre",
+            "type": "string",
+            "description": "Denominación oficial de la comunidad autónoma"
           }
         ]
       }

@@ -1,6 +1,6 @@
 # Municipios
 
-Procesa los archivos fuente de municipios que publica el INE todos los años, y que están alojados en ../archive.
+Procesa los archivos fuente de municipios que publica el INE todos los años, y que están alojados en `../../archive`.
 
 Si no los encuentra, los descarga.
 
@@ -12,9 +12,9 @@ Si no los encuentra, los descarga.
 
 ### opciones
 
-          -h          muestra esta ayuda y termina
-          -d          fuerza la descarga de los ficheros fuente aunque ya existan
-          -v          modo verbose
+          -h          Muestra ayuda y termina
+          -d          Fuerza la descarga de los ficheros fuente aunque ya existan
+          -v          Modo verbose
 
 
 ## Requisitos

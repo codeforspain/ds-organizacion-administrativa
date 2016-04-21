@@ -1,0 +1,78 @@
+[
+    {
+        "codigo": "01",
+        "nombre": "Andalucía"
+    },
+    {
+        "codigo": "02",
+        "nombre": "Aragón"
+    },
+    {
+        "codigo": "03",
+        "nombre": "Asturias, Principado de"
+    },
+    {
+        "codigo": "04",
+        "nombre": "Balears, Illes"
+    },
+    {
+        "codigo": "05",
+        "nombre": "Canarias"
+    },
+    {
+        "codigo": "06",
+        "nombre": "Cantabria"
+    },
+    {
+        "codigo": "07",
+        "nombre": "Castilla y León"
+    },
+    {
+        "codigo": "08",
+        "nombre": "Castilla - La Mancha"
+    },
+    {
+        "codigo": "09",
+        "nombre": "Cataluña"
+    },
+    {
+        "codigo": "10",
+        "nombre": "Comunitat Valenciana"
+    },
+    {
+        "codigo": "11",
+        "nombre": "Extremadura"
+    },
+    {
+        "codigo": "12",
+        "nombre": "Galicia"
+    },
+    {
+        "codigo": "13",
+        "nombre": "Madrid, Comunidad de"
+    },
+    {
+        "codigo": "14",
+        "nombre": "Murcia, Región de"
+    },
+    {
+        "codigo": "15",
+        "nombre": "Navarra, Comunidad Foral de"
+    },
+    {
+        "codigo": "16",
+        "nombre": "País Vasco"
+    },
+    {
+        "codigo": "17",
+        "nombre": "Rioja, La"
+    },
+    {
+        "codigo": "18",
+        "nombre": "Ceuta"
+    },
+    {
+        "codigo": "19",
+        "nombre": "Melilla"
+    }
+]

@@ -28,7 +28,7 @@ function log () {
 function show_help() {
 cat << EOF
 Uso: ${0##*/} [-hvd]
-Procesa los archivos fuente de municipios que publica el INE todos los años, y que están alojados en ../archive.
+Procesa los archivos fuente de municipios que publica el INE todos los años, y que están alojados en ../../archive.
 Si no los encuentra, los descarga.
 
      -h          muestra esta ayuda y termina
@@ -115,8 +115,8 @@ done
 
 log Creamos symlinks \(último procesado\)\\n
 
-echo ln -rfs $HISTORICAL_DATA/$CSVFILE  $DATA/municipios.csv
-echo ln -rfs $HISTORICAL_DATA/$JSONFILE $DATA/municipios.json
+echo ln -f $HISTORICAL_DATA/$CSVFILE  $DATA/municipios.csv
+echo ln -f $HISTORICAL_DATA/$JSONFILE $DATA/municipios.json
 
 ln -f $HISTORICAL_DATA/$CSVFILE  $DATA/municipios.csv
 ln -f $HISTORICAL_DATA/$JSONFILE $DATA/municipios.json
