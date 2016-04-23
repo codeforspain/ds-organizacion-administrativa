@@ -54,6 +54,43 @@
       }
     },
     {
+      "path": "data/municipios_historical.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "CPRO",
+            "type": "number",
+            "description": "Código INE de la provincia",
+            "pattern": "[0-9]{2}"
+
+          },
+          {
+            "name": "CMUN",
+            "type": "number",
+            "description": "Código INE del municipio en relación a la provincia. CPRO contacatenado con CMUN resulta en el codigo INE del municipio",
+            "pattern": "[0-9]{3}"
+          },
+          {
+            "name": "DC",
+            "type": "number",
+            "description": "Dígito de control que, asignado mediante una regla de cálculo, permite la detección de errores de grabación y codificación",
+            "pattern": "[0-9]{1}"
+          },
+          {
+            "name": "NOMBRE",
+            "type": "string",
+            "description": "Denominación oficial del municipio"
+          },
+          {
+            "name": "YEAR",
+            "type": "number",
+            "pattern": "[0-9]{4}",
+            "description": "Año del dato"
+          }
+        ]
+      }
+    },
+    {
       "path": "data/provincias.csv",
       "schema": {
         "fields": [

@@ -13,11 +13,12 @@ Este dataset es parte del proyecto abierto y colaborativo CodeForSpain. Puedes o
 ## Municipios
 
 
-- URL: [Relación de municipios y códigos por provincias](http://www.ine.es/daco/daco42/codmun/codmun16/16codmunmapa.htm)
+- URL: http://www.ine.es/daco/daco42/codmun/codmun[YY]/[YY]codmun.xls (<small> [YY] es el último año, p.e. 16)</small>)
 - Tipo: Excel (xlsx)
 - Descripción: http://www.ine.es/daco/daco42/codmun/codmun00i.htm 
-- Script: [/scripts/municipios/](/scripts/municipios/)
 - Datos procesaods: [/data/municipios.json](data/municipios.json) | [/data/municipios.csv](data/municipios.csv) 
+
+ 
 
 La lista de municipios sufre modificaciones todos los años para reflejar tanto los nuevos municipios (segregados), los que han desaparecido (incorporaciones o fusiones) y los cambios en sus denominaciones oficiales.
     
@@ -39,7 +40,6 @@ Ejemplo en CSV:
 | 01   | 001  | 4  | Alegría-Dulantzi | 
 | 01   | 002  | 9  | Amurrio          | 
 | 01   | 049  | 3  | Añana            | 
-| 01   | 003  | 5  | Aramaio          | 
 
 
 En JSON:
@@ -64,17 +64,38 @@ En JSON:
             "DC":   "3",
             "NOMBRE": "Añana"
         },
-        {
-            "CPRO": "01",
-            "CMUN": "003",
-            "DC":   "5",
-            "NOMBRE": "Aramaio"
-        },
 
 
-### Historico
 
-En la carpeta [/data/historical](/data/historical) se almacena un histórico con los datos correspondientes a otros años.  
+## Historico de Municipios 
+
+
+- URL: http://www.ine.es/daco/daco42/codmun/codmun[YY]/[YY]codmun.xls (<small> [YY] es el año, desde 04 hasta hoy</small>)
+- Tipo: Excel (xlsx)
+- Descripción: http://www.ine.es/daco/daco42/codmun/codmun00i.htm 
+- Datos procesaods: [/data/municipios_historical.json](data/municipios_historical.json) | [/data/municipios_historical.csv](data/municipios_historical.csv) 
+
+    
+
+### Formato de los datos
+
+
+Incluye los siguientes campos:
+
+    CPRO:   Codigo INE de la provincia
+    CMUN:   Codigo INE del municipio en relacion a la provincia
+    DC:     Digito de control
+    NOMBRE: Denominacion oficial
+    YEAR:   Año del dato 
+
+Ejemplo en CSV:
+
+    | CPRO | CMUN | DC | NOMBRE                   | YEAR  | 
+    |------|------|----|--------------------------|-------| 
+    | 16   |  167 |  8 |  Pozorrubio              |  2013 | 
+    | 16   |  167 |  8 |  Pozorrubio de Santiago  |  2014 | 
+
+
 
         
          
@@ -83,7 +104,6 @@ En la carpeta [/data/historical](/data/historical) se almacena un histórico con
 
 - URL: http://www.ine.es/daco/daco42/codmun/cod_provincia.htm
 - Tipo: HTML
-- Script: [/scripts/autonomias_provincias/](/scripts/autonomias_provincias/)
 - Datos procesaods: [/data/provincias.json](data/provincias.json) | [/data/provincias.csv](data/provincias.csv) 
 
 Las modificaciones que se producen son solo en las denominaciones oficiales de las provincias.
@@ -127,7 +147,6 @@ En JSON:
 
 - URL: http://www.ine.es/daco/daco42/codmun/cod_ccaa.htm
 - Tipo: HTML
-- Script: [/scripts/autonomias_provincias/](/scripts/autonomias_provincias/)
 - Datos procesaods: [/data/autonomias.json](data/autonomias.json) | [/data/autonomias.csv](data/autonomias.csv) 
 
 No ha sufrido modificaciones en los últimos años.  
@@ -166,3 +185,8 @@ En JSON:
              "codigo":"03",
              "nombre":"Asturias, Principado de"
          },
+
+
+## Script
+
+El script se puede encontrar en [/scripts/](/scripts/).
