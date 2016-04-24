@@ -8,6 +8,7 @@ Este dataset es parte del proyecto abierto y colaborativo CodeForSpain. Puedes o
 - [CodeForSpain Wiki](https://github.com/codeforspain/datos/wiki)
 - [Twitter](https://twitter.com/codeforspain)
 - [www.codeforspain.org](www.codeforspain.org)
+- [Roadmap](https://trello.com/b/uI7MbPg5/codeforspain-ds-organizacion-administrativa)
 
 
 ## Municipios
