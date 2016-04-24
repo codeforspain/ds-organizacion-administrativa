@@ -1,6 +1,6 @@
 # Script
 
-Procesa los archivos fuente de autonomias, provincias, municipios, etc. alojados en `../archive`.
+Procesa los archivos fuente de autonomías, provincias, municipios, islas, etc. alojados en `../archive`.
 
 Si no los encuentra, los descarga.
 
@@ -18,16 +18,16 @@ Si se invoca sin argumentos, procesa todo.
     
         download [source]   Descarga los archivos fuente, pero no los procesa. 
                     
-                            Toma como parametro opcional uno o mas de los siguientes:
+                            Toma como parámetro opcional uno o mas de los siguientes:
                     
-                            [autonomias, provincias, municipios]
+                            [autonomías, provincias, municipios, islas]
 
                         
         process [source]    Procesa los archivos fuente, pero no los descarga.
         
-                            Toma como parametro opcional uno o mas de los siguientes:
+                            Toma como parámetro opcional uno o mas de los siguientes:
                                         
-                            [autonomias, provincias, municipios]                        
+                            [autonomías, provincias, municipios, islas]                        
                         
     OPTIONS
     

@@ -22,7 +22,11 @@
     }
   ],
   "resources": [
-    { 
+    {
+      "name": "ds_oa_municipios",
+      "title": "Municipios de España",
+      "description": "Relacion de municipios de España por provincia, según el INE.",
+      "format": "csv",
       "path": "data/municipios.csv",
       "schema": {
         "fields": [
@@ -54,6 +58,10 @@
       }
     },
     {
+      "name": "ds_oa_municipios_historical",
+      "title": "Municipios de España (Histórico)",
+      "description": "Relacion de municipios de España, por provincia y año, según el INE. Recoge modificaciones anuales.",
+      "format": "csv",
       "path": "data/municipios_historical.csv",
       "schema": {
         "fields": [
@@ -91,6 +99,10 @@
       }
     },
     {
+      "name": "ds_oa_provincias",
+      "title": "Provincias de España",
+      "description": "Relacion de provincias de España según el INE.",
+      "format": "csv",
       "path": "data/provincias.csv",
       "schema": {
         "fields": [
@@ -109,6 +121,10 @@
       }
     },
     {
+      "name": "ds_oa_autonomias",
+      "title": "Comunidades Autonomas de España ",
+      "description": "Relacion de comunidades autonomas de España, según el INE.",
+      "format": "csv",
       "path": "data/autonomias.csv",
       "schema": {
         "fields": [
@@ -125,6 +141,124 @@
           }
         ]
       }
+    },
+    {
+      "name": "ds_oa_municipios_islas",
+      "title": "Municipios de España por Isla",
+      "description": "Relacion de municipios que contiene cada Isla en al último año, según el INE.",
+      "format": "csv",
+      "path": "data/municipios_islas.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "CPRO",
+            "type": "number",
+            "description": "Código INE de la provincia",
+            "pattern": "[0-9]{2}"
+
+          },
+          {
+            "name": "CISLA",
+            "type": "number",
+            "description": "Código INE de la isla",
+            "pattern": "[0-9]{3}"
+          },
+          {
+            "name": "CMUN",
+            "type": "number",
+            "description": "Código INE del municipio en relación a la provincia. CPRO contacatenado con CMUN resulta en el codigo INE del municipio",
+            "pattern": "[0-9]{3}"
+          },
+          {
+            "name": "DC",
+            "type": "number",
+            "description": "Dígito de control que, asignado mediante una regla de cálculo, permite la detección de errores de grabación y codificación",
+            "pattern": "[0-9]{1}"
+          },
+          {
+            "name": "NOMBRE",
+            "type": "string",
+            "description": "Denominación oficial del municipio"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ds_oa_municipios_islas_historical",
+      "title": "Municipios de España por Isla (Histórico)",
+      "description": "Relacion de municipios por isla y por año desde 2008, según el INE. Recoge modificaciones anuales.",
+      "format": "csv",
+      "path": "data/municipios_islas_historical.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "CPRO",
+            "type": "number",
+            "description": "Código INE de la provincia",
+            "pattern": "[0-9]{2}"
+
+          },
+          {
+            "name": "CISLA",
+            "type": "number",
+            "description": "Código INE de la isla",
+            "pattern": "[0-9]{3}"
+          },
+          {
+            "name": "CMUN",
+            "type": "number",
+            "description": "Código INE del municipio en relación a la provincia. CPRO contacatenado con CMUN resulta en el codigo INE del municipio",
+            "pattern": "[0-9]{3}"
+          },
+          {
+            "name": "DC",
+            "type": "number",
+            "description": "Dígito de control que, asignado mediante una regla de cálculo, permite la detección de errores de grabación y codificación",
+            "pattern": "[0-9]{1}"
+          },
+          {
+            "name": "NOMBRE",
+            "type": "string",
+            "description": "Denominación oficial del municipio"
+          },
+          {
+            "name": "YEAR",
+            "type": "number",
+            "pattern": "[0-9]{4}",
+            "description": "Año del dato"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ds_oa_islas",
+      "title": "Islas de España",
+      "description": "Relacion de islas por provincia según el INE.",
+      "format": "csv",
+      "path": "data/islas.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "CPRO",
+            "type": "number",
+            "description": "Código INE de la provincia",
+            "pattern": "[0-9]{2}"
+
+          },
+          {
+            "name": "CISLA",
+            "type": "number",
+            "description": "Código INE de la isla",
+            "pattern": "[0-9]{3}"
+          },
+          {
+            "name": "NOMBRE",
+            "type": "string",
+            "description": "Denominación oficial de la isla"
+          }
+        ]
+      }
     }
+
   ]
 }
