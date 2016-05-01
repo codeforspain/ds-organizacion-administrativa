@@ -1,776 +1,776 @@
-CPRO,CISLA,CMUN,DC,NOMBRE,YEAR
-7,071,24,4,Formentera,2012
-7,072,26,0,Eivissa,2012
-7,072,46,6,"Sant Antoni de Portmany",2012
-7,072,50,4,"Sant Joan de Labritja",2012
-7,072,48,8,"Sant Josep de sa Talaia",2012
-7,072,54,7,"Santa Eulalia del Río",2012
-7,073,1,2,Alaró,2012
-7,073,3,3,Alcúdia,2012
-7,073,4,8,Algaida,2012
-7,073,5,1,Andratx,2012
-7,073,901,3,Ariany,2012
-7,073,6,4,Artà,2012
-7,073,7,0,Banyalbufar,2012
-7,073,8,6,Binissalem,2012
-7,073,9,9,Búger,2012
-7,073,10,3,Bunyola,2012
-7,073,11,0,Calvià,2012
-7,073,12,5,Campanet,2012
-7,073,13,1,Campos,2012
-7,073,14,6,Capdepera,2012
-7,073,16,2,Consell,2012
-7,073,17,8,Costitx,2012
-7,073,18,4,Deyá,2012
-7,073,19,7,Escorca,2012
-7,073,20,1,Esporles,2012
-7,073,21,8,Estellencs,2012
-7,073,22,3,Felanitx,2012
-7,073,25,7,Fornalutx,2012
-7,073,27,6,Inca,2012
-7,073,28,2,"Lloret de Vistalegre",2012
-7,073,29,5,Lloseta,2012
-7,073,30,9,Llubí,2012
-7,073,31,6,Llucmajor,2012
-7,073,33,7,Manacor,2012
-7,073,34,2,"Mancor de la Vall",2012
-7,073,35,5,"Maria de la Salut",2012
-7,073,36,8,Marratxí,2012
-7,073,38,0,Montuïri,2012
-7,073,39,3,Muro,2012
-7,073,40,7,Palma,2012
-7,073,41,4,Petra,2012
-7,073,44,0,"Pobla, Sa",2012
-7,073,42,9,Pollença,2012
-7,073,43,5,Porreres,2012
-7,073,45,3,Puigpunyent,2012
-7,073,59,8,"Salines, Ses",2012
-7,073,49,1,"Sant Joan",2012
-7,073,51,1,"Sant Llorenç des Cardassar",2012
-7,073,53,2,"Santa Eugènia",2012
-7,073,55,0,"Santa Margalida",2012
-7,073,56,3,"Santa María del Camí",2012
-7,073,57,9,Santanyí,2012
-7,073,58,5,Selva,2012
-7,073,47,2,Sencelles,2012
-7,073,60,2,Sineu,2012
-7,073,61,9,Sóller,2012
-7,073,62,4,"Son Servera",2012
-7,073,63,0,Valldemossa,2012
-7,073,65,8,"Vilafranca de Bonany",2012
-7,074,2,7,Alaior,2012
-7,074,64,5,"Castell, Es",2012
-7,074,15,9,"Ciutadella de Menorca",2012
-7,074,23,9,Ferreries,2012
-7,074,32,1,Maó,2012
-7,074,37,4,"Mercadal, Es",2012
-7,074,902,8,"Migjorn Gran, Es",2012
-7,074,52,6,"Sant Lluís",2012
-35,351,3,8,Antigua,2012
-35,351,7,5,Betancuria,2012
-35,351,14,1,"Oliva, La",2012
-35,351,15,4,Pájara,2012
-35,351,17,3,"Puerto del Rosario",2012
-35,351,30,4,Tuineje,2012
-35,352,1,7,Agaete,2012
-35,352,2,2,Agüimes,2012
-35,352,20,6,"Aldea de San Nicolás, La",2012
-35,352,5,6,Artenara,2012
-35,352,6,9,Arucas,2012
-35,352,8,1,Firgas,2012
-35,352,9,4,Gáldar,2012
-35,352,11,5,Ingenio,2012
-35,352,12,0,Mogán,2012
-35,352,13,6,Moya,2012
-35,352,16,7,"Palmas de Gran Canaria, Las",2012
-35,352,19,2,"San Bartolomé de Tirajana",2012
-35,352,21,3,"Santa Brígida",2012
-35,352,22,8,"Santa Lucía de Tirajana",2012
-35,352,23,4,"Santa María de Guía de Gran Canaria",2012
-35,352,25,2,Tejeda,2012
-35,352,26,5,Telde,2012
-35,352,27,1,Teror,2012
-35,352,32,6,Valleseco,2012
-35,352,31,1,"Valsequillo de Gran Canaria",2012
-35,352,33,2,"Vega de San Mateo",2012
-35,353,4,3,Arrecife,2012
-35,353,10,8,Haría,2012
-35,353,18,9,"San Bartolomé",2012
-35,353,24,9,Teguise,2012
-35,353,28,7,Tías,2012
-35,353,29,0,Tinajo,2012
-35,353,34,7,Yaiza,2012
-38,381,2,7,Agulo,2012
-38,381,3,3,Alajeró,2012
-38,381,21,8,Hermigua,2012
-38,381,36,8,"San Sebastián de la Gomera",2012
-38,381,49,1,"Valle Gran Rey",2012
-38,381,50,4,Vallehermoso,2012
-38,382,13,1,Frontera,2012
-38,382,901,3,"Pinar de El Hierro, El",2012
-38,382,48,8,Valverde,2012
-38,383,7,0,Barlovento,2012
-38,383,8,6,"Breña Alta",2012
-38,383,9,9,"Breña Baja",2012
-38,383,14,6,"Fuencaliente de la Palma",2012
-38,383,16,2,Garafía,2012
-38,383,24,4,"Llanos de Aridane, Los",2012
-38,383,27,6,"Paso, El",2012
-38,383,29,5,Puntagorda,2012
-38,383,30,9,Puntallana,2012
-38,383,33,7,"San Andrés y Sauces",2012
-38,383,37,4,"Santa Cruz de la Palma",2012
-38,383,45,3,Tazacorte,2012
-38,383,47,2,Tijarafe,2012
-38,383,53,2,"Villa de Mazo",2012
-38,384,1,2,Adeje,2012
-38,384,4,8,Arafo,2012
-38,384,5,1,Arico,2012
-38,384,6,4,Arona,2012
-38,384,10,3,"Buenavista del Norte",2012
-38,384,11,0,Candelaria,2012
-38,384,12,5,Fasnia,2012
-38,384,15,9,Garachico,2012
-38,384,17,8,"Granadilla de Abona",2012
-38,384,18,4,"Guancha, La",2012
-38,384,19,7,"Guía de Isora",2012
-38,384,20,1,Güímar,2012
-38,384,22,3,"Icod de los Vinos",2012
-38,384,25,7,"Matanza de Acentejo, La",2012
-38,384,26,0,"Orotava, La",2012
-38,384,28,2,"Puerto de la Cruz",2012
-38,384,31,6,"Realejos, Los",2012
-38,384,32,1,"Rosario, El",2012
-38,384,23,9,"San Cristóbal de La Laguna",2012
-38,384,34,2,"San Juan de la Rambla",2012
-38,384,35,5,"San Miguel de Abona",2012
-38,384,38,0,"Santa Cruz de Tenerife",2012
-38,384,39,3,"Santa Úrsula",2012
-38,384,40,7,"Santiago del Teide",2012
-38,384,41,4,"Sauzal, El",2012
-38,384,42,9,"Silos, Los",2012
-38,384,43,5,Tacoronte,2012
-38,384,44,0,"Tanque, El",2012
-38,384,46,6,Tegueste,2012
-38,384,51,1,"Victoria de Acentejo, La",2012
-38,384,52,6,Vilaflor,2012
-7,071,24,4,Formentera,2013
-7,072,26,0,Eivissa,2013
-7,072,46,6,"Sant Antoni de Portmany",2013
-7,072,50,4,"Sant Joan de Labritja",2013
-7,072,48,8,"Sant Josep de sa Talaia",2013
-7,072,54,7,"Santa Eulalia del Río",2013
-7,073,1,2,Alaró,2013
-7,073,3,3,Alcúdia,2013
-7,073,4,8,Algaida,2013
-7,073,5,1,Andratx,2013
-7,073,901,3,Ariany,2013
-7,073,6,4,Artà,2013
-7,073,7,0,Banyalbufar,2013
-7,073,8,6,Binissalem,2013
-7,073,9,9,Búger,2013
-7,073,10,3,Bunyola,2013
-7,073,11,0,Calvià,2013
-7,073,12,5,Campanet,2013
-7,073,13,1,Campos,2013
-7,073,14,6,Capdepera,2013
-7,073,16,2,Consell,2013
-7,073,17,8,Costitx,2013
-7,073,18,4,Deyá,2013
-7,073,19,7,Escorca,2013
-7,073,20,1,Esporles,2013
-7,073,21,8,Estellencs,2013
-7,073,22,3,Felanitx,2013
-7,073,25,7,Fornalutx,2013
-7,073,27,6,Inca,2013
-7,073,28,2,"Lloret de Vistalegre",2013
-7,073,29,5,Lloseta,2013
-7,073,30,9,Llubí,2013
-7,073,31,6,Llucmajor,2013
-7,073,33,7,Manacor,2013
-7,073,34,2,"Mancor de la Vall",2013
-7,073,35,5,"Maria de la Salut",2013
-7,073,36,8,Marratxí,2013
-7,073,38,0,Montuïri,2013
-7,073,39,3,Muro,2013
-7,073,40,7,"Palma de Mallorca",2013
-7,073,41,4,Petra,2013
-7,073,44,0,"Pobla, Sa",2013
-7,073,42,9,Pollença,2013
-7,073,43,5,Porreres,2013
-7,073,45,3,Puigpunyent,2013
-7,073,59,8,"Salines, Ses",2013
-7,073,49,1,"Sant Joan",2013
-7,073,51,1,"Sant Llorenç des Cardassar",2013
-7,073,53,2,"Santa Eugènia",2013
-7,073,55,0,"Santa Margalida",2013
-7,073,56,3,"Santa María del Camí",2013
-7,073,57,9,Santanyí,2013
-7,073,58,5,Selva,2013
-7,073,47,2,Sencelles,2013
-7,073,60,2,Sineu,2013
-7,073,61,9,Sóller,2013
-7,073,62,4,"Son Servera",2013
-7,073,63,0,Valldemossa,2013
-7,073,65,8,"Vilafranca de Bonany",2013
-7,074,2,7,Alaior,2013
-7,074,64,5,"Castell, Es",2013
-7,074,15,9,"Ciutadella de Menorca",2013
-7,074,23,9,Ferreries,2013
-7,074,32,1,Maó,2013
-7,074,37,4,"Mercadal, Es",2013
-7,074,902,8,"Migjorn Gran, Es",2013
-7,074,52,6,"Sant Lluís",2013
-35,351,3,8,Antigua,2013
-35,351,7,5,Betancuria,2013
-35,351,14,1,"Oliva, La",2013
-35,351,15,4,Pájara,2013
-35,351,17,3,"Puerto del Rosario",2013
-35,351,30,4,Tuineje,2013
-35,352,1,7,Agaete,2013
-35,352,2,2,Agüimes,2013
-35,352,20,6,"Aldea de San Nicolás, La",2013
-35,352,5,6,Artenara,2013
-35,352,6,9,Arucas,2013
-35,352,8,1,Firgas,2013
-35,352,9,4,Gáldar,2013
-35,352,11,5,Ingenio,2013
-35,352,12,0,Mogán,2013
-35,352,13,6,Moya,2013
-35,352,16,7,"Palmas de Gran Canaria, Las",2013
-35,352,19,2,"San Bartolomé de Tirajana",2013
-35,352,21,3,"Santa Brígida",2013
-35,352,22,8,"Santa Lucía de Tirajana",2013
-35,352,23,4,"Santa María de Guía de Gran Canaria",2013
-35,352,25,2,Tejeda,2013
-35,352,26,5,Telde,2013
-35,352,27,1,Teror,2013
-35,352,32,6,Valleseco,2013
-35,352,31,1,"Valsequillo de Gran Canaria",2013
-35,352,33,2,"Vega de San Mateo",2013
-35,353,4,3,Arrecife,2013
-35,353,10,8,Haría,2013
-35,353,18,9,"San Bartolomé",2013
-35,353,24,9,Teguise,2013
-35,353,28,7,Tías,2013
-35,353,29,0,Tinajo,2013
-35,353,34,7,Yaiza,2013
-38,381,2,7,Agulo,2013
-38,381,3,3,Alajeró,2013
-38,381,21,8,Hermigua,2013
-38,381,36,8,"San Sebastián de la Gomera",2013
-38,381,49,1,"Valle Gran Rey",2013
-38,381,50,4,Vallehermoso,2013
-38,382,13,1,Frontera,2013
-38,382,901,3,"Pinar de El Hierro, El",2013
-38,382,48,8,Valverde,2013
-38,383,7,0,Barlovento,2013
-38,383,8,6,"Breña Alta",2013
-38,383,9,9,"Breña Baja",2013
-38,383,14,6,"Fuencaliente de la Palma",2013
-38,383,16,2,Garafía,2013
-38,383,24,4,"Llanos de Aridane, Los",2013
-38,383,27,6,"Paso, El",2013
-38,383,29,5,Puntagorda,2013
-38,383,30,9,Puntallana,2013
-38,383,33,7,"San Andrés y Sauces",2013
-38,383,37,4,"Santa Cruz de la Palma",2013
-38,383,45,3,Tazacorte,2013
-38,383,47,2,Tijarafe,2013
-38,383,53,2,"Villa de Mazo",2013
-38,384,1,2,Adeje,2013
-38,384,4,8,Arafo,2013
-38,384,5,1,Arico,2013
-38,384,6,4,Arona,2013
-38,384,10,3,"Buenavista del Norte",2013
-38,384,11,0,Candelaria,2013
-38,384,12,5,Fasnia,2013
-38,384,15,9,Garachico,2013
-38,384,17,8,"Granadilla de Abona",2013
-38,384,18,4,"Guancha, La",2013
-38,384,19,7,"Guía de Isora",2013
-38,384,20,1,Güímar,2013
-38,384,22,3,"Icod de los Vinos",2013
-38,384,25,7,"Matanza de Acentejo, La",2013
-38,384,26,0,"Orotava, La",2013
-38,384,28,2,"Puerto de la Cruz",2013
-38,384,31,6,"Realejos, Los",2013
-38,384,32,1,"Rosario, El",2013
-38,384,23,9,"San Cristóbal de La Laguna",2013
-38,384,34,2,"San Juan de la Rambla",2013
-38,384,35,5,"San Miguel de Abona",2013
-38,384,38,0,"Santa Cruz de Tenerife",2013
-38,384,39,3,"Santa Úrsula",2013
-38,384,40,7,"Santiago del Teide",2013
-38,384,41,4,"Sauzal, El",2013
-38,384,42,9,"Silos, Los",2013
-38,384,43,5,Tacoronte,2013
-38,384,44,0,"Tanque, El",2013
-38,384,46,6,Tegueste,2013
-38,384,51,1,"Victoria de Acentejo, La",2013
-38,384,52,6,Vilaflor,2013
-7,071,24,4,Formentera,2014
-7,072,26,0,Eivissa,2014
-7,072,46,6,"Sant Antoni de Portmany",2014
-7,072,50,4,"Sant Joan de Labritja",2014
-7,072,48,8,"Sant Josep de sa Talaia",2014
-7,072,54,7,"Santa Eulalia del Río",2014
-7,073,1,2,Alaró,2014
-7,073,3,3,Alcúdia,2014
-7,073,4,8,Algaida,2014
-7,073,5,1,Andratx,2014
-7,073,901,3,Ariany,2014
-7,073,6,4,Artà,2014
-7,073,7,0,Banyalbufar,2014
-7,073,8,6,Binissalem,2014
-7,073,9,9,Búger,2014
-7,073,10,3,Bunyola,2014
-7,073,11,0,Calvià,2014
-7,073,12,5,Campanet,2014
-7,073,13,1,Campos,2014
-7,073,14,6,Capdepera,2014
-7,073,16,2,Consell,2014
-7,073,17,8,Costitx,2014
-7,073,18,4,Deià,2014
-7,073,19,7,Escorca,2014
-7,073,20,1,Esporles,2014
-7,073,21,8,Estellencs,2014
-7,073,22,3,Felanitx,2014
-7,073,25,7,Fornalutx,2014
-7,073,27,6,Inca,2014
-7,073,28,2,"Lloret de Vistalegre",2014
-7,073,29,5,Lloseta,2014
-7,073,30,9,Llubí,2014
-7,073,31,6,Llucmajor,2014
-7,073,33,7,Manacor,2014
-7,073,34,2,"Mancor de la Vall",2014
-7,073,35,5,"Maria de la Salut",2014
-7,073,36,8,Marratxí,2014
-7,073,38,0,Montuïri,2014
-7,073,39,3,Muro,2014
-7,073,40,7,"Palma de Mallorca",2014
-7,073,41,4,Petra,2014
-7,073,44,0,"Pobla, Sa",2014
-7,073,42,9,Pollença,2014
-7,073,43,5,Porreres,2014
-7,073,45,3,Puigpunyent,2014
-7,073,59,8,"Salines, Ses",2014
-7,073,49,1,"Sant Joan",2014
-7,073,51,1,"Sant Llorenç des Cardassar",2014
-7,073,53,2,"Santa Eugènia",2014
-7,073,55,0,"Santa Margalida",2014
-7,073,56,3,"Santa María del Camí",2014
-7,073,57,9,Santanyí,2014
-7,073,58,5,Selva,2014
-7,073,47,2,Sencelles,2014
-7,073,60,2,Sineu,2014
-7,073,61,9,Sóller,2014
-7,073,62,4,"Son Servera",2014
-7,073,63,0,Valldemossa,2014
-7,073,65,8,"Vilafranca de Bonany",2014
-7,074,2,7,Alaior,2014
-7,074,64,5,"Castell, Es",2014
-7,074,15,9,"Ciutadella de Menorca",2014
-7,074,23,9,Ferreries,2014
-7,074,32,1,Maó-Mahón,2014
-7,074,37,4,"Mercadal, Es",2014
-7,074,902,8,"Migjorn Gran, Es",2014
-7,074,52,6,"Sant Lluís",2014
-35,351,3,8,Antigua,2014
-35,351,7,5,Betancuria,2014
-35,351,14,1,"Oliva, La",2014
-35,351,15,4,Pájara,2014
-35,351,17,3,"Puerto del Rosario",2014
-35,351,30,4,Tuineje,2014
-35,352,1,7,Agaete,2014
-35,352,2,2,Agüimes,2014
-35,352,20,6,"Aldea de San Nicolás, La",2014
-35,352,5,6,Artenara,2014
-35,352,6,9,Arucas,2014
-35,352,8,1,Firgas,2014
-35,352,9,4,Gáldar,2014
-35,352,11,5,Ingenio,2014
-35,352,12,0,Mogán,2014
-35,352,13,6,Moya,2014
-35,352,16,7,"Palmas de Gran Canaria, Las",2014
-35,352,19,2,"San Bartolomé de Tirajana",2014
-35,352,21,3,"Santa Brígida",2014
-35,352,22,8,"Santa Lucía de Tirajana",2014
-35,352,23,4,"Santa María de Guía de Gran Canaria",2014
-35,352,25,2,Tejeda,2014
-35,352,26,5,Telde,2014
-35,352,27,1,Teror,2014
-35,352,32,6,Valleseco,2014
-35,352,31,1,"Valsequillo de Gran Canaria",2014
-35,352,33,2,"Vega de San Mateo",2014
-35,353,4,3,Arrecife,2014
-35,353,10,8,Haría,2014
-35,353,18,9,"San Bartolomé",2014
-35,353,24,9,Teguise,2014
-35,353,28,7,Tías,2014
-35,353,29,0,Tinajo,2014
-35,353,34,7,Yaiza,2014
-38,381,2,7,Agulo,2014
-38,381,3,3,Alajeró,2014
-38,381,21,8,Hermigua,2014
-38,381,36,8,"San Sebastián de la Gomera",2014
-38,381,49,1,"Valle Gran Rey",2014
-38,381,50,4,Vallehermoso,2014
-38,382,13,1,Frontera,2014
-38,382,901,3,"Pinar de El Hierro, El",2014
-38,382,48,8,Valverde,2014
-38,383,7,0,Barlovento,2014
-38,383,8,6,"Breña Alta",2014
-38,383,9,9,"Breña Baja",2014
-38,383,14,6,"Fuencaliente de la Palma",2014
-38,383,16,2,Garafía,2014
-38,383,24,4,"Llanos de Aridane, Los",2014
-38,383,27,6,"Paso, El",2014
-38,383,29,5,Puntagorda,2014
-38,383,30,9,Puntallana,2014
-38,383,33,7,"San Andrés y Sauces",2014
-38,383,37,4,"Santa Cruz de la Palma",2014
-38,383,45,3,Tazacorte,2014
-38,383,47,2,Tijarafe,2014
-38,383,53,2,"Villa de Mazo",2014
-38,384,1,2,Adeje,2014
-38,384,4,8,Arafo,2014
-38,384,5,1,Arico,2014
-38,384,6,4,Arona,2014
-38,384,10,3,"Buenavista del Norte",2014
-38,384,11,0,Candelaria,2014
-38,384,12,5,Fasnia,2014
-38,384,15,9,Garachico,2014
-38,384,17,8,"Granadilla de Abona",2014
-38,384,18,4,"Guancha, La",2014
-38,384,19,7,"Guía de Isora",2014
-38,384,20,1,Güímar,2014
-38,384,22,3,"Icod de los Vinos",2014
-38,384,25,7,"Matanza de Acentejo, La",2014
-38,384,26,0,"Orotava, La",2014
-38,384,28,2,"Puerto de la Cruz",2014
-38,384,31,6,"Realejos, Los",2014
-38,384,32,1,"Rosario, El",2014
-38,384,23,9,"San Cristóbal de La Laguna",2014
-38,384,34,2,"San Juan de la Rambla",2014
-38,384,35,5,"San Miguel de Abona",2014
-38,384,38,0,"Santa Cruz de Tenerife",2014
-38,384,39,3,"Santa Úrsula",2014
-38,384,40,7,"Santiago del Teide",2014
-38,384,41,4,"Sauzal, El",2014
-38,384,42,9,"Silos, Los",2014
-38,384,43,5,Tacoronte,2014
-38,384,44,0,"Tanque, El",2014
-38,384,46,6,Tegueste,2014
-38,384,51,1,"Victoria de Acentejo, La",2014
-38,384,52,6,Vilaflor,2014
-7,071,24,4,Formentera,2015
-7,072,26,0,Eivissa,2015
-7,072,46,6,"Sant Antoni de Portmany",2015
-7,072,50,4,"Sant Joan de Labritja",2015
-7,072,48,8,"Sant Josep de sa Talaia",2015
-7,072,54,7,"Santa Eulària des Riu",2015
-7,073,1,2,Alaró,2015
-7,073,3,3,Alcúdia,2015
-7,073,4,8,Algaida,2015
-7,073,5,1,Andratx,2015
-7,073,901,3,Ariany,2015
-7,073,6,4,Artà,2015
-7,073,7,0,Banyalbufar,2015
-7,073,8,6,Binissalem,2015
-7,073,9,9,Búger,2015
-7,073,10,3,Bunyola,2015
-7,073,11,0,Calvià,2015
-7,073,12,5,Campanet,2015
-7,073,13,1,Campos,2015
-7,073,14,6,Capdepera,2015
-7,073,16,2,Consell,2015
-7,073,17,8,Costitx,2015
-7,073,18,4,Deià,2015
-7,073,19,7,Escorca,2015
-7,073,20,1,Esporles,2015
-7,073,21,8,Estellencs,2015
-7,073,22,3,Felanitx,2015
-7,073,25,7,Fornalutx,2015
-7,073,27,6,Inca,2015
-7,073,28,2,"Lloret de Vistalegre",2015
-7,073,29,5,Lloseta,2015
-7,073,30,9,Llubí,2015
-7,073,31,6,Llucmajor,2015
-7,073,33,7,Manacor,2015
-7,073,34,2,"Mancor de la Vall",2015
-7,073,35,5,"Maria de la Salut",2015
-7,073,36,8,Marratxí,2015
-7,073,38,0,Montuïri,2015
-7,073,39,3,Muro,2015
-7,073,40,7,"Palma de Mallorca",2015
-7,073,41,4,Petra,2015
-7,073,44,0,"Pobla, Sa",2015
-7,073,42,9,Pollença,2015
-7,073,43,5,Porreres,2015
-7,073,45,3,Puigpunyent,2015
-7,073,59,8,"Salines, Ses",2015
-7,073,49,1,"Sant Joan",2015
-7,073,51,1,"Sant Llorenç des Cardassar",2015
-7,073,53,2,"Santa Eugènia",2015
-7,073,55,0,"Santa Margalida",2015
-7,073,56,3,"Santa María del Camí",2015
-7,073,57,9,Santanyí,2015
-7,073,58,5,Selva,2015
-7,073,47,2,Sencelles,2015
-7,073,60,2,Sineu,2015
-7,073,61,9,Sóller,2015
-7,073,62,4,"Son Servera",2015
-7,073,63,0,Valldemossa,2015
-7,073,65,8,"Vilafranca de Bonany",2015
-7,074,2,7,Alaior,2015
-7,074,64,5,"Castell, Es",2015
-7,074,15,9,"Ciutadella de Menorca",2015
-7,074,23,9,Ferreries,2015
-7,074,32,1,Maó-Mahón,2015
-7,074,37,4,"Mercadal, Es",2015
-7,074,902,8,"Migjorn Gran, Es",2015
-7,074,52,6,"Sant Lluís",2015
-35,351,3,8,Antigua,2015
-35,351,7,5,Betancuria,2015
-35,351,14,1,"Oliva, La",2015
-35,351,15,4,Pájara,2015
-35,351,17,3,"Puerto del Rosario",2015
-35,351,30,4,Tuineje,2015
-35,352,1,7,Agaete,2015
-35,352,2,2,Agüimes,2015
-35,352,20,6,"Aldea de San Nicolás, La",2015
-35,352,5,6,Artenara,2015
-35,352,6,9,Arucas,2015
-35,352,8,1,Firgas,2015
-35,352,9,4,Gáldar,2015
-35,352,11,5,Ingenio,2015
-35,352,12,0,Mogán,2015
-35,352,13,6,Moya,2015
-35,352,16,7,"Palmas de Gran Canaria, Las",2015
-35,352,19,2,"San Bartolomé de Tirajana",2015
-35,352,21,3,"Santa Brígida",2015
-35,352,22,8,"Santa Lucía de Tirajana",2015
-35,352,23,4,"Santa María de Guía de Gran Canaria",2015
-35,352,25,2,Tejeda,2015
-35,352,26,5,Telde,2015
-35,352,27,1,Teror,2015
-35,352,32,6,Valleseco,2015
-35,352,31,1,"Valsequillo de Gran Canaria",2015
-35,352,33,2,"Vega de San Mateo",2015
-35,353,4,3,Arrecife,2015
-35,353,10,8,Haría,2015
-35,353,18,9,"San Bartolomé",2015
-35,353,24,9,Teguise,2015
-35,353,28,7,Tías,2015
-35,353,29,0,Tinajo,2015
-35,353,34,7,Yaiza,2015
-38,381,2,7,Agulo,2015
-38,381,3,3,Alajeró,2015
-38,381,21,8,Hermigua,2015
-38,381,36,8,"San Sebastián de la Gomera",2015
-38,381,49,1,"Valle Gran Rey",2015
-38,381,50,4,Vallehermoso,2015
-38,382,13,1,Frontera,2015
-38,382,901,3,"Pinar de El Hierro, El",2015
-38,382,48,8,Valverde,2015
-38,383,7,0,Barlovento,2015
-38,383,8,6,"Breña Alta",2015
-38,383,9,9,"Breña Baja",2015
-38,383,14,6,"Fuencaliente de la Palma",2015
-38,383,16,2,Garafía,2015
-38,383,24,4,"Llanos de Aridane, Los",2015
-38,383,27,6,"Paso, El",2015
-38,383,29,5,Puntagorda,2015
-38,383,30,9,Puntallana,2015
-38,383,33,7,"San Andrés y Sauces",2015
-38,383,37,4,"Santa Cruz de la Palma",2015
-38,383,45,3,Tazacorte,2015
-38,383,47,2,Tijarafe,2015
-38,383,53,2,"Villa de Mazo",2015
-38,384,1,2,Adeje,2015
-38,384,4,8,Arafo,2015
-38,384,5,1,Arico,2015
-38,384,6,4,Arona,2015
-38,384,10,3,"Buenavista del Norte",2015
-38,384,11,0,Candelaria,2015
-38,384,12,5,Fasnia,2015
-38,384,15,9,Garachico,2015
-38,384,17,8,"Granadilla de Abona",2015
-38,384,18,4,"Guancha, La",2015
-38,384,19,7,"Guía de Isora",2015
-38,384,20,1,Güímar,2015
-38,384,22,3,"Icod de los Vinos",2015
-38,384,25,7,"Matanza de Acentejo, La",2015
-38,384,26,0,"Orotava, La",2015
-38,384,28,2,"Puerto de la Cruz",2015
-38,384,31,6,"Realejos, Los",2015
-38,384,32,1,"Rosario, El",2015
-38,384,23,9,"San Cristóbal de La Laguna",2015
-38,384,34,2,"San Juan de la Rambla",2015
-38,384,35,5,"San Miguel de Abona",2015
-38,384,38,0,"Santa Cruz de Tenerife",2015
-38,384,39,3,"Santa Úrsula",2015
-38,384,40,7,"Santiago del Teide",2015
-38,384,41,4,"Sauzal, El",2015
-38,384,42,9,"Silos, Los",2015
-38,384,43,5,Tacoronte,2015
-38,384,44,0,"Tanque, El",2015
-38,384,46,6,Tegueste,2015
-38,384,51,1,"Victoria de Acentejo, La",2015
-38,384,52,6,"Vilaflor de Chasna",2015
-7,071,24,4,Formentera,2016
-7,072,26,0,Eivissa,2016
-7,072,46,6,"Sant Antoni de Portmany",2016
-7,072,50,4,"Sant Joan de Labritja",2016
-7,072,48,8,"Sant Josep de sa Talaia",2016
-7,072,54,7,"Santa Eulària des Riu",2016
-7,073,1,2,Alaró,2016
-7,073,3,3,Alcúdia,2016
-7,073,4,8,Algaida,2016
-7,073,5,1,Andratx,2016
-7,073,901,3,Ariany,2016
-7,073,6,4,Artà,2016
-7,073,7,0,Banyalbufar,2016
-7,073,8,6,Binissalem,2016
-7,073,9,9,Búger,2016
-7,073,10,3,Bunyola,2016
-7,073,11,0,Calvià,2016
-7,073,12,5,Campanet,2016
-7,073,13,1,Campos,2016
-7,073,14,6,Capdepera,2016
-7,073,16,2,Consell,2016
-7,073,17,8,Costitx,2016
-7,073,18,4,Deià,2016
-7,073,19,7,Escorca,2016
-7,073,20,1,Esporles,2016
-7,073,21,8,Estellencs,2016
-7,073,22,3,Felanitx,2016
-7,073,25,7,Fornalutx,2016
-7,073,27,6,Inca,2016
-7,073,28,2,"Lloret de Vistalegre",2016
-7,073,29,5,Lloseta,2016
-7,073,30,9,Llubí,2016
-7,073,31,6,Llucmajor,2016
-7,073,33,7,Manacor,2016
-7,073,34,2,"Mancor de la Vall",2016
-7,073,35,5,"Maria de la Salut",2016
-7,073,36,8,Marratxí,2016
-7,073,38,0,Montuïri,2016
-7,073,39,3,Muro,2016
-7,073,40,7,"Palma de Mallorca",2016
-7,073,41,4,Petra,2016
-7,073,44,0,"Pobla, Sa",2016
-7,073,42,9,Pollença,2016
-7,073,43,5,Porreres,2016
-7,073,45,3,Puigpunyent,2016
-7,073,59,8,"Salines, Ses",2016
-7,073,49,1,"Sant Joan",2016
-7,073,51,1,"Sant Llorenç des Cardassar",2016
-7,073,53,2,"Santa Eugènia",2016
-7,073,55,0,"Santa Margalida",2016
-7,073,56,3,"Santa María del Camí",2016
-7,073,57,9,Santanyí,2016
-7,073,58,5,Selva,2016
-7,073,47,2,Sencelles,2016
-7,073,60,2,Sineu,2016
-7,073,61,9,Sóller,2016
-7,073,62,4,"Son Servera",2016
-7,073,63,0,Valldemossa,2016
-7,073,65,8,"Vilafranca de Bonany",2016
-7,074,2,7,Alaior,2016
-7,074,64,5,"Castell, Es",2016
-7,074,15,9,"Ciutadella de Menorca",2016
-7,074,23,9,Ferreries,2016
-7,074,32,1,Maó-Mahón,2016
-7,074,37,4,"Mercadal, Es",2016
-7,074,902,8,"Migjorn Gran, Es",2016
-7,074,52,6,"Sant Lluís",2016
-35,351,3,8,Antigua,2016
-35,351,7,5,Betancuria,2016
-35,351,14,1,"Oliva, La",2016
-35,351,15,4,Pájara,2016
-35,351,17,3,"Puerto del Rosario",2016
-35,351,30,4,Tuineje,2016
-35,352,1,7,Agaete,2016
-35,352,2,2,Agüimes,2016
-35,352,20,6,"Aldea de San Nicolás, La",2016
-35,352,5,6,Artenara,2016
-35,352,6,9,Arucas,2016
-35,352,8,1,Firgas,2016
-35,352,9,4,Gáldar,2016
-35,352,11,5,Ingenio,2016
-35,352,12,0,Mogán,2016
-35,352,13,6,Moya,2016
-35,352,16,7,"Palmas de Gran Canaria, Las",2016
-35,352,19,2,"San Bartolomé de Tirajana",2016
-35,352,21,3,"Santa Brígida",2016
-35,352,22,8,"Santa Lucía de Tirajana",2016
-35,352,23,4,"Santa María de Guía de Gran Canaria",2016
-35,352,25,2,Tejeda,2016
-35,352,26,5,Telde,2016
-35,352,27,1,Teror,2016
-35,352,32,6,Valleseco,2016
-35,352,31,1,"Valsequillo de Gran Canaria",2016
-35,352,33,2,"Vega de San Mateo",2016
-35,353,4,3,Arrecife,2016
-35,353,10,8,Haría,2016
-35,353,18,9,"San Bartolomé",2016
-35,353,24,9,Teguise,2016
-35,353,28,7,Tías,2016
-35,353,29,0,Tinajo,2016
-35,353,34,7,Yaiza,2016
-38,381,2,7,Agulo,2016
-38,381,3,3,Alajeró,2016
-38,381,21,8,Hermigua,2016
-38,381,36,8,"San Sebastián de la Gomera",2016
-38,381,49,1,"Valle Gran Rey",2016
-38,381,50,4,Vallehermoso,2016
-38,382,13,1,Frontera,2016
-38,382,901,3,"Pinar de El Hierro, El",2016
-38,382,48,8,Valverde,2016
-38,383,7,0,Barlovento,2016
-38,383,8,6,"Breña Alta",2016
-38,383,9,9,"Breña Baja",2016
-38,383,14,6,"Fuencaliente de la Palma",2016
-38,383,16,2,Garafía,2016
-38,383,24,4,"Llanos de Aridane, Los",2016
-38,383,27,6,"Paso, El",2016
-38,383,29,5,Puntagorda,2016
-38,383,30,9,Puntallana,2016
-38,383,33,7,"San Andrés y Sauces",2016
-38,383,37,4,"Santa Cruz de la Palma",2016
-38,383,45,3,Tazacorte,2016
-38,383,47,2,Tijarafe,2016
-38,383,53,2,"Villa de Mazo",2016
-38,384,1,2,Adeje,2016
-38,384,4,8,Arafo,2016
-38,384,5,1,Arico,2016
-38,384,6,4,Arona,2016
-38,384,10,3,"Buenavista del Norte",2016
-38,384,11,0,Candelaria,2016
-38,384,12,5,Fasnia,2016
-38,384,15,9,Garachico,2016
-38,384,17,8,"Granadilla de Abona",2016
-38,384,18,4,"Guancha, La",2016
-38,384,19,7,"Guía de Isora",2016
-38,384,20,1,Güímar,2016
-38,384,22,3,"Icod de los Vinos",2016
-38,384,25,7,"Matanza de Acentejo, La",2016
-38,384,26,0,"Orotava, La",2016
-38,384,28,2,"Puerto de la Cruz",2016
-38,384,31,6,"Realejos, Los",2016
-38,384,32,1,"Rosario, El",2016
-38,384,23,9,"San Cristóbal de La Laguna",2016
-38,384,34,2,"San Juan de la Rambla",2016
-38,384,35,5,"San Miguel de Abona",2016
-38,384,38,0,"Santa Cruz de Tenerife",2016
-38,384,39,3,"Santa Úrsula",2016
-38,384,40,7,"Santiago del Teide",2016
-38,384,41,4,"Sauzal, El",2016
-38,384,42,9,"Silos, Los",2016
-38,384,43,5,Tacoronte,2016
-38,384,44,0,"Tanque, El",2016
-38,384,46,6,Tegueste,2016
-38,384,51,1,"Victoria de Acentejo, La",2016
-38,384,52,6,"Vilaflor de Chasna",2016
+municipio_id,year,isla_id,provincia_id,cmun,dc,nombre
+07024,2012,071,07,024,4,Formentera
+07026,2012,072,07,026,0,Eivissa
+07046,2012,072,07,046,6,"Sant Antoni de Portmany"
+07050,2012,072,07,050,4,"Sant Joan de Labritja"
+07048,2012,072,07,048,8,"Sant Josep de sa Talaia"
+07054,2012,072,07,054,7,"Santa Eulalia del Río"
+07001,2012,073,07,001,2,Alaró
+07003,2012,073,07,003,3,Alcúdia
+07004,2012,073,07,004,8,Algaida
+07005,2012,073,07,005,1,Andratx
+07901,2012,073,07,901,3,Ariany
+07006,2012,073,07,006,4,Artà
+07007,2012,073,07,007,0,Banyalbufar
+07008,2012,073,07,008,6,Binissalem
+07009,2012,073,07,009,9,Búger
+07010,2012,073,07,010,3,Bunyola
+07011,2012,073,07,011,0,Calvià
+07012,2012,073,07,012,5,Campanet
+07013,2012,073,07,013,1,Campos
+07014,2012,073,07,014,6,Capdepera
+07016,2012,073,07,016,2,Consell
+07017,2012,073,07,017,8,Costitx
+07018,2012,073,07,018,4,Deyá
+07019,2012,073,07,019,7,Escorca
+07020,2012,073,07,020,1,Esporles
+07021,2012,073,07,021,8,Estellencs
+07022,2012,073,07,022,3,Felanitx
+07025,2012,073,07,025,7,Fornalutx
+07027,2012,073,07,027,6,Inca
+07028,2012,073,07,028,2,"Lloret de Vistalegre"
+07029,2012,073,07,029,5,Lloseta
+07030,2012,073,07,030,9,Llubí
+07031,2012,073,07,031,6,Llucmajor
+07033,2012,073,07,033,7,Manacor
+07034,2012,073,07,034,2,"Mancor de la Vall"
+07035,2012,073,07,035,5,"Maria de la Salut"
+07036,2012,073,07,036,8,Marratxí
+07038,2012,073,07,038,0,Montuïri
+07039,2012,073,07,039,3,Muro
+07040,2012,073,07,040,7,Palma
+07041,2012,073,07,041,4,Petra
+07044,2012,073,07,044,0,"Pobla, Sa"
+07042,2012,073,07,042,9,Pollença
+07043,2012,073,07,043,5,Porreres
+07045,2012,073,07,045,3,Puigpunyent
+07059,2012,073,07,059,8,"Salines, Ses"
+07049,2012,073,07,049,1,"Sant Joan"
+07051,2012,073,07,051,1,"Sant Llorenç des Cardassar"
+07053,2012,073,07,053,2,"Santa Eugènia"
+07055,2012,073,07,055,0,"Santa Margalida"
+07056,2012,073,07,056,3,"Santa María del Camí"
+07057,2012,073,07,057,9,Santanyí
+07058,2012,073,07,058,5,Selva
+07047,2012,073,07,047,2,Sencelles
+07060,2012,073,07,060,2,Sineu
+07061,2012,073,07,061,9,Sóller
+07062,2012,073,07,062,4,"Son Servera"
+07063,2012,073,07,063,0,Valldemossa
+07065,2012,073,07,065,8,"Vilafranca de Bonany"
+07002,2012,074,07,002,7,Alaior
+07064,2012,074,07,064,5,"Castell, Es"
+07015,2012,074,07,015,9,"Ciutadella de Menorca"
+07023,2012,074,07,023,9,Ferreries
+07032,2012,074,07,032,1,Maó
+07037,2012,074,07,037,4,"Mercadal, Es"
+07902,2012,074,07,902,8,"Migjorn Gran, Es"
+07052,2012,074,07,052,6,"Sant Lluís"
+35003,2012,351,35,003,8,Antigua
+35007,2012,351,35,007,5,Betancuria
+35014,2012,351,35,014,1,"Oliva, La"
+35015,2012,351,35,015,4,Pájara
+35017,2012,351,35,017,3,"Puerto del Rosario"
+35030,2012,351,35,030,4,Tuineje
+35001,2012,352,35,001,7,Agaete
+35002,2012,352,35,002,2,Agüimes
+35020,2012,352,35,020,6,"Aldea de San Nicolás, La"
+35005,2012,352,35,005,6,Artenara
+35006,2012,352,35,006,9,Arucas
+35008,2012,352,35,008,1,Firgas
+35009,2012,352,35,009,4,Gáldar
+35011,2012,352,35,011,5,Ingenio
+35012,2012,352,35,012,0,Mogán
+35013,2012,352,35,013,6,Moya
+35016,2012,352,35,016,7,"Palmas de Gran Canaria, Las"
+35019,2012,352,35,019,2,"San Bartolomé de Tirajana"
+35021,2012,352,35,021,3,"Santa Brígida"
+35022,2012,352,35,022,8,"Santa Lucía de Tirajana"
+35023,2012,352,35,023,4,"Santa María de Guía de Gran Canaria"
+35025,2012,352,35,025,2,Tejeda
+35026,2012,352,35,026,5,Telde
+35027,2012,352,35,027,1,Teror
+35032,2012,352,35,032,6,Valleseco
+35031,2012,352,35,031,1,"Valsequillo de Gran Canaria"
+35033,2012,352,35,033,2,"Vega de San Mateo"
+35004,2012,353,35,004,3,Arrecife
+35010,2012,353,35,010,8,Haría
+35018,2012,353,35,018,9,"San Bartolomé"
+35024,2012,353,35,024,9,Teguise
+35028,2012,353,35,028,7,Tías
+35029,2012,353,35,029,0,Tinajo
+35034,2012,353,35,034,7,Yaiza
+38002,2012,381,38,002,7,Agulo
+38003,2012,381,38,003,3,Alajeró
+38021,2012,381,38,021,8,Hermigua
+38036,2012,381,38,036,8,"San Sebastián de la Gomera"
+38049,2012,381,38,049,1,"Valle Gran Rey"
+38050,2012,381,38,050,4,Vallehermoso
+38013,2012,382,38,013,1,Frontera
+38901,2012,382,38,901,3,"Pinar de El Hierro, El"
+38048,2012,382,38,048,8,Valverde
+38007,2012,383,38,007,0,Barlovento
+38008,2012,383,38,008,6,"Breña Alta"
+38009,2012,383,38,009,9,"Breña Baja"
+38014,2012,383,38,014,6,"Fuencaliente de la Palma"
+38016,2012,383,38,016,2,Garafía
+38024,2012,383,38,024,4,"Llanos de Aridane, Los"
+38027,2012,383,38,027,6,"Paso, El"
+38029,2012,383,38,029,5,Puntagorda
+38030,2012,383,38,030,9,Puntallana
+38033,2012,383,38,033,7,"San Andrés y Sauces"
+38037,2012,383,38,037,4,"Santa Cruz de la Palma"
+38045,2012,383,38,045,3,Tazacorte
+38047,2012,383,38,047,2,Tijarafe
+38053,2012,383,38,053,2,"Villa de Mazo"
+38001,2012,384,38,001,2,Adeje
+38004,2012,384,38,004,8,Arafo
+38005,2012,384,38,005,1,Arico
+38006,2012,384,38,006,4,Arona
+38010,2012,384,38,010,3,"Buenavista del Norte"
+38011,2012,384,38,011,0,Candelaria
+38012,2012,384,38,012,5,Fasnia
+38015,2012,384,38,015,9,Garachico
+38017,2012,384,38,017,8,"Granadilla de Abona"
+38018,2012,384,38,018,4,"Guancha, La"
+38019,2012,384,38,019,7,"Guía de Isora"
+38020,2012,384,38,020,1,Güímar
+38022,2012,384,38,022,3,"Icod de los Vinos"
+38025,2012,384,38,025,7,"Matanza de Acentejo, La"
+38026,2012,384,38,026,0,"Orotava, La"
+38028,2012,384,38,028,2,"Puerto de la Cruz"
+38031,2012,384,38,031,6,"Realejos, Los"
+38032,2012,384,38,032,1,"Rosario, El"
+38023,2012,384,38,023,9,"San Cristóbal de La Laguna"
+38034,2012,384,38,034,2,"San Juan de la Rambla"
+38035,2012,384,38,035,5,"San Miguel de Abona"
+38038,2012,384,38,038,0,"Santa Cruz de Tenerife"
+38039,2012,384,38,039,3,"Santa Úrsula"
+38040,2012,384,38,040,7,"Santiago del Teide"
+38041,2012,384,38,041,4,"Sauzal, El"
+38042,2012,384,38,042,9,"Silos, Los"
+38043,2012,384,38,043,5,Tacoronte
+38044,2012,384,38,044,0,"Tanque, El"
+38046,2012,384,38,046,6,Tegueste
+38051,2012,384,38,051,1,"Victoria de Acentejo, La"
+38052,2012,384,38,052,6,Vilaflor
+07024,2013,071,07,024,4,Formentera
+07026,2013,072,07,026,0,Eivissa
+07046,2013,072,07,046,6,"Sant Antoni de Portmany"
+07050,2013,072,07,050,4,"Sant Joan de Labritja"
+07048,2013,072,07,048,8,"Sant Josep de sa Talaia"
+07054,2013,072,07,054,7,"Santa Eulalia del Río"
+07001,2013,073,07,001,2,Alaró
+07003,2013,073,07,003,3,Alcúdia
+07004,2013,073,07,004,8,Algaida
+07005,2013,073,07,005,1,Andratx
+07901,2013,073,07,901,3,Ariany
+07006,2013,073,07,006,4,Artà
+07007,2013,073,07,007,0,Banyalbufar
+07008,2013,073,07,008,6,Binissalem
+07009,2013,073,07,009,9,Búger
+07010,2013,073,07,010,3,Bunyola
+07011,2013,073,07,011,0,Calvià
+07012,2013,073,07,012,5,Campanet
+07013,2013,073,07,013,1,Campos
+07014,2013,073,07,014,6,Capdepera
+07016,2013,073,07,016,2,Consell
+07017,2013,073,07,017,8,Costitx
+07018,2013,073,07,018,4,Deyá
+07019,2013,073,07,019,7,Escorca
+07020,2013,073,07,020,1,Esporles
+07021,2013,073,07,021,8,Estellencs
+07022,2013,073,07,022,3,Felanitx
+07025,2013,073,07,025,7,Fornalutx
+07027,2013,073,07,027,6,Inca
+07028,2013,073,07,028,2,"Lloret de Vistalegre"
+07029,2013,073,07,029,5,Lloseta
+07030,2013,073,07,030,9,Llubí
+07031,2013,073,07,031,6,Llucmajor
+07033,2013,073,07,033,7,Manacor
+07034,2013,073,07,034,2,"Mancor de la Vall"
+07035,2013,073,07,035,5,"Maria de la Salut"
+07036,2013,073,07,036,8,Marratxí
+07038,2013,073,07,038,0,Montuïri
+07039,2013,073,07,039,3,Muro
+07040,2013,073,07,040,7,"Palma de Mallorca"
+07041,2013,073,07,041,4,Petra
+07044,2013,073,07,044,0,"Pobla, Sa"
+07042,2013,073,07,042,9,Pollença
+07043,2013,073,07,043,5,Porreres
+07045,2013,073,07,045,3,Puigpunyent
+07059,2013,073,07,059,8,"Salines, Ses"
+07049,2013,073,07,049,1,"Sant Joan"
+07051,2013,073,07,051,1,"Sant Llorenç des Cardassar"
+07053,2013,073,07,053,2,"Santa Eugènia"
+07055,2013,073,07,055,0,"Santa Margalida"
+07056,2013,073,07,056,3,"Santa María del Camí"
+07057,2013,073,07,057,9,Santanyí
+07058,2013,073,07,058,5,Selva
+07047,2013,073,07,047,2,Sencelles
+07060,2013,073,07,060,2,Sineu
+07061,2013,073,07,061,9,Sóller
+07062,2013,073,07,062,4,"Son Servera"
+07063,2013,073,07,063,0,Valldemossa
+07065,2013,073,07,065,8,"Vilafranca de Bonany"
+07002,2013,074,07,002,7,Alaior
+07064,2013,074,07,064,5,"Castell, Es"
+07015,2013,074,07,015,9,"Ciutadella de Menorca"
+07023,2013,074,07,023,9,Ferreries
+07032,2013,074,07,032,1,Maó
+07037,2013,074,07,037,4,"Mercadal, Es"
+07902,2013,074,07,902,8,"Migjorn Gran, Es"
+07052,2013,074,07,052,6,"Sant Lluís"
+35003,2013,351,35,003,8,Antigua
+35007,2013,351,35,007,5,Betancuria
+35014,2013,351,35,014,1,"Oliva, La"
+35015,2013,351,35,015,4,Pájara
+35017,2013,351,35,017,3,"Puerto del Rosario"
+35030,2013,351,35,030,4,Tuineje
+35001,2013,352,35,001,7,Agaete
+35002,2013,352,35,002,2,Agüimes
+35020,2013,352,35,020,6,"Aldea de San Nicolás, La"
+35005,2013,352,35,005,6,Artenara
+35006,2013,352,35,006,9,Arucas
+35008,2013,352,35,008,1,Firgas
+35009,2013,352,35,009,4,Gáldar
+35011,2013,352,35,011,5,Ingenio
+35012,2013,352,35,012,0,Mogán
+35013,2013,352,35,013,6,Moya
+35016,2013,352,35,016,7,"Palmas de Gran Canaria, Las"
+35019,2013,352,35,019,2,"San Bartolomé de Tirajana"
+35021,2013,352,35,021,3,"Santa Brígida"
+35022,2013,352,35,022,8,"Santa Lucía de Tirajana"
+35023,2013,352,35,023,4,"Santa María de Guía de Gran Canaria"
+35025,2013,352,35,025,2,Tejeda
+35026,2013,352,35,026,5,Telde
+35027,2013,352,35,027,1,Teror
+35032,2013,352,35,032,6,Valleseco
+35031,2013,352,35,031,1,"Valsequillo de Gran Canaria"
+35033,2013,352,35,033,2,"Vega de San Mateo"
+35004,2013,353,35,004,3,Arrecife
+35010,2013,353,35,010,8,Haría
+35018,2013,353,35,018,9,"San Bartolomé"
+35024,2013,353,35,024,9,Teguise
+35028,2013,353,35,028,7,Tías
+35029,2013,353,35,029,0,Tinajo
+35034,2013,353,35,034,7,Yaiza
+38002,2013,381,38,002,7,Agulo
+38003,2013,381,38,003,3,Alajeró
+38021,2013,381,38,021,8,Hermigua
+38036,2013,381,38,036,8,"San Sebastián de la Gomera"
+38049,2013,381,38,049,1,"Valle Gran Rey"
+38050,2013,381,38,050,4,Vallehermoso
+38013,2013,382,38,013,1,Frontera
+38901,2013,382,38,901,3,"Pinar de El Hierro, El"
+38048,2013,382,38,048,8,Valverde
+38007,2013,383,38,007,0,Barlovento
+38008,2013,383,38,008,6,"Breña Alta"
+38009,2013,383,38,009,9,"Breña Baja"
+38014,2013,383,38,014,6,"Fuencaliente de la Palma"
+38016,2013,383,38,016,2,Garafía
+38024,2013,383,38,024,4,"Llanos de Aridane, Los"
+38027,2013,383,38,027,6,"Paso, El"
+38029,2013,383,38,029,5,Puntagorda
+38030,2013,383,38,030,9,Puntallana
+38033,2013,383,38,033,7,"San Andrés y Sauces"
+38037,2013,383,38,037,4,"Santa Cruz de la Palma"
+38045,2013,383,38,045,3,Tazacorte
+38047,2013,383,38,047,2,Tijarafe
+38053,2013,383,38,053,2,"Villa de Mazo"
+38001,2013,384,38,001,2,Adeje
+38004,2013,384,38,004,8,Arafo
+38005,2013,384,38,005,1,Arico
+38006,2013,384,38,006,4,Arona
+38010,2013,384,38,010,3,"Buenavista del Norte"
+38011,2013,384,38,011,0,Candelaria
+38012,2013,384,38,012,5,Fasnia
+38015,2013,384,38,015,9,Garachico
+38017,2013,384,38,017,8,"Granadilla de Abona"
+38018,2013,384,38,018,4,"Guancha, La"
+38019,2013,384,38,019,7,"Guía de Isora"
+38020,2013,384,38,020,1,Güímar
+38022,2013,384,38,022,3,"Icod de los Vinos"
+38025,2013,384,38,025,7,"Matanza de Acentejo, La"
+38026,2013,384,38,026,0,"Orotava, La"
+38028,2013,384,38,028,2,"Puerto de la Cruz"
+38031,2013,384,38,031,6,"Realejos, Los"
+38032,2013,384,38,032,1,"Rosario, El"
+38023,2013,384,38,023,9,"San Cristóbal de La Laguna"
+38034,2013,384,38,034,2,"San Juan de la Rambla"
+38035,2013,384,38,035,5,"San Miguel de Abona"
+38038,2013,384,38,038,0,"Santa Cruz de Tenerife"
+38039,2013,384,38,039,3,"Santa Úrsula"
+38040,2013,384,38,040,7,"Santiago del Teide"
+38041,2013,384,38,041,4,"Sauzal, El"
+38042,2013,384,38,042,9,"Silos, Los"
+38043,2013,384,38,043,5,Tacoronte
+38044,2013,384,38,044,0,"Tanque, El"
+38046,2013,384,38,046,6,Tegueste
+38051,2013,384,38,051,1,"Victoria de Acentejo, La"
+38052,2013,384,38,052,6,Vilaflor
+07024,2014,071,07,024,4,Formentera
+07026,2014,072,07,026,0,Eivissa
+07046,2014,072,07,046,6,"Sant Antoni de Portmany"
+07050,2014,072,07,050,4,"Sant Joan de Labritja"
+07048,2014,072,07,048,8,"Sant Josep de sa Talaia"
+07054,2014,072,07,054,7,"Santa Eulalia del Río"
+07001,2014,073,07,001,2,Alaró
+07003,2014,073,07,003,3,Alcúdia
+07004,2014,073,07,004,8,Algaida
+07005,2014,073,07,005,1,Andratx
+07901,2014,073,07,901,3,Ariany
+07006,2014,073,07,006,4,Artà
+07007,2014,073,07,007,0,Banyalbufar
+07008,2014,073,07,008,6,Binissalem
+07009,2014,073,07,009,9,Búger
+07010,2014,073,07,010,3,Bunyola
+07011,2014,073,07,011,0,Calvià
+07012,2014,073,07,012,5,Campanet
+07013,2014,073,07,013,1,Campos
+07014,2014,073,07,014,6,Capdepera
+07016,2014,073,07,016,2,Consell
+07017,2014,073,07,017,8,Costitx
+07018,2014,073,07,018,4,Deià
+07019,2014,073,07,019,7,Escorca
+07020,2014,073,07,020,1,Esporles
+07021,2014,073,07,021,8,Estellencs
+07022,2014,073,07,022,3,Felanitx
+07025,2014,073,07,025,7,Fornalutx
+07027,2014,073,07,027,6,Inca
+07028,2014,073,07,028,2,"Lloret de Vistalegre"
+07029,2014,073,07,029,5,Lloseta
+07030,2014,073,07,030,9,Llubí
+07031,2014,073,07,031,6,Llucmajor
+07033,2014,073,07,033,7,Manacor
+07034,2014,073,07,034,2,"Mancor de la Vall"
+07035,2014,073,07,035,5,"Maria de la Salut"
+07036,2014,073,07,036,8,Marratxí
+07038,2014,073,07,038,0,Montuïri
+07039,2014,073,07,039,3,Muro
+07040,2014,073,07,040,7,"Palma de Mallorca"
+07041,2014,073,07,041,4,Petra
+07044,2014,073,07,044,0,"Pobla, Sa"
+07042,2014,073,07,042,9,Pollença
+07043,2014,073,07,043,5,Porreres
+07045,2014,073,07,045,3,Puigpunyent
+07059,2014,073,07,059,8,"Salines, Ses"
+07049,2014,073,07,049,1,"Sant Joan"
+07051,2014,073,07,051,1,"Sant Llorenç des Cardassar"
+07053,2014,073,07,053,2,"Santa Eugènia"
+07055,2014,073,07,055,0,"Santa Margalida"
+07056,2014,073,07,056,3,"Santa María del Camí"
+07057,2014,073,07,057,9,Santanyí
+07058,2014,073,07,058,5,Selva
+07047,2014,073,07,047,2,Sencelles
+07060,2014,073,07,060,2,Sineu
+07061,2014,073,07,061,9,Sóller
+07062,2014,073,07,062,4,"Son Servera"
+07063,2014,073,07,063,0,Valldemossa
+07065,2014,073,07,065,8,"Vilafranca de Bonany"
+07002,2014,074,07,002,7,Alaior
+07064,2014,074,07,064,5,"Castell, Es"
+07015,2014,074,07,015,9,"Ciutadella de Menorca"
+07023,2014,074,07,023,9,Ferreries
+07032,2014,074,07,032,1,Maó-Mahón
+07037,2014,074,07,037,4,"Mercadal, Es"
+07902,2014,074,07,902,8,"Migjorn Gran, Es"
+07052,2014,074,07,052,6,"Sant Lluís"
+35003,2014,351,35,003,8,Antigua
+35007,2014,351,35,007,5,Betancuria
+35014,2014,351,35,014,1,"Oliva, La"
+35015,2014,351,35,015,4,Pájara
+35017,2014,351,35,017,3,"Puerto del Rosario"
+35030,2014,351,35,030,4,Tuineje
+35001,2014,352,35,001,7,Agaete
+35002,2014,352,35,002,2,Agüimes
+35020,2014,352,35,020,6,"Aldea de San Nicolás, La"
+35005,2014,352,35,005,6,Artenara
+35006,2014,352,35,006,9,Arucas
+35008,2014,352,35,008,1,Firgas
+35009,2014,352,35,009,4,Gáldar
+35011,2014,352,35,011,5,Ingenio
+35012,2014,352,35,012,0,Mogán
+35013,2014,352,35,013,6,Moya
+35016,2014,352,35,016,7,"Palmas de Gran Canaria, Las"
+35019,2014,352,35,019,2,"San Bartolomé de Tirajana"
+35021,2014,352,35,021,3,"Santa Brígida"
+35022,2014,352,35,022,8,"Santa Lucía de Tirajana"
+35023,2014,352,35,023,4,"Santa María de Guía de Gran Canaria"
+35025,2014,352,35,025,2,Tejeda
+35026,2014,352,35,026,5,Telde
+35027,2014,352,35,027,1,Teror
+35032,2014,352,35,032,6,Valleseco
+35031,2014,352,35,031,1,"Valsequillo de Gran Canaria"
+35033,2014,352,35,033,2,"Vega de San Mateo"
+35004,2014,353,35,004,3,Arrecife
+35010,2014,353,35,010,8,Haría
+35018,2014,353,35,018,9,"San Bartolomé"
+35024,2014,353,35,024,9,Teguise
+35028,2014,353,35,028,7,Tías
+35029,2014,353,35,029,0,Tinajo
+35034,2014,353,35,034,7,Yaiza
+38002,2014,381,38,002,7,Agulo
+38003,2014,381,38,003,3,Alajeró
+38021,2014,381,38,021,8,Hermigua
+38036,2014,381,38,036,8,"San Sebastián de la Gomera"
+38049,2014,381,38,049,1,"Valle Gran Rey"
+38050,2014,381,38,050,4,Vallehermoso
+38013,2014,382,38,013,1,Frontera
+38901,2014,382,38,901,3,"Pinar de El Hierro, El"
+38048,2014,382,38,048,8,Valverde
+38007,2014,383,38,007,0,Barlovento
+38008,2014,383,38,008,6,"Breña Alta"
+38009,2014,383,38,009,9,"Breña Baja"
+38014,2014,383,38,014,6,"Fuencaliente de la Palma"
+38016,2014,383,38,016,2,Garafía
+38024,2014,383,38,024,4,"Llanos de Aridane, Los"
+38027,2014,383,38,027,6,"Paso, El"
+38029,2014,383,38,029,5,Puntagorda
+38030,2014,383,38,030,9,Puntallana
+38033,2014,383,38,033,7,"San Andrés y Sauces"
+38037,2014,383,38,037,4,"Santa Cruz de la Palma"
+38045,2014,383,38,045,3,Tazacorte
+38047,2014,383,38,047,2,Tijarafe
+38053,2014,383,38,053,2,"Villa de Mazo"
+38001,2014,384,38,001,2,Adeje
+38004,2014,384,38,004,8,Arafo
+38005,2014,384,38,005,1,Arico
+38006,2014,384,38,006,4,Arona
+38010,2014,384,38,010,3,"Buenavista del Norte"
+38011,2014,384,38,011,0,Candelaria
+38012,2014,384,38,012,5,Fasnia
+38015,2014,384,38,015,9,Garachico
+38017,2014,384,38,017,8,"Granadilla de Abona"
+38018,2014,384,38,018,4,"Guancha, La"
+38019,2014,384,38,019,7,"Guía de Isora"
+38020,2014,384,38,020,1,Güímar
+38022,2014,384,38,022,3,"Icod de los Vinos"
+38025,2014,384,38,025,7,"Matanza de Acentejo, La"
+38026,2014,384,38,026,0,"Orotava, La"
+38028,2014,384,38,028,2,"Puerto de la Cruz"
+38031,2014,384,38,031,6,"Realejos, Los"
+38032,2014,384,38,032,1,"Rosario, El"
+38023,2014,384,38,023,9,"San Cristóbal de La Laguna"
+38034,2014,384,38,034,2,"San Juan de la Rambla"
+38035,2014,384,38,035,5,"San Miguel de Abona"
+38038,2014,384,38,038,0,"Santa Cruz de Tenerife"
+38039,2014,384,38,039,3,"Santa Úrsula"
+38040,2014,384,38,040,7,"Santiago del Teide"
+38041,2014,384,38,041,4,"Sauzal, El"
+38042,2014,384,38,042,9,"Silos, Los"
+38043,2014,384,38,043,5,Tacoronte
+38044,2014,384,38,044,0,"Tanque, El"
+38046,2014,384,38,046,6,Tegueste
+38051,2014,384,38,051,1,"Victoria de Acentejo, La"
+38052,2014,384,38,052,6,Vilaflor
+07024,2015,071,07,024,4,Formentera
+07026,2015,072,07,026,0,Eivissa
+07046,2015,072,07,046,6,"Sant Antoni de Portmany"
+07050,2015,072,07,050,4,"Sant Joan de Labritja"
+07048,2015,072,07,048,8,"Sant Josep de sa Talaia"
+07054,2015,072,07,054,7,"Santa Eulària des Riu"
+07001,2015,073,07,001,2,Alaró
+07003,2015,073,07,003,3,Alcúdia
+07004,2015,073,07,004,8,Algaida
+07005,2015,073,07,005,1,Andratx
+07901,2015,073,07,901,3,Ariany
+07006,2015,073,07,006,4,Artà
+07007,2015,073,07,007,0,Banyalbufar
+07008,2015,073,07,008,6,Binissalem
+07009,2015,073,07,009,9,Búger
+07010,2015,073,07,010,3,Bunyola
+07011,2015,073,07,011,0,Calvià
+07012,2015,073,07,012,5,Campanet
+07013,2015,073,07,013,1,Campos
+07014,2015,073,07,014,6,Capdepera
+07016,2015,073,07,016,2,Consell
+07017,2015,073,07,017,8,Costitx
+07018,2015,073,07,018,4,Deià
+07019,2015,073,07,019,7,Escorca
+07020,2015,073,07,020,1,Esporles
+07021,2015,073,07,021,8,Estellencs
+07022,2015,073,07,022,3,Felanitx
+07025,2015,073,07,025,7,Fornalutx
+07027,2015,073,07,027,6,Inca
+07028,2015,073,07,028,2,"Lloret de Vistalegre"
+07029,2015,073,07,029,5,Lloseta
+07030,2015,073,07,030,9,Llubí
+07031,2015,073,07,031,6,Llucmajor
+07033,2015,073,07,033,7,Manacor
+07034,2015,073,07,034,2,"Mancor de la Vall"
+07035,2015,073,07,035,5,"Maria de la Salut"
+07036,2015,073,07,036,8,Marratxí
+07038,2015,073,07,038,0,Montuïri
+07039,2015,073,07,039,3,Muro
+07040,2015,073,07,040,7,"Palma de Mallorca"
+07041,2015,073,07,041,4,Petra
+07044,2015,073,07,044,0,"Pobla, Sa"
+07042,2015,073,07,042,9,Pollença
+07043,2015,073,07,043,5,Porreres
+07045,2015,073,07,045,3,Puigpunyent
+07059,2015,073,07,059,8,"Salines, Ses"
+07049,2015,073,07,049,1,"Sant Joan"
+07051,2015,073,07,051,1,"Sant Llorenç des Cardassar"
+07053,2015,073,07,053,2,"Santa Eugènia"
+07055,2015,073,07,055,0,"Santa Margalida"
+07056,2015,073,07,056,3,"Santa María del Camí"
+07057,2015,073,07,057,9,Santanyí
+07058,2015,073,07,058,5,Selva
+07047,2015,073,07,047,2,Sencelles
+07060,2015,073,07,060,2,Sineu
+07061,2015,073,07,061,9,Sóller
+07062,2015,073,07,062,4,"Son Servera"
+07063,2015,073,07,063,0,Valldemossa
+07065,2015,073,07,065,8,"Vilafranca de Bonany"
+07002,2015,074,07,002,7,Alaior
+07064,2015,074,07,064,5,"Castell, Es"
+07015,2015,074,07,015,9,"Ciutadella de Menorca"
+07023,2015,074,07,023,9,Ferreries
+07032,2015,074,07,032,1,Maó-Mahón
+07037,2015,074,07,037,4,"Mercadal, Es"
+07902,2015,074,07,902,8,"Migjorn Gran, Es"
+07052,2015,074,07,052,6,"Sant Lluís"
+35003,2015,351,35,003,8,Antigua
+35007,2015,351,35,007,5,Betancuria
+35014,2015,351,35,014,1,"Oliva, La"
+35015,2015,351,35,015,4,Pájara
+35017,2015,351,35,017,3,"Puerto del Rosario"
+35030,2015,351,35,030,4,Tuineje
+35001,2015,352,35,001,7,Agaete
+35002,2015,352,35,002,2,Agüimes
+35020,2015,352,35,020,6,"Aldea de San Nicolás, La"
+35005,2015,352,35,005,6,Artenara
+35006,2015,352,35,006,9,Arucas
+35008,2015,352,35,008,1,Firgas
+35009,2015,352,35,009,4,Gáldar
+35011,2015,352,35,011,5,Ingenio
+35012,2015,352,35,012,0,Mogán
+35013,2015,352,35,013,6,Moya
+35016,2015,352,35,016,7,"Palmas de Gran Canaria, Las"
+35019,2015,352,35,019,2,"San Bartolomé de Tirajana"
+35021,2015,352,35,021,3,"Santa Brígida"
+35022,2015,352,35,022,8,"Santa Lucía de Tirajana"
+35023,2015,352,35,023,4,"Santa María de Guía de Gran Canaria"
+35025,2015,352,35,025,2,Tejeda
+35026,2015,352,35,026,5,Telde
+35027,2015,352,35,027,1,Teror
+35032,2015,352,35,032,6,Valleseco
+35031,2015,352,35,031,1,"Valsequillo de Gran Canaria"
+35033,2015,352,35,033,2,"Vega de San Mateo"
+35004,2015,353,35,004,3,Arrecife
+35010,2015,353,35,010,8,Haría
+35018,2015,353,35,018,9,"San Bartolomé"
+35024,2015,353,35,024,9,Teguise
+35028,2015,353,35,028,7,Tías
+35029,2015,353,35,029,0,Tinajo
+35034,2015,353,35,034,7,Yaiza
+38002,2015,381,38,002,7,Agulo
+38003,2015,381,38,003,3,Alajeró
+38021,2015,381,38,021,8,Hermigua
+38036,2015,381,38,036,8,"San Sebastián de la Gomera"
+38049,2015,381,38,049,1,"Valle Gran Rey"
+38050,2015,381,38,050,4,Vallehermoso
+38013,2015,382,38,013,1,Frontera
+38901,2015,382,38,901,3,"Pinar de El Hierro, El"
+38048,2015,382,38,048,8,Valverde
+38007,2015,383,38,007,0,Barlovento
+38008,2015,383,38,008,6,"Breña Alta"
+38009,2015,383,38,009,9,"Breña Baja"
+38014,2015,383,38,014,6,"Fuencaliente de la Palma"
+38016,2015,383,38,016,2,Garafía
+38024,2015,383,38,024,4,"Llanos de Aridane, Los"
+38027,2015,383,38,027,6,"Paso, El"
+38029,2015,383,38,029,5,Puntagorda
+38030,2015,383,38,030,9,Puntallana
+38033,2015,383,38,033,7,"San Andrés y Sauces"
+38037,2015,383,38,037,4,"Santa Cruz de la Palma"
+38045,2015,383,38,045,3,Tazacorte
+38047,2015,383,38,047,2,Tijarafe
+38053,2015,383,38,053,2,"Villa de Mazo"
+38001,2015,384,38,001,2,Adeje
+38004,2015,384,38,004,8,Arafo
+38005,2015,384,38,005,1,Arico
+38006,2015,384,38,006,4,Arona
+38010,2015,384,38,010,3,"Buenavista del Norte"
+38011,2015,384,38,011,0,Candelaria
+38012,2015,384,38,012,5,Fasnia
+38015,2015,384,38,015,9,Garachico
+38017,2015,384,38,017,8,"Granadilla de Abona"
+38018,2015,384,38,018,4,"Guancha, La"
+38019,2015,384,38,019,7,"Guía de Isora"
+38020,2015,384,38,020,1,Güímar
+38022,2015,384,38,022,3,"Icod de los Vinos"
+38025,2015,384,38,025,7,"Matanza de Acentejo, La"
+38026,2015,384,38,026,0,"Orotava, La"
+38028,2015,384,38,028,2,"Puerto de la Cruz"
+38031,2015,384,38,031,6,"Realejos, Los"
+38032,2015,384,38,032,1,"Rosario, El"
+38023,2015,384,38,023,9,"San Cristóbal de La Laguna"
+38034,2015,384,38,034,2,"San Juan de la Rambla"
+38035,2015,384,38,035,5,"San Miguel de Abona"
+38038,2015,384,38,038,0,"Santa Cruz de Tenerife"
+38039,2015,384,38,039,3,"Santa Úrsula"
+38040,2015,384,38,040,7,"Santiago del Teide"
+38041,2015,384,38,041,4,"Sauzal, El"
+38042,2015,384,38,042,9,"Silos, Los"
+38043,2015,384,38,043,5,Tacoronte
+38044,2015,384,38,044,0,"Tanque, El"
+38046,2015,384,38,046,6,Tegueste
+38051,2015,384,38,051,1,"Victoria de Acentejo, La"
+38052,2015,384,38,052,6,"Vilaflor de Chasna"
+07024,2016,071,07,024,4,Formentera
+07026,2016,072,07,026,0,Eivissa
+07046,2016,072,07,046,6,"Sant Antoni de Portmany"
+07050,2016,072,07,050,4,"Sant Joan de Labritja"
+07048,2016,072,07,048,8,"Sant Josep de sa Talaia"
+07054,2016,072,07,054,7,"Santa Eulària des Riu"
+07001,2016,073,07,001,2,Alaró
+07003,2016,073,07,003,3,Alcúdia
+07004,2016,073,07,004,8,Algaida
+07005,2016,073,07,005,1,Andratx
+07901,2016,073,07,901,3,Ariany
+07006,2016,073,07,006,4,Artà
+07007,2016,073,07,007,0,Banyalbufar
+07008,2016,073,07,008,6,Binissalem
+07009,2016,073,07,009,9,Búger
+07010,2016,073,07,010,3,Bunyola
+07011,2016,073,07,011,0,Calvià
+07012,2016,073,07,012,5,Campanet
+07013,2016,073,07,013,1,Campos
+07014,2016,073,07,014,6,Capdepera
+07016,2016,073,07,016,2,Consell
+07017,2016,073,07,017,8,Costitx
+07018,2016,073,07,018,4,Deià
+07019,2016,073,07,019,7,Escorca
+07020,2016,073,07,020,1,Esporles
+07021,2016,073,07,021,8,Estellencs
+07022,2016,073,07,022,3,Felanitx
+07025,2016,073,07,025,7,Fornalutx
+07027,2016,073,07,027,6,Inca
+07028,2016,073,07,028,2,"Lloret de Vistalegre"
+07029,2016,073,07,029,5,Lloseta
+07030,2016,073,07,030,9,Llubí
+07031,2016,073,07,031,6,Llucmajor
+07033,2016,073,07,033,7,Manacor
+07034,2016,073,07,034,2,"Mancor de la Vall"
+07035,2016,073,07,035,5,"Maria de la Salut"
+07036,2016,073,07,036,8,Marratxí
+07038,2016,073,07,038,0,Montuïri
+07039,2016,073,07,039,3,Muro
+07040,2016,073,07,040,7,"Palma de Mallorca"
+07041,2016,073,07,041,4,Petra
+07044,2016,073,07,044,0,"Pobla, Sa"
+07042,2016,073,07,042,9,Pollença
+07043,2016,073,07,043,5,Porreres
+07045,2016,073,07,045,3,Puigpunyent
+07059,2016,073,07,059,8,"Salines, Ses"
+07049,2016,073,07,049,1,"Sant Joan"
+07051,2016,073,07,051,1,"Sant Llorenç des Cardassar"
+07053,2016,073,07,053,2,"Santa Eugènia"
+07055,2016,073,07,055,0,"Santa Margalida"
+07056,2016,073,07,056,3,"Santa María del Camí"
+07057,2016,073,07,057,9,Santanyí
+07058,2016,073,07,058,5,Selva
+07047,2016,073,07,047,2,Sencelles
+07060,2016,073,07,060,2,Sineu
+07061,2016,073,07,061,9,Sóller
+07062,2016,073,07,062,4,"Son Servera"
+07063,2016,073,07,063,0,Valldemossa
+07065,2016,073,07,065,8,"Vilafranca de Bonany"
+07002,2016,074,07,002,7,Alaior
+07064,2016,074,07,064,5,"Castell, Es"
+07015,2016,074,07,015,9,"Ciutadella de Menorca"
+07023,2016,074,07,023,9,Ferreries
+07032,2016,074,07,032,1,Maó-Mahón
+07037,2016,074,07,037,4,"Mercadal, Es"
+07902,2016,074,07,902,8,"Migjorn Gran, Es"
+07052,2016,074,07,052,6,"Sant Lluís"
+35003,2016,351,35,003,8,Antigua
+35007,2016,351,35,007,5,Betancuria
+35014,2016,351,35,014,1,"Oliva, La"
+35015,2016,351,35,015,4,Pájara
+35017,2016,351,35,017,3,"Puerto del Rosario"
+35030,2016,351,35,030,4,Tuineje
+35001,2016,352,35,001,7,Agaete
+35002,2016,352,35,002,2,Agüimes
+35020,2016,352,35,020,6,"Aldea de San Nicolás, La"
+35005,2016,352,35,005,6,Artenara
+35006,2016,352,35,006,9,Arucas
+35008,2016,352,35,008,1,Firgas
+35009,2016,352,35,009,4,Gáldar
+35011,2016,352,35,011,5,Ingenio
+35012,2016,352,35,012,0,Mogán
+35013,2016,352,35,013,6,Moya
+35016,2016,352,35,016,7,"Palmas de Gran Canaria, Las"
+35019,2016,352,35,019,2,"San Bartolomé de Tirajana"
+35021,2016,352,35,021,3,"Santa Brígida"
+35022,2016,352,35,022,8,"Santa Lucía de Tirajana"
+35023,2016,352,35,023,4,"Santa María de Guía de Gran Canaria"
+35025,2016,352,35,025,2,Tejeda
+35026,2016,352,35,026,5,Telde
+35027,2016,352,35,027,1,Teror
+35032,2016,352,35,032,6,Valleseco
+35031,2016,352,35,031,1,"Valsequillo de Gran Canaria"
+35033,2016,352,35,033,2,"Vega de San Mateo"
+35004,2016,353,35,004,3,Arrecife
+35010,2016,353,35,010,8,Haría
+35018,2016,353,35,018,9,"San Bartolomé"
+35024,2016,353,35,024,9,Teguise
+35028,2016,353,35,028,7,Tías
+35029,2016,353,35,029,0,Tinajo
+35034,2016,353,35,034,7,Yaiza
+38002,2016,381,38,002,7,Agulo
+38003,2016,381,38,003,3,Alajeró
+38021,2016,381,38,021,8,Hermigua
+38036,2016,381,38,036,8,"San Sebastián de la Gomera"
+38049,2016,381,38,049,1,"Valle Gran Rey"
+38050,2016,381,38,050,4,Vallehermoso
+38013,2016,382,38,013,1,Frontera
+38901,2016,382,38,901,3,"Pinar de El Hierro, El"
+38048,2016,382,38,048,8,Valverde
+38007,2016,383,38,007,0,Barlovento
+38008,2016,383,38,008,6,"Breña Alta"
+38009,2016,383,38,009,9,"Breña Baja"
+38014,2016,383,38,014,6,"Fuencaliente de la Palma"
+38016,2016,383,38,016,2,Garafía
+38024,2016,383,38,024,4,"Llanos de Aridane, Los"
+38027,2016,383,38,027,6,"Paso, El"
+38029,2016,383,38,029,5,Puntagorda
+38030,2016,383,38,030,9,Puntallana
+38033,2016,383,38,033,7,"San Andrés y Sauces"
+38037,2016,383,38,037,4,"Santa Cruz de la Palma"
+38045,2016,383,38,045,3,Tazacorte
+38047,2016,383,38,047,2,Tijarafe
+38053,2016,383,38,053,2,"Villa de Mazo"
+38001,2016,384,38,001,2,Adeje
+38004,2016,384,38,004,8,Arafo
+38005,2016,384,38,005,1,Arico
+38006,2016,384,38,006,4,Arona
+38010,2016,384,38,010,3,"Buenavista del Norte"
+38011,2016,384,38,011,0,Candelaria
+38012,2016,384,38,012,5,Fasnia
+38015,2016,384,38,015,9,Garachico
+38017,2016,384,38,017,8,"Granadilla de Abona"
+38018,2016,384,38,018,4,"Guancha, La"
+38019,2016,384,38,019,7,"Guía de Isora"
+38020,2016,384,38,020,1,Güímar
+38022,2016,384,38,022,3,"Icod de los Vinos"
+38025,2016,384,38,025,7,"Matanza de Acentejo, La"
+38026,2016,384,38,026,0,"Orotava, La"
+38028,2016,384,38,028,2,"Puerto de la Cruz"
+38031,2016,384,38,031,6,"Realejos, Los"
+38032,2016,384,38,032,1,"Rosario, El"
+38023,2016,384,38,023,9,"San Cristóbal de La Laguna"
+38034,2016,384,38,034,2,"San Juan de la Rambla"
+38035,2016,384,38,035,5,"San Miguel de Abona"
+38038,2016,384,38,038,0,"Santa Cruz de Tenerife"
+38039,2016,384,38,039,3,"Santa Úrsula"
+38040,2016,384,38,040,7,"Santiago del Teide"
+38041,2016,384,38,041,4,"Sauzal, El"
+38042,2016,384,38,042,9,"Silos, Los"
+38043,2016,384,38,043,5,Tacoronte
+38044,2016,384,38,044,0,"Tanque, El"
+38046,2016,384,38,046,6,Tegueste
+38051,2016,384,38,051,1,"Victoria de Acentejo, La"
+38052,2016,384,38,052,6,"Vilaflor de Chasna"

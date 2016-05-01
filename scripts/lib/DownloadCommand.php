@@ -2,44 +2,50 @@
 /**
  * Si no existen, descarga los archivos fuente y los graba a disco
  *
- * @arg source fuente a procesar (OPCIONAL). Puede ser "municipios", "provincias", "autonomias" o "islas". Si no se especifica  procesa todo.
- * @opt force fuerza la descarga de los ficheros fuente aunque ya existan
- *
  */
 class DownloadCommand extends ConsoleKit\Command
 {
+
+    /**
+     * Overriding para que invoque all por defecto.
+     */
     public function execute(array $args, array $options = array())
     {
-        is_dir(DATA_FOLDER) || mkdir(DATA_FOLDER);
-        is_dir(ARCHIVE_FOLDER) || mkdir(ARCHIVE_FOLDER);
-
-        if (empty($args)) {
-            foreach (get_class_methods($this) as $method) {
-                if (strpos($method, 'download')!==false) {
-                    $this->$method($options);
-                }
-            }
+        //si se invoca sin sucomando, ejecuta todo
+        if (!count($args)) {
+            $args=['all'];
         }
 
-        foreach ($args as $arg){
-            $downloadMethod = "download". ucfirst($arg);
-
-            if (!method_exists($this,$downloadMethod)) {
-                die("Argumento invalido {$arg}");
-            }
-            $this->$downloadMethod($options);
-        }
-
-
-        //$this->writeln('hello world!', ConsoleKit\Colors::GREEN);
+        return parent::execute($args, $options);
     }
 
 
-    private function downloadMunicipios($options)
+    /**
+     * Descarga todas los archivos fuente
+     *
+     * @opt force fuerza la descarga de los ficheros fuente aunque ya existan
+     */
+    public function executeAll(array $args, array $options = array())
     {
-        for ($i = MUNCIPIOS_YEAR_START % 2000;$i <= date('y');$i++){
 
-            $url=sprintf(MUNCIPIOS_URL,$i,$i);
+        foreach (get_class_methods($this) as $method) {
+            if (strpos($method, 'execute') !== false && $method != 'executeAll' && $method != 'execute') {
+                $this->$method($args,$options);
+            }
+        }
+    }
+
+
+    /**
+     * Descarga los archivos fuente de los municipios
+     *
+     * @opt force fuerza la descarga de los ficheros fuente aunque ya existan
+     */
+    public function executeMunicipios(array $args, array $options = array())
+    {
+        for ($i = Config::MUNCIPIOS_YEAR_START % 2000;$i <= date('y');$i++){
+
+            $url=sprintf(Config::MUNCIPIOS_URL,$i,$i);
             if ($i>=16) $url.="x";  //xlsx a partir de 2016.
             $fileName = end(explode('/', $url));
 
@@ -51,31 +57,45 @@ class DownloadCommand extends ConsoleKit\Command
     }
 
 
-    private function downloadProvincias($options)
+    /**
+     * Descarga el archivo fuente de las provincias
+     *
+     * @opt force fuerza la descarga de los ficheros fuente aunque ya existan
+     */
+    public function executeProvincias(array $args, array $options = array())
     {
-        if (!file_exists(ARCHIVE_FOLDER . DS . PROVINCIAS_SOURCE_FILE) || isset($options['force']) || isset($options['f'])){
-            file_put_contents(ARCHIVE_FOLDER . DS . PROVINCIAS_SOURCE_FILE, fopen(PROVINCIAS_URL, 'r'));
+        if (!file_exists(ARCHIVE_FOLDER . DS . Config::PROVINCIAS_SOURCE_FILE) || isset($options['force']) || isset($options['f'])){
+            file_put_contents(ARCHIVE_FOLDER . DS . Config::PROVINCIAS_SOURCE_FILE, fopen(Config::PROVINCIAS_URL, 'r'));
         }
 
     }
 
 
-    private function downloadAutonomias($options)
+    /**
+     * Descarga el archivo fuente de las autonomías
+     *
+     * @opt force fuerza la descarga de los ficheros fuente aunque ya existan
+     */
+    public function executeAutonomias(array $args, array $options = array())
     {
-        if (!file_exists(ARCHIVE_FOLDER . DS . AUTONOMIAS_SOURCE_FILE) || isset($options['force']) || isset($options['f'])){
-            file_put_contents(ARCHIVE_FOLDER . DS . AUTONOMIAS_SOURCE_FILE, fopen(AUTONOMIAS_URL, 'r'));
+        if (!file_exists(ARCHIVE_FOLDER . DS . Config::AUTONOMIAS_SOURCE_FILE) || isset($options['force']) || isset($options['f'])){
+            file_put_contents(ARCHIVE_FOLDER . DS . Config::AUTONOMIAS_SOURCE_FILE, fopen(Config::AUTONOMIAS_URL, 'r'));
         }
 
     }
 
-
-    private function downloadIslas($options)
+    /**
+     * Descarga los archivos fuente de las islas
+     *
+     * @opt force fuerza la descarga de los ficheros fuente aunque ya existan
+     */
+    public function executeIslas(array $args, array $options = array())
     {
 
-        foreach (unserialize(ISLAS_PROVINCIA_INE_CODES) as $provincia) {
-            for ($i = ISLAS_YEAR_START % 2000; $i <= date('y'); $i++) {
+        foreach (unserialize(Config::ISLAS_PROVINCIA_INE_CODES) as $provincia) {
+            for ($i = Config::ISLAS_YEAR_START % 2000; $i <= date('y'); $i++) {
 
-                $url = sprintf(ISLAS_URL, $i, $i, $provincia);
+                $url = sprintf(Config::ISLAS_URL, $i, $i, $provincia);
                 $fileName = end(explode('/', $url));
 
                 if (!file_exists(ARCHIVE_FOLDER . DS . $fileName) || isset($options['d']) || isset($options['f'])) {

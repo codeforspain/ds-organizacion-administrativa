@@ -7,31 +7,50 @@ Si no los encuentra, los descarga.
 
 ## Modo de Uso
 
-    $ ./php script.php [COMMANDS [source]] [OPTIONS]
+    $ ./php script.php [COMMAND SUBCOMMAND]] [OPTIONS]
 
-Si se invoca sin argumentos, procesa todo.
+Si se invoca sin subcomandos o argumentos, executa:
+
+  1. download all
+  2. process all  
+  3. update
+  4. convert-to-json
 
 
 ### Opciones
 
     COMMANDS
     
-        download [source]   Descarga los archivos fuente, pero no los procesa. 
+        download [SUBCOMMAND]   Descarga los archivos fuente, pero no los procesa.                    
+                                Se puede especificar opcionalmente un suvcomando:
                     
-                            Toma como parámetro opcional uno o mas de los siguientes:
-                    
-                            [autonomías, provincias, municipios, islas]
+            source SOURCE       Descarga únicamente SOURCE, que puede ser
+                                
+                                    [autonomias, provincias, municipios, islas]
+
+            all                 Descarga todas las fuentes (por defecto).
+                                                                  
+
+            OPTIONS
+            
+                --force, -f     Fuerza la descarga de los archivos fuente, aunque existan                         
 
                         
-        process [source]    Procesa los archivos fuente, pero no los descarga.
-        
-                            Toma como parámetro opcional uno o mas de los siguientes:
-                                        
-                            [autonomías, provincias, municipios, islas]                        
                         
-    OPTIONS
-    
-        --force, -f         Fuerza la descarga de los archivos fuente, aunque existan                         
+        process [SUBCOMMAND]    Procesa los archivos fuente, pero no los descarga.
+        
+            source SOURCE       Procesa únicamente SOURCE, que puede ser uno de los siguientes:
+                                
+                                    [autonomias, provincias, municipios, islas]
+
+            all                 Procesa todas las fuentes (por defecto).
+                                                       
+                                                            
+        convert-to-json         Convierte todo los archivos .csv en /data a .json.
+            
+            
+        update                  Actualiza el archivo datapackage.json                                                
+                        
         
        
 

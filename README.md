@@ -19,28 +19,27 @@ Este dataset es parte del proyecto abierto y colaborativo CodeForSpain. Puedes o
 - Descripción: http://www.ine.es/daco/daco42/codmun/codmun00i.htm 
 - Datos procesados: [/data/municipios.json](data/municipios.json) | [/data/municipios.csv](data/municipios.csv) 
 
- 
-
-La lista de municipios sufre modificaciones todos los años para reflejar tanto los nuevos municipios (segregados), los que han desaparecido (incorporaciones o fusiones) y los cambios en sus denominaciones oficiales.
-    
+   
 
 ### Formato de los datos
 
 
 Incluye los siguientes campos:
 
-    CPRO:   Código INE de la provincia
-    CMUN:   Código INE del municipio en relación a la provincia
-    DC:     Dígito de control
-    NOMBRE: Denominación oficial 
+    
+    municipio_id:   Código INE del municipio
+    provincia_id:   Código INE de la provincia
+    cmun:           Código INE del municipio en relación a la provincia
+    dc:             Dígito de control
+    nombre:         Denominación oficial 
 
 Ejemplo en CSV:
 
-| CPRO | CMUN | DC | NOMBRE           | 
-|------|------|----|------------------| 
-| 01   | 001  | 4  | Alegría-Dulantzi | 
-| 01   | 002  | 9  | Amurrio          | 
-| 01   | 049  | 3  | Añana            | 
+|municipio_id| provincia_id | cmun | dc | nombre           | 
+|------------|--------------|------|----|------------------| 
+| 01001      | 01           | 001  | 4  | Alegría-Dulantzi | 
+| 01002      | 01           | 002  | 9  | Amurrio          | 
+| 01049      | 01           | 049  | 3  | Añana            | 
 
 
 En JSON:
@@ -48,22 +47,25 @@ En JSON:
 
     [
         {
-            "CPRO": "01",                       // CÓDIGO DE LA PROVINCIA
-            "CMUN": "001",                      // CÓDIGO DEL MUNICIPIO
-            "DC":   "4",                        // DIGITO DE CONTROL
-            "NOMBRE": "Alegría-Dulantzi""       // DENOMINACIÓN DEL MUNICIPIO 
+            "municipio_id": "01001",               
+            "provincia_id": "01",               
+            "cmun": "001",                     
+            "dc":   "4",                       
+            "nombre": "Alegría-Dulantzi""       
         },
         {
-            "CPRO": "01",
-            "CMUN": "002",
-            "DC":   "9",
-            "NOMBRE": "Amurrio"
+            "municipio_id": "01002",               
+            "provincia_id": "01",
+            "cmun": "002",
+            "dc":   "9",
+            "nombre": "Amurrio"
         },
         {
-            "CPRO": "01",
-            "CMUN": "049",
-            "DC":   "3",
-            "NOMBRE": "Añana"
+            "municipio_id": "01049",               
+            "provincia_id": "01",
+            "cmun": "049",
+            "dc":   "3",
+            "nombre": "Añana"
         },
 
 
@@ -76,25 +78,28 @@ En JSON:
 - Descripción: http://www.ine.es/daco/daco42/codmun/codmun00i.htm 
 - Datos procesados: [/data/municipios_historical.json](data/municipios_historical.json) | [/data/municipios_historical.csv](data/municipios_historical.csv) 
 
-    
+La lista de municipios sufre modificaciones todos los años para reflejar tanto los nuevos municipios (segregados), los que han desaparecido (incorporaciones o fusiones) y los cambios en sus denominaciones oficiales.
+
 
 ### Formato de los datos
 
 
 Incluye los siguientes campos:
 
-    CPRO:   Código INE de la provincia
-    CMUN:   Código INE del municipio en relación a la provincia
-    DC:     Dígito de control
-    NOMBRE: Denominación oficial
-    YEAR:   Año del dato 
+    municipio_id:   Código INE del municipio
+    year:           Año del dato         
+    provincia_id:   Código INE de la provincia
+    cmun:           Código INE del municipio en relación a la provincia
+    dc:             Dígito de control
+    nombre:         Denominación oficial
+    
 
 Ejemplo en CSV:
 
-| CPRO | CMUN | DC | NOMBRE                   | YEAR  | 
-|------|------|----|--------------------------|-------| 
-| 16   |  167 |  8 |  Pozorrubio              |  2013 | 
-| 16   |  167 |  8 |  Pozorrubio de Santiago  |  2014 | 
+|municipio_id| year  | provincia_id  | cmun | dc | nombre                   | 
+|------------|-------|---------------|------|----|--------------------------| 
+| 16167      |  2013 |16             |  167 |  8 |  Pozorrubio              | 
+| 16167      |  2014 |16             |  167 |  8 |  Pozorrubio de Santiago  | 
 
 
         
@@ -108,39 +113,40 @@ Ejemplo en CSV:
 
 Las modificaciones que se producen son solo en las denominaciones oficiales de las provincias.
 
-### Formato de los datos
 
+### Formato de los datos
 
 Incluye los siguientes campos:
 
-    codigo:   Código INE de la provincia
-    nombre:   Denominación oficial
+    provincia_id:   Código INE de la provincia
+    nombre:         Denominación oficial
     
 
 Ejemplo en CSV:
 
-| codigo | nombre           | 
-|--------|------------------| 
-| 02     | Albacete         | 
-| 03     | Alicante/Alacant | 
-| 04     | Almería          | 
+| provincia_id | nombre           | 
+|--------------|------------------| 
+| 02           | Albacete         | 
+| 03           | Alicante/Alacant | 
+| 04           | Almería          | 
 
 
 En JSON:
 
     [
         {
-            "codigo": "02",
-            "nombre": "Albacete"
+            "provincia_id": "02",
+            "nombre":       "Albacete"
         },
         {
-            "codigo": "03",
-            "nombre": "Alicante\/Alacant"
+            "provincia_id": "03",
+            "nombre":       "Alicante\/Alacant"
         },
         {
-            "codigo": "04",
-            "nombre": "Almería"
+            "provincia_id": "04",
+            "nombre":       "Almería"
         },
+
 
 
 ## Comunidades Autonomas
@@ -156,33 +162,33 @@ No ha sufrido modificaciones en los últimos años.
 
 Incluye los siguientes campos:
 
-    codigo:   Código INE de la autonomia
-    nombre:   Denominación oficial
+    autonomia_id:   Código INE de la autonomia
+    nombre:         Denominación oficial
       
 
 
 Ejemplo en CSV:
 
-| codigo | nombre                    | 
-|--------|---------------------------| 
-| 01     | Andalucía                 | 
-| 02     | Aragón                    | 
-| 03     | "Asturias, Principado de" | 
+| autonomia_id | nombre                    | 
+|--------------|---------------------------| 
+| 01           | Andalucía                 | 
+| 02           | Aragón                    | 
+| 03           | "Asturias, Principado de" | 
 
 
 En JSON:
 
     [
          {
-             "codigo":"01",
+             "autonomia_id":"01",
              "nombre":"Andalucía"
          },
          {
-            "codigo":"02",
+            "autonomia_id":"02",
             "nombre":"Aragón"
          },
          {
-             "codigo":"03",
+             "autonomia_id":"03",
              "nombre":"Asturias, Principado de"
          },
 
@@ -201,17 +207,17 @@ En JSON:
 
 Incluye los siguientes campos:
 
-    CPRO:    Código INE de la provincia
-    CISLA:   Código INE de la isla
-    NOMBRE:  Denominación oficial 
+    isla_id:        Código INE de la isla
+    provincia_id:   Código INE de la provincia
+    nombre:         Denominación oficial 
 
 Ejemplo en CSV:
 
-| CPRO | CISLA | NOMBRE        | 
-|------|-------|---------------| 
-| 7    | 074   | Menorca       | 
-| 35   | 351   | Fuerteventura | 
-| 38   | 383   | "Palma, La "  | 
+| isla_id | provincia_id  | nombre        | 
+|---------|---------------|---------------| 
+| 074     | 07            | Menorca       | 
+| 351     | 35            | Fuerteventura | 
+| 383     | 38            | "Palma, La "  | 
 
 
 
@@ -229,19 +235,21 @@ Ejemplo en CSV:
 
 Incluye los siguientes campos:
 
-    CPRO:   Código INE de la provincia
-    CISLA:  Código INE de la isla
-    CMUN:   Código INE del municipio en relación a la provincia     
-    DC:     Dígito de control
-    NOMBRE: Denominación oficial
+    municipio_id:   Código INE del municipio
+    provincia_id:   Código INE de la provincia
+    isla_id:        Código INE de la isla
+    cmun:           Código INE del municipio en relación a la provincia     
+    dc:             Dígito de control
+    nombre:         Denominación oficial
+
 
 Ejemplo en CSV:
 
-| CPRO | CISLA | CMUN | DC | NOMBRE                       | 
-|------|-------|------|----|------------------------------| 
-| 7    | 072   | 46   | 6  | "Sant Antoni de Portmany"    | 
-| 38   | 381   | 36   | 8  | "San Sebastián de la Gomera" | 
-| 35   | 352   | 27   | 1  | Teror                        | 
+| municipio_id | provincia_id  | isla_id | cmun | dc | nombre                       | 
+|--------------|---------------|---------|------|----|------------------------------| 
+| 07046        | 07            | 072     | 046  | 6  | "Sant Antoni de Portmany"    | 
+| 38036        | 38            | 381     | 036  | 8  | "San Sebastián de la Gomera" | 
+| 35027        | 35            | 352     | 027  | 1  | Teror                        | 
 
 
 
@@ -259,19 +267,21 @@ Existen datos desde 2008, aunque solo a partir de 2012 se incorpora el código I
 
 Incluye los siguientes campos:
 
-    CPRO:   Código INE de la provincia
-    CISLA:  Código INE de la isla
-    CMUN:   Código INE del municipio en relación a la provincia     
-    DC:     Dígito de control
-    NOMBRE: Denominación oficial
-    YEAR:   Año del dato 
+    municipio_id:   Código INE del municipio  
+    year:           Año del dato       
+    provincia_id:   Código INE de la provincia
+    isla_id:        Código INE de la isla
+    cmun:           Código INE del municipio en relación a la provincia     
+    dc:             Dígito de control
+    nombre:         Denominación oficial
+
 
 Ejemplo en CSV:
 
-| CPRO | CISLA | CMUN | DC | NOMBRE               | YEAR | 
-|------|-------|------|----|----------------------|------| 
-| 38   | 384   | 52   | 6  | Vilaflor             | 2014 | 
-| 38   | 384   | 52   | 6  | "Vilaflor de Chasna" | 2015 | 
+| municipio_id | year | provincia_id  | isla_id | cmun | dc | nombre               | 
+|--------------|------|---------------|---------|------|----|----------------------| 
+| 38052        | 2014 | 38            | 384     | 052  | 6  | Vilaflor             | 
+| 38052        | 2015 | 38            | 384     | 052  | 6  | "Vilaflor de Chasna" | 
 
 
 
