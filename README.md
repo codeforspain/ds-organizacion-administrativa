@@ -14,7 +14,7 @@ Este dataset es parte del proyecto abierto y colaborativo CodeForSpain. Puedes o
 ## Municipios
 
 
-- URL: http://www.ine.es/daco/daco42/codmun/codmun[YY]/[YY]codmun.xls ( [YY] es el último año, p.e. 16))
+- URL: `http://www.ine.es/daco/daco42/codmun/codmun[YY]/[YY]codmun.xls` donde `YY` es el último año, p.e. 16
 - Tipo: Excel (xlsx)
 - Descripción: http://www.ine.es/daco/daco42/codmun/codmun00i.htm 
 - Datos procesados: [/data/municipios.json](data/municipios.json) | [/data/municipios.csv](data/municipios.csv) 
@@ -73,7 +73,7 @@ En JSON:
 ## Municipios (Histórico) 
 
 
-- URL: http://www.ine.es/daco/daco42/codmun/codmun[YY]/[YY]codmun.xls ( [YY] es el año, desde 04 hasta hoy)
+- URL: `http://www.ine.es/daco/daco42/codmun/codmun[YY]/[YY]codmun.xls` donde `YY` es el año, desde 04 hasta hoy.
 - Tipo: Excel (xlsx)
 - Descripción: http://www.ine.es/daco/daco42/codmun/codmun00i.htm 
 - Datos procesados: [/data/municipios_historical.json](data/municipios_historical.json) | [/data/municipios_historical.csv](data/municipios_historical.csv) 
@@ -196,7 +196,7 @@ En JSON:
 ## Islas
 
 
-- URL: http://www.ine.es/daco/daco42/codmun/codmun[YY]/[CP]codislas[YY].xls" ( [YY] es el último año, p.e. 16, [CP] es el codigo de la pronvincia))
+- URL: `http://www.ine.es/daco/daco42/codmun/codmun[YY]/[CP]codislas[YY].xls` donde `YY` es el último año, p.e. 16 y `CP`  es el código de la provincia
 - Tipo: Excel (xlsx)
 - Datos procesados: [/data/islas.json](data/islas.json) | [/data/islas.csv](data/islas.csv) 
 
@@ -224,7 +224,7 @@ Ejemplo en CSV:
 ## Municipios por Isla 
 
 
-- URL: http://www.ine.es/daco/daco42/codmun/codmun[YY]/[CP]codislas[YY].xls" ( [YY] es el ultimo año, p.e. 16,  [CP] es el codigo de la pronvincia)
+- URL: http://www.ine.es/daco/daco42/codmun/codmun[YY]/[CP]codislas[YY].xls" donde `YY` es el ultimo año, p.e. 16 y `CP` es el código de la provincia)
 - Tipo: Excel (xlsx)
 - Datos procesados: [/data/municipios_islas.json](data/municipios_islas.json) | [/data/municipios_islas.csv](data/municipios_islas.csv) 
 
@@ -256,7 +256,7 @@ Ejemplo en CSV:
 ## Municipios por Isla (Histórico)
 
 
-- URL: http://www.ine.es/daco/daco42/codmun/codmun[YY]/[CP]codislas[YY].xls" ( [YY] es el año, desde 12 hasta hoy,  [CP] es el codigo de la pronvincia)
+- URL: `http:// www.ine.es/daco/daco42/codmun/codmun[YY]/[CP]codislas[YY].xls` donde `YY` es el año, desde 12 hasta hoy y `CP` es el código de la provincia
 - Tipo: Excel (xlsx)
 - Datos procesados: [/data/municipios_islas.json](data/municipios_islas.json) | [/data/municipios_islas.csv](data/municipios_islas.csv) 
 

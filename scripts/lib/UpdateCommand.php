@@ -21,11 +21,12 @@ class UpdateCommand extends ConsoleKit\Command
 
         $datapackageNew['last_updated']=date('Y-m-d ');
 
-
-        foreach ( Config::$datapackage['resources'] as $resource){
-            $resource['format'] = 'json';
-            $resource['path'] = array_shift(explode('.',$resource['path'])) . ".json";
-            $datapackageNew['resources'][]=$resource;
+        if (!isset($options['nojson']) && !isset($options['n'])){
+            foreach ( Config::$datapackage['resources'] as $resource){
+                $resource['format'] = 'json';
+                $resource['path'] = array_shift(explode('.',$resource['path'])) . ".json";
+                $datapackageNew['resources'][]=$resource;
+            }
         }
 
 
