@@ -37,8 +37,8 @@ class UpdateCommand extends ConsoleKit\Command
         if (file_exists(BASE_PATH . DS . "datapackage.json")) {
             $datapackageOld = json_decode(file_get_contents(BASE_PATH . DS . "datapackage.json"));
             if (!empty($datapackageOld->version)) {
-                $datapackageNew['version'] = $datapackageOld->version;
-                $datapackageNew['version']++;
+                $semver = explode(".", $datapackageOld->version);
+                if (sizeof($semver)==3) $datapackageNew['version'] = implode(".", [$semver[0],$semver[1],++$semver[2]]);
             } else {
                 $datapackageNew['version']="0.0.1";
             }
