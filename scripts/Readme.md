@@ -46,8 +46,7 @@ Si se invoca sin subcomandos o argumentos, executa:
             all                 Procesa todas las fuentes (por defecto).
                                                        
                                                             
-        convert-to-json         Convierte todo los archivos .csv en /data a .json.
-            
+        convert-to-json         Convierte todos los archivos .csv almacenados en /data a .json.
             
         update                  Actualiza el archivo datapackage.json                                                
                         
