@@ -1,12 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="es">
-<HEAD>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
 <META http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
 <META HTTP-EQUIV="Expires" CONTENT="Mon, 28 May 2001 00:00:01 GMT">
 <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
     
-<TITLE>INEbase/ Clasificaciones /Relaci&oacute;n de municipios, provincias, comunidades y ciudades aut&oacute;nomas con sus c&oacute;digos / Relación de comunidades y ciudades autónomas con sus códigos</TITLE>
+<title>INEbase/ Clasificaciones /Relaci&oacute;n de municipios, provincias, comunidades y ciudades aut&oacute;nomas con sus c&oacute;digos / Relación de comunidades y ciudades autónomas con sus códigos</title>
 
  
 
@@ -16,6 +15,7 @@
 		
 	
 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
 
@@ -31,47 +31,81 @@
 <meta name="viewport" content="width=device-width,maximum-scale=3.0,initial-scale=1.0,minimum-scale=0.9,user-scalable=yes">
 
 <meta http-equiv="Content-Script-Type" content="text/javascript" >
+
+
+
+
+		
+	
+
+
+	
+
 <script type="text/javascript">
+
+var sepMil= ".";
+var sepDec= ",";
+
 var docIsLoaded=false;
-var HM_Menu_Dir="/menus/";
-var HM_imgDir="/menus/img/";
-var HM_DirJs="/menus/js/";
+var HM_Menu_Dir="http://www.ine.es/menus/";
+var HM_imgDir="http://www.ine.es/menus/img/";
+var HM_DirJs="http://www.ine.es/menus/js/";
 var HM_idioma="es";
 var Menu_TipoLoading="(none)";
 var othethickbox="";
-var INE_Servidor="";
+var INE_Servidor="http://www.ine.es";/*
 try{
 if (document.location!=null && document.location.origin!=null)
 	INE_Servidor=document.location.origin
 }catch(e){
-INE_Servidor="";
-}
+INE_Servidor="http://www.ine.es";
+}*/
 </script>
 
 	
 
+<script type="text/javascript" src="http://www.ine.es/menus/js/jquery.js"></script>
+<script type="text/javascript" src="http://www.ine.es/menus/js/jquery.cookie.js"></script>
 
-<script type="text/javascript" src="/menus/js/jquery.js"></script>
-<script type="text/javascript" src="/menus/js/jquery-ui.js"></script>
-<link rel="stylesheet" href="/menus/estilos/jquery-ui/jquery-ui.css">
-<script type="text/javascript" src="/menus/js/tooltip.js"></script>
-<script type="text/javascript" src="/menus/js/thickboxINE.js"></script>
-<script src="/menus/js/general.js" type="text/javascript"></script>
-<script src="/menus/js/cookie.js" type="text/javascript"></script>
-<script src="/menus/js/images.js" type="text/javascript"></script>
-<script src="/menus/js/loading.js" type="text/javascript"></script>
-<script src="/menus/js/cambiotamano.js" type="text/javascript"></script>
-<script src="/menus/js/SSO.js" type="text/javascript"></script>
-
-
-<link rel="stylesheet" href="/menus/estilos/formato.css">
-<link rel="stylesheet" href="/menus/estilos/baseINE.css">
-<link rel="stylesheet" href="/menus/estilos/cabecera.css">
-<link rel="stylesheet" href="/menus/estilos/pie.css">
-<link rel="stylesheet" href="/menus/estilos/menucabecera.css">
-<link rel="stylesheet" href="/menus/estilos/thickbox.css">
+<script type="text/javascript" src="http://www.ine.es/menus/js/jquery-ui.js"></script>
+<link rel="stylesheet" href="http://www.ine.es/menus/estilos/jquery-ui/jquery-ui.css">
+<script type="text/javascript" src="http://www.ine.es/menus/js/tooltip.js"></script>
+<script type="text/javascript" src="http://www.ine.es/menus/js/thickboxINE.js"></script>
+<script src="http://www.ine.es/menus/js/general.js" type="text/javascript"></script>
+<script src="http://www.ine.es/menus/js/cookie.js" type="text/javascript"></script>
+<script src="http://www.ine.es/menus/js/images.js" type="text/javascript"></script>
+<script src="http://www.ine.es/menus/js/loading.js" type="text/javascript"></script>
+<script src="http://www.ine.es/menus/js/cambiotamano.js" type="text/javascript"></script>
+<script src="http://www.ine.es/menus/js/SSO.js" type="text/javascript"></script>
 
 
+<link rel="stylesheet" href="http://www.ine.es/menus/estilos/formato.css">
+<link rel="stylesheet" href="http://www.ine.es/menus/estilos/baseINE.css">
+<link rel="stylesheet" href="http://www.ine.es/menus/estilos/cabecera.css">
+<link rel="stylesheet" href="http://www.ine.es/menus/estilos/pie.css">
+<link rel="stylesheet" href="http://www.ine.es/menus/estilos/menucabecera.css">
+<link rel="stylesheet" href="http://www.ine.es/menus/estilos/thickbox.css">
+
+	<!-- Codigo de seguimiento de Google Analytics  -->
+  <script type="text/javascript">
+
+    try{ 
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-19028967-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+        window.status='Analytics Work';
+    }catch(e){
+
+    }
+
+    <!-- Fin Google Analytics  -->               
+    </script>	
 
  <link href="/estilos/menus_ems.css" type="text/css" rel="stylesheet">
 
@@ -193,8 +227,6 @@ INE_Servidor="";
 
 			
 						
-
-
 
 
 
@@ -452,19 +484,19 @@ INE_Servidor="";
 	
 	
 		
-		<a href="/welcome.shtml" title="P&#225;gina de inicio" accesskey="i"><img src="/menus/img/logoine2.jpg" id="Menu_cabeceraLogoINE" alt="Logotipo Ine. Ir a p&#225;gina de inicio"></a>
+		<a href="/welcome.shtml" title="P&#225;gina de inicio" accesskey="i"><img src="http://www.ine.es/menus/img/logoine2.jpg" id="Menu_cabeceraLogoINE" alt="Logotipo Ine. Ir a p&#225;gina de inicio"></a>
 				
 					
 			<ul>			
-				<li><a href="#" accesskey="-" onclick="tamano(-1)" title="Reducir tama&#241;o de fuente"><img src="/menus/img/a1.gif" alt="Reducir tama&#241;o de fuente"></a></li>
-				<li><a href="#" accesskey="r" onclick="tamano(0)" title="Restaurar tama&#241;o de fuente"><img src="/menus/img/a2.gif" alt="Restaurar tama&#241;o de fuente"></a></li>
-				<li><a href="#" accesskey="+" onclick="tamano(1)" title="Aumentar tama&#241;o de fuente"><img src="/menus/img/a3.gif" alt="Aumentar tama&#241;o de fuente"></a></li>
+				<li><a href="#" accesskey="-" onclick="tamano(-1)" title="Reducir tama&#241;o de fuente"><img src="http://www.ine.es/menus/img/a1.gif" alt="Reducir tama&#241;o de fuente"></a></li>
+				<li><a href="#" accesskey="r" onclick="tamano(0)" title="Restaurar tama&#241;o de fuente"><img src="http://www.ine.es/menus/img/a2.gif" alt="Restaurar tama&#241;o de fuente"></a></li>
+				<li><a href="#" accesskey="+" onclick="tamano(1)" title="Aumentar tama&#241;o de fuente"><img src="http://www.ine.es/menus/img/a3.gif" alt="Aumentar tama&#241;o de fuente"></a></li>
 								
-				<li><img src="/menus/img/barraSeparacionSombra.gif" alt=""></li>	
+				<li><img src="http://www.ine.es/menus/img/barraSeparacionSombra.gif" alt=""></li>	
 				
-				<li><a href="/infoine/" accesskey="c" title="Contacta con nosotros"><img src="/menus/img/btnsobre.gif" alt="Contacta con nosotros"></a></li>
-				<li><a href="/menus/jsalert_es.shtml" onclick="AgregarFavoritos(Menu_TituloFavoritos,Menu_UrlFavoritos);this.blur();return false"			onkeypress=" if (window.event.keyCode==13){AgregarFavoritos(Menu_TituloFavoritos,Menu_UrlFavoritos);this.blur();return false}" accesskey="f" title="A&#241;adir a Favoritos"><img src="/menus/img/btnFavoritos.gif" alt="A&#241;adir a Favoritos"></a></li>	
-				<li><a href="/indiceweb.htm" title="Visualizar mapa del web" accesskey="w"><img src="/menus/img/btnMap.gif" alt="Visualizar mapa del web"></a></li>							
+				<li><a href="/infoine/" accesskey="c" title="Contacta con nosotros"><img src="http://www.ine.es/menus/img/btnsobre.gif" alt="Contacta con nosotros"></a></li>
+				<li><a href="http://www.ine.es/menus/jsalert_es.shtml" onclick="AgregarFavoritos(Menu_TituloFavoritos,Menu_UrlFavoritos);this.blur();return false"			onkeypress=" if (window.event.keyCode==13){AgregarFavoritos(Menu_TituloFavoritos,Menu_UrlFavoritos);this.blur();return false}" accesskey="f" title="A&#241;adir a Favoritos"><img src="http://www.ine.es/menus/img/btnFavoritos.gif" alt="A&#241;adir a Favoritos"></a></li>	
+				<li><a href="/indiceweb.htm" title="Visualizar mapa del web" accesskey="w"><img src="http://www.ine.es/menus/img/btnMap.gif" alt="Visualizar mapa del web"></a></li>							
 			</ul>
 	
 	
@@ -474,8 +506,11 @@ INE_Servidor="";
 
 	<div id="Menu_cabeceraMenu">
 		<ul class="nav">
-			<li class="left"><a href="/ss/Satellite?c=Page&amp;pagename=INE%2FINELayout&amp;cid=1254735905566&amp;L=0" accesskey="1"><img class="cabeceraImg" src="/menus/img/cab01.jpg" alt="Opcion 01. El INE"></a>		
+			<li class="left"><a href="http://www.ine.es/ss/Satellite?c=Page&amp;pagename=INE%2FINELayout&amp;cid=1254735905566&amp;L=0" accesskey="1"><img class="cabeceraImg" src="http://www.ine.es/menus/img/cab01.jpg" alt="Opcion 01. El INE"></a>		
 				
+
+
+
 
 
 
@@ -686,7 +721,7 @@ INE_Servidor="";
 	 <a href='/ss/Satellite?L=es_ES&amp;c=Page&amp;cid=1259948963758&amp;p=1259948963758&amp;pagename=INE%2FINELayout'>Encomiendas de gesti&oacute;n</a>
     
 
-</li><li class="last">
+</li><li>
 
 
 
@@ -698,6 +733,20 @@ INE_Servidor="";
 
 	
 	 <a href='/ss/Satellite?L=es_ES&amp;c=Page&amp;cid=1254735905224&amp;p=1254735905224&amp;pagename=INE%2FINELayout'>Perfil del contratante</a>
+    
+
+</li><li class="last">
+
+
+
+  
+	
+
+	
+	
+
+	
+	 <a href='/ss/Satellite?L=es_ES&amp;c=Page&amp;cid=1259949629905&amp;p=1259949629905&amp;pagename=INE%2FINELayout'>Participaci&oacute;n p&uacute;blica en proyectos normativos</a>
     
 
 </li></ul></li>  
@@ -755,7 +804,7 @@ INE_Servidor="";
 	
 
 	
-	 <a href='/ss/Satellite?L=es_ES&amp;c=Page&amp;cid=1254735904936&amp;p=1254735904936&amp;pagename=INE%2FINELayout'>La estad&iacute;stica de la AGE</a>
+	 <a href='/ss/Satellite?L=es_ES&amp;c=Page&amp;cid=1254735904936&amp;p=1254735904936&amp;pagename=INE%2FINELayout'>La estad&iacute;stica de la Administraci&oacute;n del Estado</a>
     
 
 </li><li>
@@ -950,7 +999,7 @@ INE_Servidor="";
 				
 			</li>		
 			
-			<li class="left"><a href="/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735839296&amp;p=1254735839296&amp;pagename=MetodologiaYEstandares%2FINELayout" accesskey="3"><img class="cabeceraImg" src="/menus/img/cab03.jpg"  alt="Opcion 03. M&#233;todos y proyectos" ></a>						
+			<li class="left"><a href="/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735839296&amp;p=1254735839296&amp;pagename=MetodologiaYEstandares%2FINELayout" accesskey="3"><img class="cabeceraImg" src="http://www.ine.es/menus/img/cab03.jpg"  alt="Opcion 03. M&#233;todos y proyectos" ></a>						
 				
 
 
@@ -1119,16 +1168,16 @@ INE_Servidor="";
 
 			</li>
 			
-			<li class="left"><a class="margen_der19" href="/prensa/seccion_prensa.htm" accesskey="5"><img class="cabeceraImg" src="/menus/img/cab05.jpg"  alt="Opcion 05. Prensa" ></a>						
+			<li class="left"><a class="margen_der19" href="http://www.ine.es/prensa/seccion_prensa.htm" accesskey="5"><img class="cabeceraImg" src="http://www.ine.es/menus/img/cab05.jpg"  alt="Opcion 05. Prensa" ></a>						
 				
 				<ul>
-					<li><a href="/prensa/seccion_prensa.htm">Secci&#243;n Prensa</a></li>
-					<li><a href="/prensa/prensa.htm">Notas de prensa publicadas</a></li>																									
-					<li class="last"><a href="/daco/daco41/calen.htm">Calendario de estad&#237;sticas</a></li>
+					<li><a href="http://www.ine.es/prensa/seccion_prensa.htm">Secci&#243;n Prensa</a></li>
+					<li><a href="http://www.ine.es/prensa/prensa.htm">Notas de prensa publicadas</a></li>																									
+					<li class="last"><a href="http://www.ine.es/daco/daco41/calen.htm">Calendario de estad&#237;sticas</a></li>
 				</ul>
 			</li>	
 			
-	 <li class="left"><a href="/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735788988&amp;p=1254735788988&amp;pagename=CensoElectoral%2FINELayout" accesskey="7"><img class="cabeceraImg" src="/menus/img/cab07.jpg"  alt="Opcion 07. Censo electoral" ></a>
+	 <li class="left"><a href="/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735788988&amp;p=1254735788988&amp;pagename=CensoElectoral%2FINELayout" accesskey="7"><img class="cabeceraImg" src="http://www.ine.es/menus/img/cab07.jpg"  alt="Opcion 07. Censo electoral" ></a>
 		
 
 
@@ -1229,85 +1278,83 @@ INE_Servidor="";
 
 	 </li>			
 			
-       <li class="left"><a href="/inebmenu/indice.htm" accesskey="2"><img class="cabeceraImg" src="/menus/img/cab02.jpg"  alt="Opcion 02. INEbase" ></a>						
+       <li class="left"><a href="http://www.ine.es/inebmenu/indice.htm" accesskey="2"><img class="cabeceraImg" src="http://www.ine.es/menus/img/cab02.jpg"  alt="Opcion 02. INEbase" ></a>						
 				<ul>
-				<li><a class="fly" href="#nogo">Agricultura y medio ambiente</a>
+				<li><a class="fly" href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735570567">Agricultura y medio ambiente</a>
   					<ul>
-							<li><a  href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735727106">Agricultura</a></li>			
-							<li><a href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976602">Agua</a></li>	
-							<li><a href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976612">Protecci&#243;n ambiental y residuos</a></li>	
-							<li><a href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976603">Cuentas ambientales</a></li>	
-							<li class="last"><a href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976601">Otras operaciones medioambientales</a></li>
+							<li><a  href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735727106">Agricultura</a></li>			
+							<li><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976602">Agua</a></li>	
+							<li><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976612">Residuos y Protecci&#243;n ambiental</a></li>	
+							<li><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976603">Cuentas ambientales</a></li>	
+							<li class="last"><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976601">Otras operaciones medioambientales</a></li>
 						</ul>			
 				</li>
 								
-				<li><a class="fly" href="#nogo">Ciencia y tecnolog&#237;a</a>
+				<li><a class="fly" href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976151">Ciencia y tecnolog&#237;a</a>
   					<ul>
-							<li><a  href="/inebmenu/mnu_imasd.htm">Investigaci&#243;n y desarrollo</a></li>			
-							<li class="last"><a href="/inebmenu/mnu_tic.htm">Nuevas tecnolog&#237;as</a></li>
+							<li><a  href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735576669">Investigaci&#243;n y desarrollo</a></li>			
+							<li class="last"><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735576692">Nuevas tecnolog&#237;as</a></li>
 						</ul>			
 				</li>	
-				<li><a class="fly" href="#nogo">Demograf&#237;a y poblaci&#243;n</a>						
+				<li><a class="fly" href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254734710984">Demograf&#237;a y poblaci&#243;n</a>						
 				    <ul>
-							<li><a  href="/inebmenu/mnu_padron.htm">Padr&#243;n. Poblaci&#243;n por municipios</a></li>			
-							<li><a href="/inebmenu/mnu_cifraspob.htm">Cifras de poblaci&#243;n y Censos demogr&#225;ficos</a></li>							
-							<li class="last"><a href="/inebmenu/mnu_dinamicapob.htm">Fen&#243;menos demogr&#225;ficos</a></li>											
+							<li><a  href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254734710990">Padr&#243;n. Poblaci&#243;n por municipios</a></li>			
+							<li><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735572981">Cifras de poblaci&#243;n y Censos demogr&#225;ficos</a></li>							
+							<li class="last"><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735573002">Fen&#243;menos demogr&#225;ficos</a></li>											
 						</ul>			
 				</li>
-			  <li><a class="fly" href="#nogo">Econom&#237;a</a>
+			  <li><a class="fly" href="#">Econom&#237;a</a>
  					  <ul>
-							<li><a  href="/inebmenu/mnu_empresas.htm">Empresas</a></li>
-							<li><a href="/inebmenu/mnu_cuentas.htm">Cuentas econ&#243;micas</a></li>
-							<li><a href="/inebmenu/mnu_financie.htm">Estad&#237;sticas financieras, monetarias y seguros</a></li>
-							<li class="last"><a href="/inebmenu/mnu_comerext.htm">Comercio exterior</a></li>																								
+							<li><a  href="http://www.ine.es/inebmenu/mnu_empresas.htm">Empresas</a></li>
+							<li><a href="http://www.ine.es/inebmenu/mnu_cuentas.htm">Cuentas econ&#243;micas</a></li>
+							<li><a href="http://www.ine.es/inebmenu/mnu_financie.htm">Estad&#237;sticas financieras, monetarias y seguros</a></li>
+							<li class="last"><a href="http://www.ine.es/inebmenu/mnu_comerext.htm">Comercio exterior</a></li>																								
 						</ul>			
 				</li>
 
-				<li><a class="fly" href="#nogo">Industria, energ&#237;a y construcci&#243;n</a>
+				<li><a class="fly" href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735570688">Industria, energ&#237;a y construcci&#243;n</a>
         		<ul>
-							<li><a  href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735576715">Industria y energ&#237;a</a></li>
-							<li class="last"><a href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735576757">Construcci&#243;n y vivienda</a></li>
+							<li><a  href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735576715">Industria y energ&#237;a</a></li>
+							<li class="last"><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735576757">Construcci&#243;n y vivienda</a></li>
 						</ul>			
 				</li>	
-				<li><a class="fly" href="#nogo">Mercado laboral</a>					
+				<li><a class="fly" href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976594">Mercado laboral</a>					
 						<ul>
-							<li><a  href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976595">Actividad, ocupaci&#243;n y paro</a></li>
-							<li><a href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976596">Salarios y costes laborales</a></li>
-							<li class="last"><a href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976597">Otras operaciones de mercado laboral</a></li>							
+							<li><a  href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976595">Actividad, ocupaci&#243;n y paro</a></li>
+							<li><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976596">Salarios y costes laborales</a></li>
+							<li class="last"><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976597">Otras operaciones de mercado laboral</a></li>							
 						</ul>
 				</li>	
-				<li><a class="fly" href="#nogo">Nivel y condiciones de vida (IPC)</a>
+				<li><a class="fly" href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976604">Nivel y condiciones de vida (IPC)</a>
   					<ul>
-							<li><a  href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976607">&#205;ndices de precios de consumo y vivienda</a></li>
-							<li class="last"><a href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976608">Condiciones de vida</a></li>
+							<li><a  href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976607">&#205;ndices de precios de consumo y vivienda</a></li>
+							<li class="last"><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976608">Condiciones de vida</a></li>
 						</ul>			
 				</li>					
-				<li><a class="fly" href="#nogo">Servicios</a>	
+				<li><a class="fly" href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735570703">Servicios</a>	
 						<ul>
-							<li><a href="/inebmenu/mnu_servicios.htm">Encuestas globales del sector servicios</a></li>
-							<li><a href="/inebmenu/mnu_comercio.htm">Comercio</a></li>
-							<li><a href="/inebmenu/mnu_transporte.htm">Transporte y actividades conexas, comunicaciones</a></li>
-							<li><a href="/inebmenu/mnu_hosteleria.htm">Hosteler&#237;a y turismo</a></li>
-							<li class="last"><a href="/inebmenu/mnu_otrosserv.htm">Otros servicios empresariales, personales y comunitarios</a></li>
+							<li><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735576778">Encuestas globales del sector servicios</a></li>
+							<li><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735576799">Comercio</a></li>
+							<li><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735576863">Hosteler&#237;a y turismo</a></li>						
+							<li class="last"><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735576820">Transporte</a></li>
 						</ul>			
 				</li>
-				<li><a class="fly" href="#nogo">Sociedad</a>	
+				<li><a class="fly" href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735971047">Sociedad</a>	
 						<ul>
-							<li><a href="/inebmenu/mnu_educa.htm">Educaci&#243;n</a></li>
-							<li><a href="/inebmenu/mnu_cultyocio.htm">Cultura y ocio</a></li>
-							<li><a href="/inebmenu/mnu_salud.htm">Salud</a></li>
-							<li><a href="/inebmenu/mnu_justicia.htm">Seguridad y Justicia</a></li>
-							<li><a href="/inebmenu/mnu_analisoc.htm">An&#225;lisis sociales</a></li>
-							<li class="last"><a href="/inebmenu/mnu_elecciones.htm">Procesos electorales</a></li>
+							<li><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735573113">Educaci&#243;n y cultura</a></li>
+							<li><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735573175">Salud</a></li>
+							<li><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735573206">Seguridad y Justicia</a></li>
+							<li><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735576508">An&#225;lisis sociales</a></li>							
+							<li class="last"><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735576529">Procesos electorales</a></li>
 						</ul>			
 				</li>				
-				<li><a href="/inebmenu/mnu_internac.htm">Datos internacionales</a></li>	
-				<li><a href="/inebmenu/mnu_sintesis.htm">S&#237;ntesis estad&#237;stica</a></li>	
+				<li><a href="http://www.ine.es/inebmenu/mnu_internac.htm">Datos internacionales</a></li>	
+				<li><a href="http://www.ine.es/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&amp;cid=1254735976606">S&#237;ntesis estad&#237;stica</a></li>	
 				<li class="last"><a href="/dynt3/FMI/es/">Indicadores econ&#243;micos. FMI</a></li>					
 				</ul>
 			 </li>
 		
-			<li class="left"><a href="/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735801161&amp;p=1254735801161&amp;pagename=FormacionYEmpleo%2FINELayout" accesskey="4"><img class="cabeceraImg" src="/menus/img/cab04.jpg"  alt="Opcion 04. Formaci&#243;n y empleo" ></a>						
+			<li class="left"><a href="/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735801161&amp;p=1254735801161&amp;pagename=FormacionYEmpleo%2FINELayout" accesskey="4"><img class="cabeceraImg" src="http://www.ine.es/menus/img/cab04.jpg"  alt="Opcion 04. Formaci&#243;n y empleo" ></a>						
 				
 
 
@@ -1406,7 +1453,7 @@ INE_Servidor="";
 	
 
 	
-	 <a href='/ss/Satellite?L=es_ES&amp;c=Page&amp;cid=1254735801186&amp;p=1254735801186&amp;pagename=FormacionYEmpleo%2FINELayout'>Empleo</a>
+	 <a href='/ss/Satellite?L=es_ES&amp;c=Page&amp;cid=1254735801186&amp;p=1254735801186&amp;pagename=FormacionYEmpleo%2FINELayout'>Empleo - Oposiciones </a>
     
 
 </li>  
@@ -1444,7 +1491,7 @@ INE_Servidor="";
 
 			</li>
 
-			<li class="left"><a class="margen_der19" href="/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735550343&amp;p=1254735550343&amp;pagename=ProductosYServicios%2FPYSLayout" accesskey="6"><img class="cabeceraImg" src="/menus/img/cab06.jpg"  alt="Opcion 06. Productos y servicios" ></a>						
+			<li class="left"><a class="margen_der19" href="/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735550343&amp;p=1254735550343&amp;pagename=ProductosYServicios%2FPYSLayout" accesskey="6"><img class="cabeceraImg" src="http://www.ine.es/menus/img/cab06.jpg"  alt="Opcion 06. Productos y servicios" ></a>						
 				
 
 
@@ -1829,7 +1876,7 @@ INE_Servidor="";
 
 				
 			</li>	
-		 <li class="left"><a href="https://sede.ine.gob.es/ss/Satellite?c=Page&amp;cid=1254734719723&amp;pagename=SedeElectronica%2FSELayout&amp;lang=es_ES" target="_blank" accesskey="8"><img class="cabeceraImg" src="/menus/img/cab08.jpg"  alt="Opcion 08. Sede electr&#243;nica"  ></a>
+		 <li class="left"><a href="https://sede.ine.gob.es/ss/Satellite?c=Page&amp;cid=1254734719723&amp;pagename=SedeElectronica%2FSELayout&amp;lang=es_ES" target="_blank" accesskey="8"><img class="cabeceraImg" src="http://www.ine.es/menus/img/cab08.jpg"  alt="Opcion 08. Sede electr&#243;nica"  ></a>
 		 </li>			
 		</ul>	
  
@@ -1848,7 +1895,7 @@ INE_Servidor="";
 	<div id="capa_cabeceraIdiomaBuscador">
 	<div id="capa_Menu_cabeceraBuscador">
 	
-		<form name="Menu_cabeceraBuscador" id="Menu_cabeceraBuscador" action="/buscar/searchResults.do" onsubmit="return Buscador_Valida();" method="get">
+		<form name="Menu_cabeceraBuscador" id="Menu_cabeceraBuscador" action="http://www.ine.es/buscar/searchResults.do" onsubmit="return Buscador_Valida();" method="get">
 				<label class="oculto" for="searchString">Buscar (Campo obligatorio / Mandatory field)</label>
 		        <input title="Escriba el texto para buscar/Find text" class="Menu_searchString" type="text" id="searchString" name="searchString" value="">
 		        <input type="submit" id="Menu_botonBuscador" name="Menu_botonBuscador" value="Buscar" onmouseover="this.className='botonAzul-hover'" onfocus="this.className='botonAzul-hover'" onmouseout="this.className='botonAzul'"  onblur="this.className='botonAzul'">
@@ -1856,12 +1903,12 @@ INE_Servidor="";
 		        <input type="hidden" name="startat" id="startat" value="0">
 		        <input type="hidden" name="L" id="L" value="0">
 		</form>	
-		<script type="text/javascript" src="/menus//plantillas/buscar/js/liveSearch.js"></script>
+		<script type="text/javascript" src="http://www.ine.es/menus//plantillas/buscar/js/liveSearch.js"></script>
 		<script type="text/javascript">
 
 		function initAjax(){
 			try{
-				jQuery('#searchString').liveSearch({url: '/buscar/json/Palabras?s='});
+				jQuery('#searchString').liveSearch({url: 'http://www.ine.es/buscar/json/Palabras?s='});
 		  }catch(err){
 		  }
 		}
@@ -1878,13 +1925,15 @@ INE_Servidor="";
 
 
 <ul>
-<li><img src="/menus/img/idioma.gif" alt="Seleccionar idioma" /></li>
-<li>
-<a href="/en/daco/daco42/codmun/cod_ccaa_en.htm"
+<li><img src="http://www.ine.es/menus/img/idioma.gif" alt="Seleccionar idioma" /></li>
+
+
+<li><a href="/en/daco/daco42/codmun/cod_ccaa_en.htm"
 	 lang="en"
  class="" title="English"
- >EN</a>
-</li>
+ >EN</a></li>
+
+
 
 
 
@@ -1911,8 +1960,20 @@ INE_Servidor="";
 
  
   
-<img src="/images/logoinebase.gif" width="100" height="46" class="alineaderechatotal sinborde" alt="Logotipo de INEbase"><h1 class="docenob">INEbase
-/ Clasificaciones / Relaci&oacute;n de municipios, provincias, comunidades y ciudades aut&oacute;nomas con sus c&oacute;digos / <strong>Relación de comunidades y ciudades autónomas con sus códigos</strong></h1>
+<img src="/images/logoinebase.gif" width="100" height="46" class="alineaderechatotal sinborde" alt="Logotipo de INEbase"><h2 class="docenob"><ul class="miga">
+<li>
+<a href="/inebmenu/indice.htm" title="INEbase">INEbase</a>
+</li>
+<li class="medio">
+<a href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&cid=1254734710984">Demografía y población</a>
+</li>
+<li class="medio">
+<a href="/dyngs/INEbase/es/categoria.htm?c=Estadistica_P&cid=1254734710990">Padrón. Población por municipios</a>
+</li>
+<li class="medio">
+<a href="/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177031&menu=ultiDatos&idp=1254734710990">Relación de municipios y sus códigos por provincias</a>
+</li>
+</ul> / <strong>Relación de comunidades y ciudades autónomas con sus códigos</strong></h2>
 
 </div>
 <div style="margin-top:10px;"></div> 
@@ -1923,90 +1984,90 @@ INE_Servidor="";
 
 
 
-<TABLE width="50%" CELLPADDING="2" cellspacing="2" summary="maquetacion">
+  <table  class="miTabla" summary="Tabla códigos">
+  <tr class="diezcarne" style="background-color:#eef2f8;">
 
-  <TR VALIGN="top" class="diezcarne">
-    <TD ALIGN="left">CODIGO</TD> 
-    <TD ALIGN="left">LITERAL</TD>
-    </TR>
-  <TR VALIGN="bottom">
-    <TD>01 </TD>
-    <TD>Andalucía</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>02 </TD>
-    <TD>Aragón</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>03 </TD>
-    <TD>Asturias, Principado de</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>04 </TD>
-    <TD>Balears, Illes</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>05 </TD>
-    <TD>Canarias</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>06 </TD>
-    <TD>Cantabria</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>07 </TD>
-    <TD>Castilla y León</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>08 </TD>
-    <TD>Castilla - La Mancha</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>09 </TD>
-    <TD>Cataluña</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>10 </TD>
-    <TD>Comunitat Valenciana</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>11 </TD>
-    <TD>Extremadura</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>12 </TD>
-    <TD>Galicia</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>13 </TD>
-    <TD>Madrid, Comunidad de</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>14 </TD>
-    <TD>Murcia, Región de</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>15 </TD>
-    <TD>Navarra, Comunidad Foral de</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>16 </TD>
-    <TD>País Vasco</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>17 </TD>
-    <TD>Rioja, La</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>18 </TD>
-    <TD>Ceuta</TD>
-    </TR>
-<TR VALIGN="bottom">
-  <TD>19 </TD>
-    <TD>Melilla</TD>
-    </TR>
+    <th ALIGN="left">Código</th> 
+    <th ALIGN="left">Literal</th>
+    </tr>
+  <tr VALIGN="bottom">
+    <td>01 </td>
+    <td>Andalucía</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>02 </td>
+    <td>Aragón</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>03 </td>
+    <td>Asturias, Principado de</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>04 </td>
+    <td>Balears, Illes</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>05 </td>
+    <td>Canarias</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>06 </td>
+    <td>Cantabria</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>07 </td>
+    <td>Castilla y León</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>08 </td>
+    <td>Castilla - La Mancha</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>09 </td>
+    <td>Cataluña</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>10 </td>
+    <td>Comunitat Valenciana</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>11 </td>
+    <td>Extremadura</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>12 </td>
+    <td>Galicia</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>13 </td>
+    <td>Madrid, Comunidad de</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>14 </td>
+    <td>Murcia, Región de</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>15 </td>
+    <td>Navarra, Comunidad Foral de</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>16 </td>
+    <td>País Vasco</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>17 </td>
+    <td>Rioja, La</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>18 </td>
+    <td>Ceuta</td>
+    </tr>
+<tr VALIGN="bottom">
+  <td>19 </td>
+    <td>Melilla</td>
+    </tr>
   
-</Table>
+</table>
 
 <!-- Comentario -  Aquí debe ir el contenido generico del pie --> 
 <!-- FIN  CUERPO DEL DOCUMENTO-->
@@ -2082,18 +2143,18 @@ INE_Servidor="";
 
 
 	  <ul class="homePie">
-	   <li><a href="http://www.ine.es">&copy; INE 2016</a></li>
-	   <li class="bordeL"><a href="/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735858723&amp;p=1254735858723&amp;pagename=Ayuda%2FINELayout">Accesibilidad</a></li>
-	   <li class="bordeL"><a href="/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735858539&amp;p=1254735858539&amp;pagename=Ayuda%2FINELayout">Aviso de seguridad</a></li>   
-	   <li class="bordeL"><a href="/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735849170&amp;p=1254735849170&amp;pagename=Ayuda%2FINELayout">Aviso legal</a></li>   
-	   <li class="bordeL"><a href="/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735858549&amp;p=1254735858549&amp;pagename=Ayuda%2FINELayout">Ayuda</a></li> 
+	   <li><a href="http://www.ine.es">&copy; INE 2017</a></li>
+	   <li class="bordeL"><a href="http://www.ine.es/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735858723&amp;p=1254735858723&amp;pagename=Ayuda%2FINELayout">Accesibilidad</a></li>
+	   <li class="bordeL"><a href="http://www.ine.es/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735858539&amp;p=1254735858539&amp;pagename=Ayuda%2FINELayout">Aviso de seguridad</a></li>   
+	   <li class="bordeL"><a href="http://www.ine.es/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735849170&amp;p=1254735849170&amp;pagename=Ayuda%2FINELayout">Aviso legal</a></li>   
+	   <li class="bordeL"><a href="http://www.ine.es/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735858549&amp;p=1254735858549&amp;pagename=Ayuda%2FINELayout">Ayuda</a></li> 
 	   <li class="bordeL"><a href="http://www.ine.es/contactar">D&#243;nde encontrarnos</a></li>
 
 	  </ul>
 
 	  <ul class="homePieDcha">
-	   <li><a href="/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735905268&amp;p=1254735905268&amp;pagename=INE%2FINELayout"><img src="/menus/img/see.gif" width="25" height="25" class="pieleft padding_todo" alt="" > Sistema estad&#237;stico<br>europeo</a></li>               	  
-	   <li><a href="http://www.ine.es/infoine/"><img src="/menus/img/correo.gif" width="25" height="25" class="pieleft padding_todo" alt="" > Contactar<br>INE</a></li>               
+	   <li><a href="http://www.ine.es/ss/Satellite?L=0&amp;c=Page&amp;cid=1254735905268&amp;p=1254735905268&amp;pagename=INE%2FINELayout"><img src="http://www.ine.es/menus/img/see.gif" width="25" height="25" class="pieleft padding_todo" alt="" > Sistema estad&#237;stico<br>europeo</a></li>               	  
+	   <li><a href="http://www.ine.es/infoine/"><img src="http://www.ine.es/menus/img/correo.gif" width="25" height="25" class="pieleft padding_todo" alt="" > Contactar<br>INE</a></li>               
 	  </ul>
 	
 </div>

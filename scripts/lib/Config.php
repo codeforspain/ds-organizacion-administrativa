@@ -73,12 +73,6 @@ class Config
                                     'pattern' => '[0-9]{5}',
                                 ),
                                 array (
-                                    'name' => 'year',
-                                    'type' => 'number',
-                                    'pattern' => '[0-9]{4}',
-                                    'description' => 'Año del dato',
-                                ),
-                                array (
                                     'name' => 'provincia_id',
                                     'type' => 'number',
                                     'description' => 'Código INE de la provincia',

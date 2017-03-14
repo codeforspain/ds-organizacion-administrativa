@@ -7,7 +7,7 @@ Si no los encuentra, los descarga.
 
 ## Modo de Uso
 
-    $ ./php script.php [COMMAND SUBCOMMAND]] [OPTIONS]
+    $ php script.php [COMMAND SUBCOMMAND]] [OPTIONS]
 
 Si se invoca sin subcomandos o argumentos, executa:
 
@@ -22,7 +22,7 @@ Si se invoca sin subcomandos o argumentos, executa:
     COMMANDS
     
         download [SUBCOMMAND]   Descarga los archivos fuente, pero no los procesa.                    
-                                Se puede especificar opcionalmente un suvcomando:
+                                Se puede especificar opcionalmente un subcomando:
                     
             source SOURCE       Descarga únicamente SOURCE, que puede ser
                                 

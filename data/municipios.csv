@@ -1,4 +1,5 @@
 municipio_id,provincia_id,cmun,dc,nombre
+01051,01,051,3,Agurain/Salvatierra
 01001,01,001,4,Alegría-Dulantzi
 01002,01,002,9,Amurrio
 01049,01,049,3,Añana
@@ -38,7 +39,6 @@ municipio_id,provincia_id,cmun,dc,nombre
 01043,01,043,7,Oyón-Oion
 01044,01,044,2,Peñacerrada-Urizaharra
 01047,01,047,4,"Ribera Baja/Erribera Beitia"
-01051,01,051,3,Salvatierra/Agurain
 01052,01,052,8,Samaniego
 01053,01,053,4,"San Millán/Donemiliaga"
 01054,01,054,9,Urkabustaiz
@@ -329,7 +329,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 04051,04,051,9,Huécija
 04052,04,052,4,"Huércal de Almería"
 04053,04,053,0,Huércal-Overa
-04054,04,054,5,Illar
+04054,04,054,5,Íllar
 04055,04,055,8,Instinción
 04056,04,056,1,Laroya
 04057,04,057,7,"Láujar de Andarax"
@@ -1874,7 +1874,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 12070,12,070,5,"Jana, la"
 12071,12,071,2,Jérica
 12074,12,074,8,"Llosa, la"
-12072,12,072,7,"Lucena del Cid"
+12072,12,072,7,"Llucena/Lucena del Cid"
 12073,12,073,3,Ludiente
 12075,12,075,1,"Mata de Morella, la"
 12076,12,076,4,Matet
@@ -2763,7 +2763,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 18099,18,099,4,"Huétor de Santillán"
 18100,18,100,8,"Huétor Tájar"
 18101,18,101,5,"Huétor Vega"
-18102,18,102,0,Illora
+18102,18,102,0,Íllora
 18103,18,103,6,Ítrabo
 18105,18,105,4,Iznalloz
 18106,18,106,7,Játar
@@ -3534,7 +3534,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 23029,23,029,4,"Chiclana de Segura"
 23030,23,030,8,Chilluévar
 23031,23,031,5,Escañuela
-23032,23,032,0,Espelúy
+23032,23,032,0,Espeluy
 23033,23,033,6,Frailes
 23034,23,034,1,"Fuensanta de Martos"
 23035,23,035,4,"Fuerte del Rey"
@@ -4655,7 +4655,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 31042,31,042,5,Azagra
 31043,31,043,1,Azuelo
 31044,31,044,6,Bakaiku
-31901,31,901,9,Barañain
+31901,31,901,9,Barañáin/Barañain
 31045,31,045,9,Barásoain
 31046,31,046,2,Barbarin
 31047,31,047,8,Bargota
@@ -4699,7 +4699,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 31080,31,080,4,Dicastillo
 31081,31,081,1,Donamaria
 31221,31,221,2,Doneztebe/Santesteban
-31083,31,083,2,Echarri
+31083,31,083,2,Echarri/Etxarri
 31087,31,087,9,Elgorriaga
 31089,31,089,8,Enériz/Eneritz
 31090,31,090,2,Eratsun
@@ -4811,7 +4811,6 @@ municipio_id,provincia_id,cmun,dc,nombre
 31189,31,189,7,Olazti/Olazagutía
 31190,31,190,1,Olejua
 31191,31,191,8,Olite/Erriberri
-31194,31,194,4,Ollo
 31192,31,192,3,Olóriz/Oloritz
 31195,31,195,7,Orbaizeta
 31196,31,196,0,Orbara
@@ -4867,6 +4866,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 31246,31,246,0,Uterga
 31247,31,247,6,Uztárroz/Uztarroze
 31086,31,086,3,"Valle de Egüés/Eguesibar"
+31194,31,194,4,"Valle de Ollo/Ollaran"
 31260,31,260,6,"Valle de Yerri/Deierri"
 31249,31,249,5,Valtierra
 31251,31,251,5,Viana
@@ -5288,8 +5288,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 36008,36,008,4,Cangas
 36009,36,009,7,"Cañiza, A"
 36010,36,010,1,Catoira
-36011,36,011,8,Cerdedo
-36012,36,012,3,Cotobade
+36902,36,902,6,Cerdedo-Cotobade
 36013,36,013,9,Covelo
 36014,36,014,4,Crecente
 36015,36,015,7,Cuntis
@@ -6991,7 +6990,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 46010,46,010,9,"Albalat dels Tarongers"
 46011,46,011,6,Alberic
 46012,46,012,1,Alborache
-46013,46,013,7,Alboraya
+46013,46,013,7,Alboraia/Alboraya
 46014,46,014,2,Albuixech
 46016,46,016,8,"Alcàntera de Xúquer"
 46015,46,015,5,Alcàsser
@@ -7045,9 +7044,9 @@ municipio_id,provincia_id,cmun,dc,nombre
 46064,46,064,1,Benimuslem
 46065,46,065,4,Beniparrell
 46066,46,066,7,Benirredrà
-46067,46,067,3,Benisanó
+46067,46,067,3,Benissanó
 46068,46,068,9,Benissoda
-46069,46,069,2,Benisuera
+46069,46,069,2,Benissuera
 46070,46,070,6,Bétera
 46071,46,071,3,Bicorp
 46072,46,072,8,Bocairent
@@ -7187,7 +7186,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 46209,46,209,3,Rafelguaraf
 46210,46,210,7,"Ráfol de Salem"
 46212,46,212,9,Real
-46211,46,211,4,"Real de Gandía"
+46211,46,211,4,"Real de Gandia, el"
 46213,46,213,5,Requena
 46214,46,214,0,"Riba-roja de Túria"
 46215,46,215,3,Riola

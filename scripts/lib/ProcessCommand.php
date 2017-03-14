@@ -101,8 +101,8 @@ class ProcessCommand extends ConsoleKit\Command
 
         $provincias = [];
 
-        foreach ($dom->find('table[summary$=quetacion]') as $table) {
-            foreach ($table->find('tr[!valign]') as $row) {
+        foreach ($dom->find('table[summary$=Tabla códigos]') as $table) {
+            foreach ($table->find('tr[!class]') as $row) {
                 $provincias[] = [
                     'provincia_id' => trim($row->children(0)->innertext),
                     'nombre' => html_entity_decode(trim($row->children(1)->innertext)),
@@ -337,29 +337,49 @@ class ProcessCommand extends ConsoleKit\Command
 
         $municipiosWithYear = array_map(function ($row) use ($year,$progress,$includeYear) {
 
-            if ($year <= 10) { //Antes de 2011: CMUN + DC concatenados. Separamos.
-                $provinciaId = str_pad($row['A'],2,"0",STR_PAD_LEFT);
-                $municipioId = str_pad((int) ($row['B']/10),3,"0",STR_PAD_LEFT);
-                $output = [
-                    'municipio_id' =>  $provinciaId . $municipioId,
-                    'year' => 2000 + $year,
-                    'provincia_id' => $provinciaId,
-                    'cmun' => $municipioId,
-                    'dc' => $row['B'] % 10,
-                    'nombre' => $row['C'],
-                ];
-            } else {
-                $provinciaId = str_pad($row['A'],2,"0",STR_PAD_LEFT);
-                $municipioId = str_pad($row['B'],3,"0",STR_PAD_LEFT);
-                $output = [
-                    'municipio_id' =>  $provinciaId . $municipioId,
-                    'year' => 2000 + $year,
-                    'provincia_id' => $provinciaId,
-                    'cmun' => $municipioId,
-                    'dc' => $row['C'],
-                    'nombre' => $row['D'],
-                ];
+            switch (true) {
+                case $year <= 10: //Antes de 2011: CMUN + DC concatenados. Separamos.
+                    $provinciaId = str_pad($row['A'],2,"0",STR_PAD_LEFT);
+                    $municipioId = str_pad((int) ($row['B']/10),3,"0",STR_PAD_LEFT);
+                    $output = [
+                        'municipio_id' =>  $provinciaId . $municipioId,
+                        'year' => 2000 + $year,
+                        'provincia_id' => $provinciaId,
+                        'cmun' => $municipioId,
+                        'dc' => $row['B'] % 10,
+                        'nombre' => $row['C'],
+                    ];
+                    break;
+                case $year <= 15:
+                    $provinciaId = str_pad($row['A'],2,"0",STR_PAD_LEFT);
+                    $municipioId = str_pad($row['B'],3,"0",STR_PAD_LEFT);
+                    $output = [
+                        'municipio_id' =>  $provinciaId . $municipioId,
+                        'year' => 2000 + $year,
+                        'provincia_id' => $provinciaId,
+                        'cmun' => $municipioId,
+                        'dc' => $row['C'],
+                        'nombre' => $row['D'],
+                    ];
+                    break;
+                case $year > 15: //Nuevo columna CODAUTO. Ignoramos y ajustamos indices
+                    $provinciaId = str_pad($row['B'],2,"0",STR_PAD_LEFT);
+                    $municipioId = str_pad($row['C'],3,"0",STR_PAD_LEFT);
+                    $output = [
+                        'municipio_id' =>  $provinciaId . $municipioId,
+                        'year' => 2000 + $year,
+                        'provincia_id' => $provinciaId,
+                        'cmun' => $municipioId,
+                        'dc' => $row['D'],
+                        'nombre' => $row['E'],
+                    ];
+                    break;
             }
+
+
+
+
+
 
             if (!$includeYear) {
                 unset($output['year']);

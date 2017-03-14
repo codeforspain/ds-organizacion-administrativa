@@ -40,12 +40,6 @@
                         "pattern": "[0-9]{5}"
                     },
                     {
-                        "name": "year",
-                        "type": "number",
-                        "pattern": "[0-9]{4}",
-                        "description": "Año del dato"
-                    },
-                    {
                         "name": "provincia_id",
                         "type": "number",
                         "description": "Código INE de la provincia",
@@ -302,12 +296,6 @@
                         "pattern": "[0-9]{5}"
                     },
                     {
-                        "name": "year",
-                        "type": "number",
-                        "pattern": "[0-9]{4}",
-                        "description": "Año del dato"
-                    },
-                    {
                         "name": "provincia_id",
                         "type": "number",
                         "description": "Código INE de la provincia",
@@ -550,6 +538,6 @@
             }
         }
     ],
-    "last_updated": "2016-05-01 ",
-    "version": "0.0.7"
+    "last_updated": "2017-03-14 ",
+    "version": "0.0.11"
 }
