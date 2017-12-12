@@ -47,7 +47,8 @@ class DownloadCommand extends ConsoleKit\Command
 
             $url=sprintf(Config::MUNCIPIOS_URL,$i,$i);
             if ($i>=16) $url.="x";  //xlsx a partir de 2016.
-            $fileName = end(explode('/', $url));
+            $urlParts = explode('/', $url);
+            $fileName = end($urlParts);
 
             if (!file_exists(ARCHIVE_FOLDER . "/$fileName") || isset($options['force']) || isset($options['f'])){
                 file_put_contents(ARCHIVE_FOLDER . "/$fileName", fopen($url, 'r'));
@@ -92,11 +93,15 @@ class DownloadCommand extends ConsoleKit\Command
     public function executeIslas(array $args, array $options = array())
     {
 
+        print_r(unserialize(Config::ISLAS_PROVINCIA_INE_CODES));die();
         foreach (unserialize(Config::ISLAS_PROVINCIA_INE_CODES) as $provincia) {
+            echo "{$provincia}\r\n";
             for ($i = Config::ISLAS_YEAR_START % 2000; $i <= date('y'); $i++) {
+                echo "{$i}\r\n";
 
                 $url = sprintf(Config::ISLAS_URL, $i, $i, $provincia);
-                $fileName = end(explode('/', $url));
+                $urlParts = explode('/', $url);
+                $fileName = end($urlParts);
 
                 if (!file_exists(ARCHIVE_FOLDER . DS . $fileName) || isset($options['d']) || isset($options['f'])) {
                     file_put_contents(ARCHIVE_FOLDER . DS . $fileName, fopen($url, 'r'));
