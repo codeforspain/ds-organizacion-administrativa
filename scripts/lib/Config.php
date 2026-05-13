@@ -4,10 +4,12 @@ class Config
 {
 
 
-    const MUNCIPIOS_URL = "http://www.ine.es/daco/daco42/codmun/codmun%02d/%02dcodmun.xls";
+    const MUNCIPIOS_URL = "https://www.ine.es/daco/daco42/codmun/codmun%02d/%02dcodmun.xls";
+    const MUNCIPIOS_URL_CURRENT = "https://www.ine.es/daco/daco42/codmun/%02dcodmun.%s";
     const PROVINCIAS_URL = "http://www.ine.es/daco/daco42/codmun/cod_provincia.htm";
     const AUTONOMIAS_URL = "http://www.ine.es/daco/daco42/codmun/cod_ccaa.htm";
-    const ISLAS_URL = "http://www.ine.es/daco/daco42/codmun/codmun%02d/%02dcodislas%02d.xls";
+    const ISLAS_URL = "https://www.ine.es/daco/daco42/codmun/codmun%02d/%02dcodislas%02d.xls";
+    const ISLAS_URL_CURRENT = "https://www.ine.es/daco/daco42/codmun/%02dcodislas.xlsx";
 
     const MUNCIPIOS_YEAR_START = 2004; // Hay datos desde 2001, pero necesitan tratamiento especial. To Do
     const ISLAS_YEAR_START = 2012; // hay datos desde 2008, pero no incluye el codigo de Isla. To Do
@@ -21,6 +23,7 @@ class Config
 
     const MUNICIPIOS_SOURCE_FILE = "%02dcodmun.xls";
     const ISLAS_SOURCE_FILE = "%02dcodislas%02d.xls";
+    const ISLAS_SOURCE_FILE_CURRENT = "%02dcodislas.xlsx";
 
     const PROVINCIAS_DEST_FILE = "provincias";
     const AUTONOMIAS_DEST_FILE = "autonomias";

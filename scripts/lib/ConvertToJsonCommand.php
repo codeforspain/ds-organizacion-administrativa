@@ -16,6 +16,32 @@ use ConsoleKit\Widgets\Box;
  */
 class ConvertToJsonCommand extends ConsoleKit\Command
 {
+    private function convertCsvToJson($csvFile, $outputFile)
+    {
+        $input = fopen($csvFile, 'r');
+        $output = fopen($outputFile, 'w');
+
+        $headers = fgetcsv($input);
+        fwrite($output, "[\n");
+
+        $first = true;
+        while (($row = fgetcsv($input)) !== false) {
+            if (count($row) !== count($headers)) {
+                continue;
+            }
+
+            if (!$first) {
+                fwrite($output, ",\n");
+            }
+
+            fwrite($output, json_encode(array_combine($headers, $row), JSON_UNESCAPED_UNICODE));
+            $first = false;
+        }
+
+        fwrite($output, "\n]\n");
+        fclose($input);
+        fclose($output);
+    }
 
     public function execute(array $args, array $options = array())
     {
@@ -27,7 +53,7 @@ class ConvertToJsonCommand extends ConsoleKit\Command
 
         foreach ($files as $csvFile) {
             $outputFile = DATA_FOLDER . DS . basename($csvFile,".csv") . ".json";
-            exec("csvjson $csvFile > $outputFile");
+            $this->convertCsvToJson($csvFile, $outputFile);
             $progress->incr();
         }
 

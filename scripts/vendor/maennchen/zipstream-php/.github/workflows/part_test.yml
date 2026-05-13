@@ -1,0 +1,213 @@
+on:
+  workflow_call:
+
+name: "Test"
+
+permissions:
+  contents: read
+
+jobs:
+  phpunit:
+    name: PHPUnit (PHP ${{ matrix.php }} on ${{ matrix.os }})
+
+    runs-on: ${{ matrix.os }}
+
+    continue-on-error: ${{ matrix.experimental }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ["8.3", "8.4", "8.5"]
+        os: [ubuntu-latest]
+        experimental: [false]
+        include:
+          - php: nightly
+            os: ubuntu-latest
+            experimental: true
+          - php: "8.5"
+            os: windows-latest
+            experimental: false
+          - php: "8.5"
+            os: macos-latest
+            experimental: false
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@fe104658747b27e96e4f7e80cd0a94068e53901d # v2.16.1
+        with:
+          egress-policy: audit
+      - name: SetUp PHP
+        id: setup-php
+        uses: shivammathur/setup-php@accd6127cb78bee3e8082180cb391013d204ef9f # v2
+        with:
+          php-version: "${{ matrix.php }}"
+          tools: phpunit
+          coverage: xdebug
+          extensions: xdebug,zip
+
+      - name: Maximize build space
+        if: "${{ runner.os == 'Linux' }}"
+        uses: easimon/maximize-build-space@fc881a613ad2a34aca9c9624518214ebc21dfc0c # v10
+        with:
+          root-reserve-mb: 512
+          swap-size-mb: 1024
+
+      - name: Checkout Code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - name: Get composer cache directory
+        id: composer-cache-common
+        if: "${{ runner.os != 'Windows' }}"
+        run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+      - name: Get composer cache directory
+        id: composer-cache-windows
+        if: "${{ runner.os == 'Windows' }}"
+        run: echo "dir=$(composer config cache-files-dir)" >> $env:GITHUB_OUTPUT
+      - name: Cache Deps
+        uses: actions/cache@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
+        id: cache
+        with:
+          path: ${{ steps.composer-cache-common.outputs.dir }}${{ steps.composer-cache-windows.outputs.dir }}
+          key: deps-${{ runner.os }}-${{ steps.setup-php.outputs.php-version }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            deps-${{ runner.os }}-${{ steps.setup-php.outputs.php-version }}-composer-
+            deps-${{ runner.os }}-${{ steps.setup-php.outputs.php-version }}-
+            deps-${{ steps.setup-php.outputs.php-version }}-
+            deps-
+      - name: Install Deps
+        if: matrix.php != 'nightly'
+        run: composer install --prefer-dist
+      - name: Install Deps (ignore PHP requirement)
+        if: matrix.php == 'nightly'
+        run: composer install --prefer-dist --ignore-platform-req=php+
+      - name: "Create temp directory for tests"
+        run: mkdir -p tmp
+      - name: Run PHPUnit
+        run: composer run test:unit:cov
+        env:
+          TMPDIR: "${{ github.workspace }}/tmp"
+      - name: Upload coverage results to Coveralls
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COVERALLS_PARALLEL: true
+          COVERALLS_FLAG_NAME: ${{ runner.os }}-${{ steps.setup-php.outputs.php-version }}
+        run: composer run coverage:report
+        continue-on-error: ${{ matrix.experimental }}
+
+  mark_coverage_done:
+    needs: ["phpunit"]
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@fe104658747b27e96e4f7e80cd0a94068e53901d # v2.16.1
+        with:
+          egress-policy: audit
+
+      - name: Coveralls Finished
+        uses: coverallsapp/github-action@5cbfd81b66ca5d10c19b062c04de0199c215fb6e # v2.3.7
+        with:
+          github-token: ${{ secrets.github_token }}
+          parallel-finished: true
+
+  psalm:
+    name: Run Psalm
+
+    runs-on: "ubuntu-latest"
+
+    permissions:
+      security-events: write
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@fe104658747b27e96e4f7e80cd0a94068e53901d # v2.16.1
+        with:
+          egress-policy: audit
+
+      - name: Checkout Code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - name: SetUp PHP
+        id: setup-php
+        uses: shivammathur/setup-php@accd6127cb78bee3e8082180cb391013d204ef9f # v2
+        with:
+          php-version-file: ".tool-versions"
+      - name: Get composer cache directory
+        id: composer-cache
+        run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+      - name: Cache Deps
+        uses: actions/cache@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
+        id: cache
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: deps-${{ runner.os }}-${{ steps.setup-php.outputs.php-version }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            deps-${{ runner.os }}-${{ steps.setup-php.outputs.php-version }}-composer-
+            deps-${{ runner.os }}-${{ steps.setup-php.outputs.php-version }}-
+            deps-${{ steps.setup-php.outputs.php-version }}-
+            deps-
+      - name: Install Deps
+        run: composer install --prefer-dist
+      - name: Run Psalm
+        run: composer run test:lint -- --report=results.sarif
+      - name: "Upload SARIF"
+        uses: github/codeql-action/upload-sarif@c10b8064de6f491fea524254123dbe5e09572f13 # v4.35.1
+        with:
+          sarif_file: results.sarif
+
+  php-cs:
+    name: Run PHP-CS
+
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@fe104658747b27e96e4f7e80cd0a94068e53901d # v2.16.1
+        with:
+          egress-policy: audit
+
+      - name: Checkout Code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - name: SetUp PHP
+        id: setup-php
+        uses: shivammathur/setup-php@accd6127cb78bee3e8082180cb391013d204ef9f # v2
+        with:
+          php-version-file: ".tool-versions"
+      - name: Get composer cache directory
+        id: composer-cache
+        run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+      - name: Cache Deps
+        uses: actions/cache@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
+        id: cache
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: deps-${{ runner.os }}-${{ steps.setup-php.outputs.php-version }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            deps-${{ runner.os }}-${{ steps.setup-php.outputs.php-version }}-composer-
+            deps-${{ runner.os }}-${{ steps.setup-php.outputs.php-version }}-
+            deps-${{ steps.setup-php.outputs.php-version }}-
+            deps-
+      - name: Install Deps
+        run: composer install --prefer-dist
+      - name: Run PHP-CS
+        run: composer run test:formatted
+        env:
+          PHP_CS_FIXER_IGNORE_ENV: 1
+
+  zizmor:
+    name: Zizmor
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - name: Run zizmor
+        uses: zizmorcore/zizmor-action@71321a20a9ded102f6e9ce5718a2fcec2c4f70d8 # v0.5.2

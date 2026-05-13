@@ -5,6 +5,22 @@
  */
 class DownloadCommand extends ConsoleKit\Command
 {
+    private function downloadFirstAvailable(array $urls, $destination, array $options = array())
+    {
+        if (file_exists($destination) && !isset($options['force']) && !isset($options['f'])) {
+            return;
+        }
+
+        foreach ($urls as $url) {
+            $content = @file_get_contents($url);
+            if ($content !== false) {
+                file_put_contents($destination, $content);
+                return;
+            }
+        }
+
+        throw new RuntimeException("No se pudo descargar {$destination}");
+    }
 
     /**
      * Overriding para que invoque all por defecto.
@@ -44,15 +60,16 @@ class DownloadCommand extends ConsoleKit\Command
     public function executeMunicipios(array $args, array $options = array())
     {
         for ($i = Config::MUNCIPIOS_YEAR_START % 2000;$i <= date('y');$i++){
-
-            $url=sprintf(Config::MUNCIPIOS_URL,$i,$i);
-            if ($i>=16) $url.="x";  //xlsx a partir de 2016.
-            $urlParts = explode('/', $url);
-            $fileName = end($urlParts);
-
-            if (!file_exists(ARCHIVE_FOLDER . "/$fileName") || isset($options['force']) || isset($options['f'])){
-                file_put_contents(ARCHIVE_FOLDER . "/$fileName", fopen($url, 'r'));
+            $extension = $i >= 16 ? 'xlsx' : 'xls';
+            $fileName = sprintf(Config::MUNICIPIOS_SOURCE_FILE, $i);
+            if ($i >= 16) {
+                $fileName .= "x";
             }
+
+            $this->downloadFirstAvailable([
+                sprintf(Config::MUNCIPIOS_URL_CURRENT, $i, $extension),
+                sprintf(Config::MUNCIPIOS_URL, $i, $i) . ($i >= 16 ? "x" : ""),
+            ], ARCHIVE_FOLDER . DS . $fileName, $options);
 
         }
     }
@@ -92,23 +109,19 @@ class DownloadCommand extends ConsoleKit\Command
      */
     public function executeIslas(array $args, array $options = array())
     {
+        for ($i = Config::ISLAS_YEAR_START % 2000; $i <= date('y'); $i++) {
+            if ($i >= 21) {
+                $this->downloadFirstAvailable([
+                    sprintf(Config::ISLAS_URL_CURRENT, $i),
+                ], ARCHIVE_FOLDER . DS . sprintf(Config::ISLAS_SOURCE_FILE_CURRENT, $i), $options);
+                continue;
+            }
 
-        print_r(unserialize(Config::ISLAS_PROVINCIA_INE_CODES));die();
-        foreach (unserialize(Config::ISLAS_PROVINCIA_INE_CODES) as $provincia) {
-            echo "{$provincia}\r\n";
-            for ($i = Config::ISLAS_YEAR_START % 2000; $i <= date('y'); $i++) {
-                echo "{$i}\r\n";
-
-                $url = sprintf(Config::ISLAS_URL, $i, $i, $provincia);
-                $urlParts = explode('/', $url);
-                $fileName = end($urlParts);
-
-                if (!file_exists(ARCHIVE_FOLDER . DS . $fileName) || isset($options['d']) || isset($options['f'])) {
-                    file_put_contents(ARCHIVE_FOLDER . DS . $fileName, fopen($url, 'r'));
-                }
-
+            foreach (unserialize(Config::ISLAS_PROVINCIA_INE_CODES) as $provincia) {
+                $this->downloadFirstAvailable([
+                    sprintf(Config::ISLAS_URL, $i, $i, $provincia),
+                ], ARCHIVE_FOLDER . DS . sprintf(Config::ISLAS_SOURCE_FILE, $i, $provincia), $options);
             }
         }
-
     }
 }

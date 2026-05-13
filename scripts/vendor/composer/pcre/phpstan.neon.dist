@@ -1,0 +1,20 @@
+parameters:
+    level: 9
+    paths:
+        - src
+        - tests
+
+    treatPhpDocTypesAsCertain: false
+
+    bootstrapFiles:
+        - vendor/autoload.php
+
+    excludePaths:
+        - tests/PHPStanTests/nsrt/*
+        - tests/PHPStanTests/fixtures/*
+
+includes:
+    - extension.neon
+    - vendor/phpstan/phpstan/conf/bleedingEdge.neon
+    - vendor/phpstan/phpstan-strict-rules/rules.neon
+    - phpstan-baseline.neon

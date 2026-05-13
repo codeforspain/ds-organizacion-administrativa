@@ -1,0 +1,48 @@
+<?php
+
+return [
+    'no arguments' => ['exception'],
+    [
+        1,
+        true,
+        1,
+    ],
+    [
+        '#N/A',
+        false,
+        1,
+        true,
+    ],
+    [
+        'ABC',
+        true,
+        'ABC',
+    ],
+    [
+        '#N/A',
+        false,
+        false,
+        false,
+        1,
+        false,
+        'ABC',
+    ],
+    [
+        'ABC',
+        false,
+        false,
+        false,
+        1,
+        true,
+        'ABC',
+    ],
+    [
+        false,
+        true,
+        false,
+        false,
+        1,
+        true,
+        'ABC',
+    ],
+];

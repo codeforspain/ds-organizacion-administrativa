@@ -1,8 +1,7 @@
 {
   "require":
   {
-    "sunra/php-simple-html-dom-parser": "v1.5.0",
     "maximebf/consolekit": ">=1.0.0",
-    "phpoffice/phpexcel": "dev-develop"
+    "phpoffice/phpspreadsheet": "^1.29"
   }
 }

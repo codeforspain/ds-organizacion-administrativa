@@ -27,7 +27,7 @@ class UpdateCommand extends ConsoleKit\Command
         if (!isset($options['nojson']) && !isset($options['n'])){
             foreach ( Config::$datapackage['resources'] as $resource){
                 $resource['format'] = 'json';
-                $resource['path'] = array_shift(explode('.',$resource['path'])) . ".json";
+                $resource['path'] = pathinfo($resource['path'], PATHINFO_DIRNAME) . DS . pathinfo($resource['path'], PATHINFO_FILENAME) . ".json";
                 $datapackageNew['resources'][]=$resource;
             }
         }

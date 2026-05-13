@@ -1,7 +1,6 @@
 <?php
 
-use Sunra\PhpSimple\HtmlDomParser;
-
+use PhpOffice\PhpSpreadsheet\IOFactory;
 use ConsoleKit\Widgets\ProgressBar;
 use ConsoleKit\Widgets\Box;
 
@@ -11,6 +10,71 @@ use ConsoleKit\Widgets\Box;
  */
 class ProcessCommand extends ConsoleKit\Command
 {
+    private function loadSpreadsheetRows($sourceFilename, $allSheets = false)
+    {
+        $excelReader = IOFactory::createReader(IOFactory::identify($sourceFilename));
+        $excelReader->setLoadAllSheets();
+        $excelObj = $excelReader->load($sourceFilename);
+
+        if (!$allSheets) {
+            return $excelObj->getActiveSheet()->toArray(null, true, true, true);
+        }
+
+        $rows = [];
+        foreach ($excelObj->getWorksheetIterator() as $sheet) {
+            $rows = array_merge($rows, $sheet->toArray(null, true, true, true));
+        }
+
+        return $rows;
+    }
+
+    private function isDataRow(array $row, $firstColumn = 'A')
+    {
+        return isset($row[$firstColumn]) && is_numeric($row[$firstColumn]);
+    }
+
+    private function hasColumns(array $row, array $columns)
+    {
+        foreach ($columns as $column) {
+            if (!isset($row[$column]) || $row[$column] === null || $row[$column] === '') {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    private function parseCodeHtmlFile($sourceFile, $idField)
+    {
+        $html = iconv("ISO-8859-15", "UTF-8", file_get_contents(ARCHIVE_FOLDER . DS . $sourceFile));
+
+        $dom = new DOMDocument();
+        libxml_use_internal_errors(true);
+        $dom->loadHTML('<?xml encoding="UTF-8">' . $html);
+        libxml_clear_errors();
+
+        $xpath = new DOMXPath($dom);
+        $rows = [];
+
+        foreach ($xpath->query('//table[contains(concat(" ", normalize-space(@class), " "), " miTabla ")]//tr[td]') as $row) {
+            $cells = $xpath->query('./td', $row);
+            if ($cells->length < 2) {
+                continue;
+            }
+
+            $id = trim($cells->item(0)->textContent);
+            if (!preg_match('/^\d+$/', $id)) {
+                continue;
+            }
+
+            $rows[] = [
+                $idField => str_pad($id, 2, "0", STR_PAD_LEFT),
+                'nombre' => trim(preg_replace('/\s+/', ' ', $cells->item(1)->textContent)),
+            ];
+        }
+
+        return $rows;
+    }
 
     /**
      * Overriding para que invoque all por defecto.
@@ -95,21 +159,7 @@ class ProcessCommand extends ConsoleKit\Command
         $box->write();
         $this->getConsole()->writeln("");
 
-        $html = iconv("ISO-8859-15", "UTF-8",
-            file_get_contents(ARCHIVE_FOLDER . DS . Config::PROVINCIAS_SOURCE_FILE));
-        $dom = HtmlDomParser::str_get_html($html);
-
-        $provincias = [];
-
-        foreach ($dom->find('table[summary$=Tabla códigos]') as $table) {
-            foreach ($table->find('tr[!class]') as $row) {
-                $provincias[] = [
-                    'provincia_id' => trim($row->children(0)->innertext),
-                    'nombre' => html_entity_decode(trim($row->children(1)->innertext)),
-                ];
-            };
-        };
-
+        $provincias = $this->parseCodeHtmlFile(Config::PROVINCIAS_SOURCE_FILE, 'provincia_id');
 
         // Grabamos CSV
         $file = fopen(DATA_FOLDER . DS . Config::PROVINCIAS_DEST_FILE . ".csv", 'w+');
@@ -133,21 +183,7 @@ class ProcessCommand extends ConsoleKit\Command
         $box->write();
         $this->getConsole()->writeln("");
 
-        $html = iconv("ISO-8859-15", "UTF-8", file_get_contents(ARCHIVE_FOLDER . DS . Config::AUTONOMIAS_SOURCE_FILE));
-
-        $dom = HtmlDomParser::str_get_html($html);
-
-        $autonomias = [];
-
-        $table = $dom->find('table', 0);
-        $rows = array_slice($table->find('tr'), 1);
-
-        foreach ($rows as $row) {
-            $autonomias[] = [
-                'autonomia_id' => trim($row->children(0)->innertext),
-                'nombre' => html_entity_decode(trim($row->children(1)->innertext)),
-            ];
-        };
+        $autonomias = $this->parseCodeHtmlFile(Config::AUTONOMIAS_SOURCE_FILE, 'autonomia_id');
 
         // Grabamos CSV
         $file = fopen(DATA_FOLDER . DS . Config::AUTONOMIAS_DEST_FILE . ".csv", 'w+');
@@ -236,30 +272,21 @@ class ProcessCommand extends ConsoleKit\Command
 
         // Agrupamos los datos de los tres archivos en un solo array
         $islasRaw = [];
-        foreach (unserialize(Config::ISLAS_PROVINCIA_INE_CODES) as $isla) {
-            $fileName = sprintf(Config::ISLAS_SOURCE_FILE, $year, $isla);
-            $sourceFilename = ARCHIVE_FOLDER . DS . $fileName;
-            $excelReader = PHPExcel_IOFactory::createReader(PHPExcel_IOFactory::identify($sourceFilename));
-
-            $excelReader->setLoadAllSheets();
-            $excelObj = $excelReader->load($sourceFilename);
-            $islaRaw = $excelObj->getActiveSheet()->toArray(null, true, true, true);
-
-
-            //quitamos las tres primeras files
-            for ($i = 0; $i == 3; $i++) {
-                if (!is_numeric($islaRaw[$i]['A'])) {
-                    unset($islaRaw);
-                }
+        if ($year >= 21) {
+            $sourceFilename = ARCHIVE_FOLDER . DS . sprintf(Config::ISLAS_SOURCE_FILE_CURRENT, $year);
+            $islasRaw = $this->loadSpreadsheetRows($sourceFilename, true);
+        } else {
+            foreach (unserialize(Config::ISLAS_PROVINCIA_INE_CODES) as $isla) {
+                $fileName = sprintf(Config::ISLAS_SOURCE_FILE, $year, $isla);
+                $sourceFilename = ARCHIVE_FOLDER . DS . $fileName;
+                $islaRaw = $this->loadSpreadsheetRows($sourceFilename);
+                $islasRaw = array_merge($islasRaw, $islaRaw);
             }
-            $islaRaw = array_slice($islaRaw, 3);
-            $islasRaw = array_merge($islasRaw, $islaRaw);
-
         }
 
         // quitamos lineas en blanco (p.e datos para 2012)
         $islasRaw = array_filter($islasRaw, function ($row) {
-            return !empty($row['A']);
+            return $this->isDataRow($row) && $this->hasColumns($row, ['A', 'B', 'C', 'D', 'E', 'F']);
         });
 
         $progress = new ProgressBar($this->getConsole(), sizeof($islasRaw));
@@ -324,16 +351,22 @@ class ProcessCommand extends ConsoleKit\Command
 
         // Procesamos documento xlsx
         $sourceFilename = ARCHIVE_FOLDER . DS . $fileName;
-        $excelReader = PHPExcel_IOFactory::createReader(PHPExcel_IOFactory::identify($sourceFilename));
-        $excelReader->setLoadAllSheets();
-        $excelObj = $excelReader->load($sourceFilename);
-        $municipiosRaw = $excelObj->getActiveSheet()->toArray(null, true, true, true);
+        $municipiosRaw = $this->loadSpreadsheetRows($sourceFilename, $year >= 21);
+
+        $municipiosRaw = array_filter($municipiosRaw, function ($row) use ($year) {
+            switch (true) {
+                case $year <= 10:
+                    return $this->isDataRow($row, 'A') && $this->hasColumns($row, ['A', 'B', 'C']);
+                case $year <= 15:
+                    return $this->isDataRow($row, 'A') && $this->hasColumns($row, ['A', 'B', 'C', 'D']);
+                case $year <= 20:
+                    return $this->isDataRow($row, 'B') && $this->hasColumns($row, ['B', 'C', 'D', 'E']);
+                default:
+                    return $this->isDataRow($row, 'A') && $this->hasColumns($row, ['A', 'B', 'C', 'D']);
+            }
+        });
 
         $progress = new ProgressBar($this->getConsole(), sizeof($municipiosRaw));
-
-        // Eliminamos las dos primeras filas
-        array_shift($municipiosRaw); //solo la primera para 2004
-        if ($year > 4) array_shift($municipiosRaw); //la segunda también para > 2004
 
         $municipiosWithYear = array_map(function ($row) use ($year,$progress,$includeYear) {
 
@@ -362,7 +395,7 @@ class ProcessCommand extends ConsoleKit\Command
                         'nombre' => $row['D'],
                     ];
                     break;
-                case $year > 15: //Nuevo columna CODAUTO. Ignoramos y ajustamos indices
+                case $year <= 20: //Nuevo columna CODAUTO. Ignoramos y ajustamos indices
                     $provinciaId = str_pad($row['B'],2,"0",STR_PAD_LEFT);
                     $municipioId = str_pad($row['C'],3,"0",STR_PAD_LEFT);
                     $output = [
@@ -372,6 +405,18 @@ class ProcessCommand extends ConsoleKit\Command
                         'cmun' => $municipioId,
                         'dc' => $row['D'],
                         'nombre' => $row['E'],
+                    ];
+                    break;
+                case $year > 20: //Desde 2021 el INE publica una hoja por provincia, sin CODAUTO.
+                    $provinciaId = str_pad($row['A'],2,"0",STR_PAD_LEFT);
+                    $municipioId = str_pad($row['B'],3,"0",STR_PAD_LEFT);
+                    $output = [
+                        'municipio_id' =>  $provinciaId . $municipioId,
+                        'year' => 2000 + $year,
+                        'provincia_id' => $provinciaId,
+                        'cmun' => $municipioId,
+                        'dc' => $row['C'],
+                        'nombre' => $row['D'],
                     ];
                     break;
             }
