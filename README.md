@@ -11,10 +11,24 @@ Este dataset es parte del proyecto abierto y colaborativo CodeForSpain. Puedes o
 - Roadmap: [Trello Roadmap](https://trello.com/b/uI7MbPg5/codeforspain-ds-organizacion-administrativa)
 
 
+## Estado actual
+
+- Última fuente INE procesada: relación a 1 de enero de 2026, publicada por el INE el 04/02/2026.
+- Última actualización del datapackage: 2026-05-13 (`0.0.13`).
+- Los CSV son la salida principal del dataset. Los JSON se generan como derivado de los CSV.
+- Los municipios insulares están incluidos en `municipios.csv`; `municipios_islas.csv` añade la relación municipio-isla para Baleares y Canarias.
+
+
+## Changelogs
+
+- [Changelog del script](CHANGELOG_SCRIPT.md)
+- [Changelog de data](CHANGELOG_DATA.md)
+
+
 ## Municipios
 
 
-- URL: `http://www.ine.es/daco/daco42/codmun/codmun[YY]/[YY]codmun.xls` donde `YY` es el último año, p.e. 16
+- URL vigente: `https://www.ine.es/daco/daco42/codmun/[YY]codmun.xlsx` donde `YY` es el último año, p.e. 26. El script mantiene compatibilidad con rutas históricas `codmun[YY]/[YY]codmun.xls[x]`.
 - Tipo: Excel (xlsx)
 - Descripción: http://www.ine.es/daco/daco42/codmun/codmun00i.htm 
 - Datos procesados: [/data/municipios.json](data/municipios.json) | [/data/municipios.csv](data/municipios.csv) 
@@ -73,7 +87,7 @@ En JSON:
 ## Municipios (Histórico) 
 
 
-- URL: `http://www.ine.es/daco/daco42/codmun/codmun[YY]/[YY]codmun.xls` donde `YY` es el año, desde 04 hasta hoy.
+- URL: `https://www.ine.es/daco/daco42/codmun/[YY]codmun.xlsx` y rutas históricas `codmun[YY]/[YY]codmun.xls[x]`, donde `YY` es el año, desde 04 hasta hoy.
 - Tipo: Excel (xlsx)
 - Descripción: http://www.ine.es/daco/daco42/codmun/codmun00i.htm 
 - Datos procesados: [/data/municipios_historical.json](data/municipios_historical.json) | [/data/municipios_historical.csv](data/municipios_historical.csv) 
@@ -196,7 +210,7 @@ En JSON:
 ## Islas
 
 
-- URL: `http://www.ine.es/daco/daco42/codmun/codmun[YY]/[CP]codislas[YY].xls` donde `YY` es el último año, p.e. 16 y `CP`  es el código de la provincia
+- URL vigente: `https://www.ine.es/daco/daco42/codmun/[YY]codislas.xlsx`, con hojas por provincia (`07`, `35`, `38`). El script mantiene compatibilidad con rutas históricas `codmun[YY]/[YY]codislas[CP].xls`.
 - Tipo: Excel (xlsx)
 - Datos procesados: [/data/islas.json](data/islas.json) | [/data/islas.csv](data/islas.csv) 
 
@@ -224,7 +238,7 @@ Ejemplo en CSV:
 ## Municipios por Isla 
 
 
-- URL: http://www.ine.es/daco/daco42/codmun/codmun[YY]/[CP]codislas[YY].xls" donde `YY` es el ultimo año, p.e. 16 y `CP` es el código de la provincia)
+- URL vigente: `https://www.ine.es/daco/daco42/codmun/[YY]codislas.xlsx`, con hojas por provincia (`07`, `35`, `38`). El script mantiene compatibilidad con rutas históricas `codmun[YY]/[YY]codislas[CP].xls`.
 - Tipo: Excel (xlsx)
 - Datos procesados: [/data/municipios_islas.json](data/municipios_islas.json) | [/data/municipios_islas.csv](data/municipios_islas.csv) 
 
@@ -256,9 +270,9 @@ Ejemplo en CSV:
 ## Municipios por Isla (Histórico)
 
 
-- URL: `http:// www.ine.es/daco/daco42/codmun/codmun[YY]/[CP]codislas[YY].xls` donde `YY` es el año, desde 12 hasta hoy y `CP` es el código de la provincia
+- URL: `https://www.ine.es/daco/daco42/codmun/[YY]codislas.xlsx` y rutas históricas `codmun[YY]/[YY]codislas[CP].xls`, donde `YY` es el año, desde 12 hasta hoy.
 - Tipo: Excel (xlsx)
-- Datos procesados: [/data/municipios_islas.json](data/municipios_islas.json) | [/data/municipios_islas.csv](data/municipios_islas.csv) 
+- Datos procesados: [/data/municipios_islas_historical.json](data/municipios_islas_historical.json) | [/data/municipios_islas_historical.csv](data/municipios_islas_historical.csv) 
 
 Existen datos desde 2008, aunque solo a partir de 2012 se incorpora el código INE de la isla.
     
