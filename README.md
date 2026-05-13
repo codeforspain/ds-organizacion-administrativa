@@ -7,8 +7,6 @@ Este dataset es parte del proyecto abierto y colaborativo CodeForSpain. Puedes o
 
 - Wiki: [CodeForSpain Wiki](https://github.com/codeforspain/datos/wiki)
 - Twitter: [@codeforspain](https://twitter.com/codeforspain)
-- Web: [www.codeforspain.org](http://www.codeforspain.org)
-- Roadmap: [Trello Roadmap](https://trello.com/b/uI7MbPg5/codeforspain-ds-organizacion-administrativa)
 
 
 ## Estado actual

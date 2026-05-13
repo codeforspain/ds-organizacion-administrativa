@@ -47,8 +47,7 @@ class Config
             ]
         ],
         "author" => [
-            "name" => "Code for Spain",
-            "web" => "http://www.codeforspain.org"
+            "name" => "Code for Spain"
         ],
         "keywords" => [ "Provincias", "Municipios", "Comunidades Autonomas", "Islas"],
 
