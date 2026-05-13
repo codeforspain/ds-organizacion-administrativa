@@ -38,7 +38,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 01042,01,042,1,Okondo
 01043,01,043,7,Oyón-Oion
 01044,01,044,2,Peñacerrada-Urizaharra
-01047,01,047,4,"Ribera Baja/Erribera Beitia"
+01047,01,047,4,"Ribera Baja/Erriberabeitia"
 01052,01,052,8,Samaniego
 01053,01,053,4,"San Millán/Donemiliaga"
 01054,01,054,9,Urkabustaiz
@@ -140,16 +140,16 @@ municipio_id,provincia_id,cmun,dc,nombre
 03002,03,002,0,Agost
 03003,03,003,6,Agres
 03004,03,004,1,Aigües
+03014,03,014,9,Alacant/Alicante
 03005,03,005,4,Albatera
 03006,03,006,7,Alcalalí
-03007,03,007,3,"Alcocer de Planes"
+03009,03,009,2,Alcoi/Alcoy
 03008,03,008,9,Alcoleja
-03009,03,009,2,Alcoy/Alcoi
+03007,03,007,3,Alcosser
 03010,03,010,6,Alfafara
 03011,03,011,3,"Alfàs del Pi, l'"
 03012,03,012,8,Algorfa
 03013,03,013,4,Algueña
-03014,03,014,9,Alicante/Alacant
 03015,03,015,2,Almoradí
 03016,03,016,5,Almudaina
 03017,03,017,1,"Alqueria d'Asnar, l'"
@@ -163,7 +163,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 03024,03,024,7,Benejúzar
 03025,03,025,0,Benferri
 03026,03,026,3,Beniarbeig
-03027,03,027,9,Beniardá
+03027,03,027,9,Beniardà
 03028,03,028,5,Beniarrés
 03030,03,030,2,Benidoleig
 03031,03,031,9,Benidorm
@@ -178,7 +178,6 @@ municipio_id,provincia_id,cmun,dc,nombre
 03039,03,039,6,Benimassot
 03040,03,040,0,Benimeli
 03041,03,041,7,Benissa
-03042,03,042,2,"Benitachell/Poble Nou de Benitatxell, el"
 03043,03,043,8,Biar
 03044,03,044,3,Bigastro
 03045,03,045,6,Bolulla
@@ -186,8 +185,8 @@ municipio_id,provincia_id,cmun,dc,nombre
 03049,03,049,4,"Callosa de Segura"
 03048,03,048,1,"Callosa d'en Sarrià"
 03047,03,047,5,Calp
+03051,03,051,4,"Camp de Mirra, el/Campo de Mirra"
 03050,03,050,7,"Campello, el"
-03051,03,051,4,"Campo de Mirra/Camp de Mirra, el"
 03052,03,052,9,Cañada
 03053,03,053,5,Castalla
 03054,03,054,0,"Castell de Castells"
@@ -201,9 +200,9 @@ municipio_id,provincia_id,cmun,dc,nombre
 03062,03,062,7,"Daya Vieja"
 03063,03,063,3,Dénia
 03064,03,064,8,Dolores
-03065,03,065,1,Elche/Elx
 03066,03,066,4,Elda
-03067,03,067,0,Facheca
+03065,03,065,1,Elx/Elche
+03067,03,067,0,Fageca
 03068,03,068,6,Famorca
 03069,03,069,9,Finestrat
 03077,03,077,8,"Fondó de les Neus, el/Hondón de las Nieves"
@@ -216,13 +215,10 @@ municipio_id,provincia_id,cmun,dc,nombre
 03078,03,078,4,"Hondón de los Frailes"
 03079,03,079,7,Ibi
 03080,03,080,1,Jacarilla
-03082,03,082,3,Jávea/Xàbia
-03083,03,083,9,Jijona/Xixona
 03085,03,085,7,Llíber
-03084,03,084,4,"Lorcha/Orxa, l'"
 03086,03,086,0,Millena
 03088,03,088,2,"Monforte del Cid"
-03089,03,089,5,Monóvar/Monòver
+03089,03,089,5,Monòver/Monóvar
 03903,03,903,7,"Montesinos, Los"
 03091,03,091,6,Murla
 03092,03,092,1,"Muro de Alcoy"
@@ -233,6 +229,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 03096,03,096,8,Onil
 03097,03,097,4,Orba
 03099,03,099,3,Orihuela
+03084,03,084,4,"Orxa, l'/Lorcha"
 03098,03,098,0,Orxeta
 03100,03,100,7,Parcent
 03101,03,101,4,Pedreguer
@@ -242,6 +239,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 03902,03,902,1,"Pilar de la Horadada"
 03105,03,105,3,"Pinós, el/Pinoso"
 03106,03,106,6,Planes
+03042,03,042,2,"Poble Nou de Benitatxell, el/Benitachell"
 03901,03,901,6,"Poblets, els"
 03107,03,107,2,Polop
 03060,03,060,5,Quatretondeta
@@ -256,9 +254,9 @@ municipio_id,provincia_id,cmun,dc,nombre
 03118,03,118,6,"San Fulgencio"
 03904,03,904,2,"San Isidro"
 03120,03,120,3,"San Miguel de Salinas"
-03122,03,122,5,"San Vicente del Raspeig/Sant Vicent del Raspeig"
 03117,03,117,0,"Sanet y Negrals"
 03119,03,119,9,"Sant Joan d'Alacant"
+03122,03,122,5,"Sant Vicent del Raspeig/San Vicente del Raspeig"
 03121,03,121,0,"Santa Pola"
 03123,03,123,1,Sax
 03124,03,124,6,Sella
@@ -268,20 +266,22 @@ municipio_id,provincia_id,cmun,dc,nombre
 03129,03,129,7,Tibi
 03130,03,130,1,Tollos
 03131,03,131,8,Tormos
-03132,03,132,3,"Torremanzanas/Torre de les Maçanes, la"
+03132,03,132,3,"Torre de les Maçanes, la/Torremanzanas"
 03133,03,133,9,Torrevieja
 03134,03,134,4,"Vall d'Alcalà, la"
-03136,03,136,0,"Vall de Gallinera"
+03136,03,136,0,"Vall de Gallinera, la"
 03137,03,137,6,"Vall de Laguar, la"
 03135,03,135,7,"Vall d'Ebo, la"
 03138,03,138,2,"Verger, el"
-03139,03,139,5,"Villajoyosa/Vila Joiosa, la"
+03139,03,139,5,"Vila Joiosa, la/Villajoyosa"
 03140,03,140,9,Villena
+03082,03,082,3,Xàbia/Jávea
 03081,03,081,8,Xaló
+03083,03,083,9,Xixona/Jijona
 04001,04,001,0,Abla
 04002,04,002,5,Abrucena
 04003,04,003,1,Adra
-04004,04,004,6,Albánchez
+04004,04,004,6,Albanchez
 04005,04,005,9,Alboloduy
 04006,04,006,2,Albox
 04007,04,007,8,Alcolea
@@ -332,7 +332,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 04054,04,054,5,Íllar
 04055,04,055,8,Instinción
 04056,04,056,1,Laroya
-04057,04,057,7,"Láujar de Andarax"
+04057,04,057,7,"Laujar de Andarax"
 04058,04,058,3,Líjar
 04059,04,059,6,Lubrín
 04060,04,060,0,"Lucainena de las Torres"
@@ -688,7 +688,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 06057,06,057,3,Garlitos
 06058,06,058,9,"Garrovilla, La"
 06059,06,059,2,"Granja de Torrehermosa"
-06903,06,903,8,"Guadiana del Caudillo"
+06903,06,903,8,Guadiana
 06060,06,060,6,Guareña
 06061,06,061,3,"Haba, La"
 06062,06,062,8,"Helechosa de los Montes"
@@ -829,14 +829,14 @@ municipio_id,provincia_id,cmun,dc,nombre
 07031,07,031,6,Llucmajor
 07033,07,033,7,Manacor
 07034,07,034,2,"Mancor de la Vall"
-07032,07,032,1,Maó-Mahón
+07032,07,032,1,Maó
 07035,07,035,5,"Maria de la Salut"
 07036,07,036,8,Marratxí
 07037,07,037,4,"Mercadal, Es"
 07902,07,902,8,"Migjorn Gran, Es"
 07038,07,038,0,Montuïri
 07039,07,039,3,Muro
-07040,07,040,7,"Palma de Mallorca"
+07040,07,040,7,Palma
 07041,07,041,4,Petra
 07044,07,044,0,"Pobla, Sa"
 07042,07,042,9,Pollença
@@ -885,7 +885,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 08020,08,020,7,Begues
 08021,08,021,4,Bellprat
 08022,08,022,9,Berga
-08023,08,023,5,"Bigues i Riells"
+08023,08,023,5,"Bigues i Riells del Fai"
 08024,08,024,0,Borredà
 08025,08,025,3,"Bruc, El"
 08026,08,026,6,"Brull, El"
@@ -1442,7 +1442,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 09350,09,350,0,"Santa María del Campo"
 09351,09,351,7,"Santa María del Invierno"
 09352,09,352,2,"Santa María del Mercadillo"
-09353,09,353,8,"Santa María Rivarredonda"
+09353,09,353,8,"Santa María Ribarredonda"
 09354,09,354,3,"Santa Olalla de Bureba"
 09355,09,355,6,"Santibáñez de Esgueva"
 09356,09,356,9,"Santibáñez del Val"
@@ -1559,7 +1559,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 10011,10,011,3,Aldeacentenera
 10014,10,014,9,"Aldeanueva de la Vera"
 10015,10,015,2,"Aldeanueva del Camino"
-10016,10,016,5,"Aldehuela de Jerte"
+10016,10,016,5,"Aldehuela del Jerte"
 10017,10,017,1,Alía
 10018,10,018,7,Aliseda
 10019,10,019,0,Almaraz
@@ -1639,7 +1639,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 10094,10,094,2,"Herrera de Alcántara"
 10095,10,095,5,Herreruela
 10096,10,096,8,Hervás
-10097,10,097,4,Higuera
+10097,10,097,4,"Higuera de Albalat"
 10098,10,098,0,Hinojal
 10099,10,099,3,Holguera
 10100,10,100,7,Hoyos
@@ -1789,7 +1789,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 11020,11,020,1,"Jerez de la Frontera"
 11021,11,021,8,"Jimena de la Frontera"
 11022,11,022,3,"Línea de la Concepción, La"
-11023,11,023,9,Medina-Sidonia
+11023,11,023,9,"Medina Sidonia"
 11024,11,024,4,Olvera
 11025,11,025,7,"Paterna de Rivera"
 11026,11,026,0,"Prado del Rey"
@@ -1799,6 +1799,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 11030,11,030,9,Rota
 11031,11,031,6,"San Fernando"
 11902,11,902,8,"San José del Valle"
+11903,11,903,4,"San Martín del Tesorillo"
 11033,11,033,7,"San Roque"
 11032,11,032,1,"Sanlúcar de Barrameda"
 11034,11,034,2,"Setenil de las Bodegas"
@@ -1817,7 +1818,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 12006,12,006,9,"Alcudia de Veo"
 12007,12,007,5,Alfondeguilla
 12008,12,008,1,"Algimia de Almonacid"
-12009,12,009,4,Almazora/Almassora
+12009,12,009,4,Almassora
 12010,12,010,8,Almedíjar
 12011,12,011,5,Almenara
 12901,12,901,8,"Alqueries, les/Alquerías del Niño Perdido"
@@ -1835,8 +1836,8 @@ municipio_id,provincia_id,cmun,dc,nombre
 12025,12,025,2,Benafigos
 12026,12,026,5,Benassal
 12027,12,027,1,Benicarló
-12028,12,028,7,Benicasim/Benicàssim
-12029,12,029,0,Benlloch
+12028,12,028,7,Benicàssim/Benicasim
+12029,12,029,0,Benlloc
 12021,12,021,3,Betxí
 12032,12,032,6,Borriana/Burriana
 12031,12,031,1,Borriol
@@ -1846,13 +1847,12 @@ municipio_id,provincia_id,cmun,dc,nombre
 12037,12,037,9,"Castell de Cabres"
 12038,12,038,5,Castellfort
 12039,12,039,8,Castellnovo
-12040,12,040,2,"Castellón de la Plana/Castelló de la Plana"
+12040,12,040,2,"Castelló de la Plana/Castellón de la Plana"
 12041,12,041,9,"Castillo de Villamalefa"
 12042,12,042,4,Catí
 12043,12,043,0,Caudiel
 12044,12,044,5,"Cervera del Maestre"
 12053,12,053,7,Chilches/Xilxes
-12055,12,055,5,Chodos/Xodos
 12056,12,056,8,Chóvar
 12045,12,045,8,Cinctorres
 12046,12,046,1,Cirat
@@ -1869,7 +1869,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 12064,12,064,0,"Fuentes de Ayódar"
 12065,12,065,3,Gaibiel
 12067,12,067,2,Geldo
-12068,12,068,8,Herbés
+12068,12,068,8,Herbers
 12069,12,069,1,Higueras
 12070,12,070,5,"Jana, la"
 12071,12,071,2,Jérica
@@ -1886,7 +1886,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 12082,12,082,5,Nules
 12083,12,083,1,"Olocau del Rey"
 12084,12,084,6,Onda
-12085,12,085,9,"Oropesa del Mar/Orpesa"
+12085,12,085,9,"Orpesa/Oropesa del Mar"
 12087,12,087,8,Palanques
 12088,12,088,4,Pavías
 12089,12,089,7,Peníscola/Peñíscola
@@ -1909,7 +1909,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 12105,12,105,5,"Sierra Engarcerán"
 12106,12,106,8,Soneja
 12107,12,107,4,"Sot de Ferrer"
-12108,12,108,0,Sueras/Suera
+12108,12,108,0,Suera/Sueras
 12109,12,109,3,Tales
 12110,12,110,7,Teresa
 12111,12,111,4,Tírig
@@ -1918,23 +1918,23 @@ municipio_id,provincia_id,cmun,dc,nombre
 12114,12,114,0,Torás
 12115,12,115,3,"Toro, El"
 12116,12,116,6,"Torralba del Pinar"
-12119,12,119,1,"Torre d'En Besora, la"
+12119,12,119,1,"Torre d'en Besora, la"
 12120,12,120,5,"Torre d'en Doménec, la"
 12117,12,117,2,Torreblanca
 12118,12,118,8,Torrechiva
 12121,12,121,2,Traiguera
-12122,12,122,7,"Useras/Useres, les"
+12122,12,122,7,"Useres, les/Useras"
 12124,12,124,8,"Vall d'Alba"
 12125,12,125,1,"Vall de Almonacid"
 12126,12,126,4,"Vall d'Uixó, la"
 12123,12,123,3,Vallat
 12127,12,127,0,Vallibona
 12128,12,128,6,Vilafamés
+12129,12,129,9,"Vilafranca/Villafranca del Cid"
 12132,12,132,5,"Vilanova d'Alcolea"
 12134,12,134,6,"Vilar de Canes"
 12135,12,135,9,Vila-real
 12136,12,136,2,"Vilavella, la"
-12129,12,129,9,"Villafranca del Cid/Vilafranca"
 12130,12,130,3,"Villahermosa del Río"
 12131,12,131,0,Villamalur
 12133,12,133,1,"Villanueva de Viver"
@@ -1943,6 +1943,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 12139,12,139,7,"Vistabella del Maestrat"
 12140,12,140,1,Viver
 12052,12,052,1,Xert
+12055,12,055,5,Xodos/Chodos
 12141,12,141,8,"Zorita del Maestrazgo"
 12142,12,142,3,Zucaina
 13001,13,001,3,Abenójar
@@ -2074,12 +2075,14 @@ municipio_id,provincia_id,cmun,dc,nombre
 14025,14,025,3,Espejo
 14026,14,026,6,Espiel
 14027,14,027,2,Fernán-Núñez
+14901,14,901,9,"Fuente Carreteros"
 14028,14,028,8,"Fuente la Lancha"
 14029,14,029,1,"Fuente Obejuna"
 14030,14,030,5,"Fuente Palmera"
 14031,14,031,2,Fuente-Tójar
 14032,14,032,7,"Granjuela, La"
 14033,14,033,3,Guadalcázar
+14902,14,902,4,"Guijarrosa, La"
 14034,14,034,8,"Guijo, El"
 14035,14,035,1,"Hinojosa del Duque"
 14036,14,036,4,Hornachuelos
@@ -2479,12 +2482,12 @@ municipio_id,provincia_id,cmun,dc,nombre
 17025,17,025,5,Bordils
 17026,17,026,8,Borrassà
 17027,17,027,4,Breda
-17028,17,028,0,Brunyola
+17028,17,028,0,"Brunyola i Sant Martí Sapresa"
 17031,17,031,4,Cabanelles
 17030,17,030,7,Cabanes
 17032,17,032,9,Cadaqués
 17033,17,033,5,"Caldes de Malavella"
-17034,17,034,0,Calonge
+17034,17,034,0,"Calonge i Sant Antoni"
 17035,17,035,3,Camós
 17036,17,036,6,Campdevànol
 17037,17,037,2,Campelles
@@ -2494,9 +2497,9 @@ municipio_id,provincia_id,cmun,dc,nombre
 17041,17,041,2,Cantallops
 17042,17,042,7,Capmany
 17044,17,044,8,"Cassà de la Selva"
+17048,17,048,6,"Castell d'Aro, Platja d'Aro i s'Agaró"
 17046,17,046,4,"Castellfollit de la Roca"
 17047,17,047,0,"Castelló d'Empúries"
-17048,17,048,6,"Castell-Platja d'Aro"
 17189,17,189,9,"Cellera de Ter, La"
 17049,17,049,9,Celrà
 17050,17,050,2,"Cervià de Ter"
@@ -2549,7 +2552,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 17103,17,103,0,"Maçanet de la Selva"
 17097,17,097,9,Madremanya
 17098,17,098,5,"Maià de Montcal"
-17100,17,100,2,Masarac
+17100,17,100,2,"Masarac i Vilarnadal"
 17101,17,101,9,Massanes
 17099,17,099,8,Meranges
 17105,17,105,8,Mieres
@@ -2742,6 +2745,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 18072,18,072,6,Escúzar
 18074,18,074,7,Ferreira
 18076,18,076,3,Fonelas
+18077,18,077,9,Fornes
 18078,18,078,5,Freila
 18079,18,079,8,"Fuente Vaqueros"
 18905,18,905,6,"Gabias, Las"
@@ -2768,7 +2772,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 18105,18,105,4,Iznalloz
 18106,18,106,7,Játar
 18107,18,107,3,Jayena
-18108,18,108,9,"Jerez del Marquesado"
+18108,18,108,9,"Jérez del Marquesado"
 18109,18,109,2,Jete
 18111,18,111,3,Jun
 18112,18,112,8,Juviles
@@ -2826,6 +2830,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 18177,18,177,8,Sorvilán
 18901,18,901,7,"Taha, La"
 18178,18,178,4,Torre-Cardela
+18916,18,916,7,"Torrenueva Costa"
 18179,18,179,7,Torvizcón
 18180,18,180,1,Trevélez
 18181,18,181,8,Turón
@@ -3300,6 +3305,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 21076,21,076,7,"Villanueva de los Castillejos"
 21077,21,077,3,Villarrasa
 21078,21,078,9,"Zalamea la Real"
+21902,21,902,6,"Zarza-Perrunal, La"
 21079,21,079,2,Zufre
 22001,22,001,5,Abiego
 22002,22,002,0,Abizanda
@@ -3633,7 +3639,6 @@ municipio_id,provincia_id,cmun,dc,nombre
 24032,24,032,5,Campazas
 24033,24,033,1,"Campo de Villavidel"
 24034,24,034,6,Camponaraya
-24036,24,036,2,Candín
 24037,24,037,8,Cármenes
 24038,24,038,4,Carracedelo
 24039,24,039,7,Carrizo
@@ -3774,6 +3779,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 24184,24,184,4,Valdesamario
 24187,24,187,6,Valdevimbre
 24188,24,188,2,"Valencia de Don Juan"
+24036,24,036,2,"Valle de Ancares"
 24191,24,191,6,Vallecillo
 24189,24,189,5,"Valverde de la Virgen"
 24190,24,190,9,Valverde-Enrique
@@ -4130,7 +4136,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 26087,26,087,3,Leiva
 26088,26,088,9,"Leza de Río Leza"
 26089,26,089,2,Logroño
-26091,26,091,3,Lumbreras
+26091,26,091,3,"Lumbreras de Cameros"
 26092,26,092,8,Manjarrés
 26093,26,093,4,"Mansilla de la Sierra"
 26094,26,094,9,"Manzanares de Rioja"
@@ -4649,7 +4655,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 31037,31,037,0,Arruazu
 31038,31,038,6,Artajona
 31039,31,039,9,Artazu
-31040,31,040,3,Atez/Atetz
+31040,31,040,3,Atetz
 31058,31,058,1,Auritz/Burguete
 31041,31,041,0,Ayegui/Aiegi
 31042,31,042,5,Azagra
@@ -4687,7 +4693,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 31068,31,068,9,Cascante
 31069,31,069,2,Cáseda
 31070,31,070,6,Castejón
-31071,31,071,3,Castillonuevo
+31071,31,071,3,Castillonuevo/Gazteluberri
 31193,31,193,9,"Cendea de Olza/Oltza Zendea"
 31072,31,072,8,Cintruénigo
 31074,31,074,9,Cirauqui/Zirauki
@@ -4733,7 +4739,6 @@ municipio_id,provincia_id,cmun,dc,nombre
 31115,31,115,4,Garralda
 31116,31,116,7,Genevilla
 31117,31,117,3,Goizueta
-31118,31,118,9,Goñi
 31119,31,119,2,Güesa/Gorza
 31120,31,120,6,Guesálaz/Gesalatz
 31121,31,121,3,Guirguillano
@@ -4753,7 +4758,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 31133,31,133,2,Izalzu/Itzaltzu
 31134,31,134,7,Jaurrieta
 31135,31,135,0,Javier
-31136,31,136,3,Juslapeña
+31136,31,136,3,Juslapeña/Txulapain
 31138,31,138,5,Lakuntza
 31139,31,139,8,Lana
 31140,31,140,2,Lantz
@@ -4771,9 +4776,9 @@ municipio_id,provincia_id,cmun,dc,nombre
 31151,31,151,6,Lerga
 31152,31,152,1,Lerín
 31153,31,153,7,Lesaka
-31154,31,154,2,Lezáun
+31154,31,154,2,Lezaun
 31155,31,155,5,Liédena
-31156,31,156,8,Lizoáin-Arriasgoiti
+31156,31,156,8,Lizoain-Arriasgoiti/Lizoainibar-Arriasgoiti
 31157,31,157,4,Lodosa
 31158,31,158,0,Lónguida/Longida
 31159,31,159,3,Lumbier
@@ -4785,7 +4790,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 31164,31,164,0,Mélida
 31165,31,165,3,Mendavia
 31166,31,166,6,Mendaza
-31167,31,167,2,Mendigorría
+31167,31,167,2,Mendigorria
 31168,31,168,8,Metauten
 31169,31,169,1,Milagro
 31170,31,170,5,Mirafuentes
@@ -4801,7 +4806,6 @@ municipio_id,provincia_id,cmun,dc,nombre
 31180,31,180,3,Muruzábal
 31181,31,181,0,Navascués/Nabaskoze
 31182,31,182,5,Nazar
-31088,31,088,5,"Noáin (Valle de Elorz)/Noain (Elortzibar)"
 31183,31,183,1,Obanos
 31185,31,185,9,Ochagavía/Otsagabia
 31184,31,184,6,Oco
@@ -4826,9 +4830,9 @@ municipio_id,provincia_id,cmun,dc,nombre
 31204,31,204,2,Piedramillera
 31205,31,205,5,Pitillas
 31206,31,206,8,"Puente la Reina/Gares"
-31207,31,207,4,Pueyo
+31207,31,207,4,Pueyo/Puiu
 31208,31,208,0,Ribaforada
-31209,31,209,3,Romanzado
+31209,31,209,3,Romanzado/Erromantzatua
 31210,31,210,7,Roncal/Erronkari
 31212,31,212,9,Sada
 31213,31,213,5,Saldías
@@ -4852,7 +4856,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 31233,31,233,1,Tulebras
 31234,31,234,6,Ucar
 31123,31,123,4,"Uharte Arakil"
-31235,31,235,9,Ujué
+31235,31,235,9,Ujué/Uxue
 31236,31,236,2,Ultzama
 31237,31,237,8,Unciti
 31238,31,238,4,Unzué/Untzue
@@ -4865,7 +4869,9 @@ municipio_id,provincia_id,cmun,dc,nombre
 31245,31,245,7,Urzainqui/Urzainki
 31246,31,246,0,Uterga
 31247,31,247,6,Uztárroz/Uztarroze
+31118,31,118,9,"Val de Goñi/Goñerri"
 31086,31,086,3,"Valle de Egüés/Eguesibar"
+31088,31,088,5,"Valle de Elorz/Elortzibar"
 31194,31,194,4,"Valle de Ollo/Ollaran"
 31260,31,260,6,"Valle de Yerri/Deierri"
 31249,31,249,5,Valtierra
@@ -5442,7 +5448,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 37115,37,115,2,"Dios le Guarde"
 37116,37,116,5,"Doñinos de Ledesma"
 37117,37,117,1,"Doñinos de Salamanca"
-37118,37,118,7,Ejeme
+37118,37,118,7,Éjeme
 37120,37,120,4,"Encina de San Silvestre"
 37119,37,119,0,"Encina, La"
 37121,37,121,1,"Encinas de Abajo"
@@ -5893,6 +5899,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 40039,40,039,0,"Campo de San Pedro"
 40040,40,040,4,Cantalejo
 40041,40,041,1,Cantimpalos
+40161,40,161,5,Carabias
 40043,40,043,2,"Carbonero el Mayor"
 40044,40,044,7,"Carrascal del Río"
 40045,40,045,0,Casla
@@ -6000,7 +6007,6 @@ municipio_id,provincia_id,cmun,dc,nombre
 40158,40,158,1,Perosillo
 40159,40,159,4,Pinarejos
 40160,40,160,8,Pinarnegrillo
-40161,40,161,5,Pradales
 40162,40,162,0,Prádena
 40163,40,163,6,"Puebla de Pedraza"
 40164,40,164,1,Rapariegos
@@ -6137,6 +6143,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 41067,41,067,1,Olivares
 41068,41,068,7,Osuna
 41069,41,069,0,"Palacios y Villafranca, Los"
+41904,41,904,3,"Palmar de Troya, El"
 41070,41,070,4,"Palomares del Río"
 41071,41,071,1,Paradas
 41072,41,072,6,Pedrera
@@ -6381,7 +6388,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 43024,43,024,9,Bellvei
 43025,43,025,2,Benifallet
 43026,43,026,5,Benissanet
-43027,43,027,1,"Bisbal de Falset, La"
+43027,43,027,1,"Bisbal de Montsant, La"
 43028,43,028,7,"Bisbal del Penedès, La"
 43029,43,029,0,Blancafort
 43030,43,030,4,Bonastre
@@ -6476,6 +6483,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 43118,43,118,8,Pratdip
 43119,43,119,1,Puigpelat
 43120,43,120,5,Querol
+43136,43,136,2,"Ràpita, La"
 43121,43,121,2,Rasquera
 43122,43,122,7,Renau
 43123,43,123,3,Reus
@@ -6492,7 +6500,6 @@ municipio_id,provincia_id,cmun,dc,nombre
 43134,43,134,6,"Rourell, El"
 43135,43,135,9,Salomó
 43905,43,905,7,Salou
-43136,43,136,2,"Sant Carles de la Ràpita"
 43137,43,137,8,"Sant Jaume dels Domenys"
 43902,43,902,3,"Sant Jaume d'Enveja"
 43138,43,138,4,"Santa Bàrbara"
@@ -6850,7 +6857,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 45076,45,076,2,Hormigos
 45077,45,077,8,Huecas
 45078,45,078,4,"Huerta de Valdecarábanos"
-45079,45,079,7,"Iglesuela, La"
+45079,45,079,7,"Iglesuela del Tiétar, La"
 45080,45,080,1,"Illán de Vacas"
 45081,45,081,8,Illescas
 45082,45,082,3,Lagartera
@@ -7001,12 +7008,12 @@ municipio_id,provincia_id,cmun,dc,nombre
 46022,46,022,9,Alfafar
 46024,46,024,0,"Alfara de la Baronia"
 46025,46,025,3,"Alfara del Patriarca"
-46026,46,026,6,Alfarp
+46026,46,026,6,Alfarb
 46027,46,027,2,Alfarrasí
 46023,46,023,5,Alfauir
-46028,46,028,8,"Algar de Palancia"
+46028,46,028,8,"Algar de Palància"
 46029,46,029,1,Algemesí
-46030,46,030,5,"Algimia de Alfara"
+46030,46,030,5,"Algímia d'Alfara"
 46031,46,031,2,Alginet
 46032,46,032,7,Almàssera
 46033,46,033,3,Almiserà
@@ -7067,6 +7074,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 46087,46,087,9,"Casas Altas"
 46088,46,088,5,"Casas Bajas"
 46089,46,089,8,Casinos
+46257,46,257,3,Castelló
 46090,46,090,2,"Castelló de Rugat"
 46091,46,091,9,"Castellonet de la Conquesta"
 46092,46,092,4,Castielfabib
@@ -7091,21 +7099,21 @@ municipio_id,provincia_id,cmun,dc,nombre
 46116,46,116,7,"Eliana, l'"
 46117,46,117,3,Emperador
 46118,46,118,9,Enguera
-46119,46,119,2,"Ènova, l'"
+46119,46,119,2,"Énova, l'"
 46120,46,120,6,Estivella
 46121,46,121,3,Estubeny
 46122,46,122,8,Faura
 46123,46,123,4,Favara
 46126,46,126,5,Foios
 46128,46,128,7,"Font de la Figuera, la"
-46127,46,127,1,"Font d'En Carròs, la"
+46127,46,127,1,"Font d'en Carròs, la"
 46124,46,124,9,"Fontanars dels Alforins"
 46125,46,125,2,Fortaleny
 46129,46,129,0,Fuenterrobles
 46131,46,131,1,Gandia
 46902,46,902,4,Gátova
 46130,46,130,4,Gavarda
-46132,46,132,6,Genovés
+46132,46,132,6,"Genovés, el"
 46133,46,133,2,Gestalgar
 46134,46,134,7,Gilet
 46135,46,135,0,Godella
@@ -7140,17 +7148,17 @@ municipio_id,provincia_id,cmun,dc,nombre
 46167,46,167,2,Millares
 46168,46,168,8,Miramar
 46169,46,169,1,Mislata
-46170,46,170,5,Mogente/Moixent
-46171,46,171,2,Moncada
+46170,46,170,5,Moixent/Mogente
+46171,46,171,2,Montcada/Moncada
 46173,46,173,3,Montaverner
 46174,46,174,8,Montesa
 46175,46,175,1,Montitxelvo/Montichelvo
 46176,46,176,4,Montroi/Montroy
 46172,46,172,7,Montserrat
 46177,46,177,0,Museros
-46178,46,178,6,Náquera
+46178,46,178,6,Nàquera/Náquera
 46179,46,179,9,Navarrés
-46180,46,180,3,Novelé/Novetlè
+46180,46,180,3,Novetlè
 46181,46,181,0,Oliva
 46183,46,183,1,"Olleria, l'"
 46182,46,182,5,Olocau
@@ -7192,9 +7200,9 @@ municipio_id,provincia_id,cmun,dc,nombre
 46215,46,215,3,Riola
 46216,46,216,6,Rocafort
 46217,46,217,2,"Rotglà i Corberà"
-46218,46,218,8,Rótova
+46218,46,218,8,Ròtova
 46219,46,219,1,Rugat
-46220,46,220,5,Sagunto/Sagunt
+46220,46,220,5,Sagunt/Sagunto
 46221,46,221,2,Salem
 46903,46,903,0,"San Antonio de Benagéber"
 46222,46,222,7,"Sant Joanet"
@@ -7225,14 +7233,13 @@ municipio_id,provincia_id,cmun,dc,nombre
 46247,46,247,6,Tuéjar
 46248,46,248,2,Turís
 46249,46,249,5,Utiel
-46250,46,250,8,Valencia
+46250,46,250,8,València
 46251,46,251,5,Vallada
 46252,46,252,0,Vallanca
 46253,46,253,6,Vallés
 46254,46,254,1,"Venta del Moro"
 46255,46,255,4,Vilallonga/Villalonga
 46256,46,256,7,Vilamarxant
-46257,46,257,3,"Villanueva de Castellón"
 46258,46,258,9,"Villar del Arzobispo"
 46259,46,259,2,"Villargordo del Cabriel"
 46260,46,260,6,Vinalesa
@@ -7477,7 +7484,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 48005,48,005,9,Arakaldo
 48006,48,006,2,Arantzazu
 48093,48,093,2,Areatza
-48009,48,009,7,Arrankudiaga
+48009,48,009,7,Arrankudiaga-Zollo
 48914,48,914,5,Arratzu
 48010,48,010,1,Arrieta
 48011,48,011,8,Arrigorriaga
@@ -7571,6 +7578,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 48065,48,065,6,Ugao-Miraballes
 48089,48,089,0,Urduliz
 48074,48,074,1,Urduña/Orduña
+48916,48,916,1,Usansolo
 48080,48,080,6,"Valle de Trápaga-Trapagaran"
 48095,48,095,0,Zaldibar
 48096,48,096,3,Zalla
@@ -7953,7 +7961,7 @@ municipio_id,provincia_id,cmun,dc,nombre
 50126,50,126,3,Illueca
 50128,50,128,5,Isuerre
 50129,50,129,8,Jaraba
-50130,50,130,2,Jarque
+50130,50,130,2,"Jarque de Moncayo"
 50131,50,131,9,Jaulín
 50132,50,132,4,"Joyosa, La"
 50133,50,133,0,Lagata

@@ -38,7 +38,7 @@ municipio_id,isla_id,provincia_id,cmun,dc,nombre
 07036,073,07,036,8,Marratxí
 07038,073,07,038,0,Montuïri
 07039,073,07,039,3,Muro
-07040,073,07,040,7,"Palma de Mallorca"
+07040,073,07,040,7,Palma
 07041,073,07,041,4,Petra
 07044,073,07,044,0,"Pobla, Sa"
 07042,073,07,042,9,Pollença
@@ -62,7 +62,7 @@ municipio_id,isla_id,provincia_id,cmun,dc,nombre
 07064,074,07,064,5,"Castell, Es"
 07015,074,07,015,9,"Ciutadella de Menorca"
 07023,074,07,023,9,Ferreries
-07032,074,07,032,1,Maó-Mahón
+07032,074,07,032,1,Maó
 07037,074,07,037,4,"Mercadal, Es"
 07902,074,07,902,8,"Migjorn Gran, Es"
 07052,074,07,052,6,"Sant Lluís"
